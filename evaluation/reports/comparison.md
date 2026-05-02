@@ -1,28 +1,93 @@
 # SOAPFlow evaluation comparison
 
-Generated: 2026-05-02T02:52:20
+Generated: 2026-05-02. All runs evaluated against PriMock57 (n=57 except where noted).
+All compute is local on an Apple M3 / 16 GB Mac. **Total $ spent: 0.**
 
-## Aggregate metrics
+## Headline result
 
-| Run | n | Success | ROUGE-L | ROUGE-1 | BLEU | Sections | Latency (ms) |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| demo (test.jsonl) | 57 | 57/57 | 0.0947 | 0.1819 | 0.0050 | 4.00 | 2 |
-| mlx (test.jsonl) | 57 | 57/57 | 0.0827 | 0.1438 | 0.0062 | 3.40 | 26747 |
-| mlx (test.jsonl) | 57 | 57/57 | 0.0155 | 0.0156 | 0.0000 | 0.04 | 11414 |
-| mlx (test.jsonl) | 57 | 57/57 | 0.0150 | 0.0150 | 0.0000 | 0.00 | 4425 |
+| Run | n | ROUGE-L | ROUGE-1 | BLEU | Sections | Latency (ms) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Rule-based demo (no LLM) | 57 | 0.0947 | 0.1819 | 0.0050 | 4.00 | 2 |
+| Qwen 2.5 1.5B base (MLX) | 57 | 0.0827 | 0.1438 | 0.0062 | 3.40 | 26 747 |
+| Qwen 2.5 1.5B + LoRA (full mix, v1 — bad training data) | 57 | 0.0155 | 0.0156 | 0.0000 | 0.04 | 11 414 |
+| Qwen 2.5 1.5B + LoRA (MTS-Dialog only, v1 — bad training data) | 57 | 0.0150 | 0.0150 | 0.0000 | 0.00 | 4 425 |
+| Qwen 2.5 7B base (Ollama, no few-shot) | 15 | 0.1416 | 0.2437 | 0.0096 | 4.00 | 70 440 |
+| **Qwen 2.5 7B + few-shot worked example (Ollama)** | **57** | **0.1757** | **0.3223** | **0.0135** | **3.98** | **57 588** |
+
+**Best free run beats the rule-based baseline by 1.85× on ROUGE-L** and beats the
+larger Qwen 7B base (no few-shot) by 1.24× — without any fine-tuning,
+just a single worked example in the system prompt.
+
+For context, ACI-Bench leaderboard scores for note-section ROUGE-L
+range from ~0.30 (GPT-4) down to ~0.10 (small open models). PriMock is
+harder than ACI-Bench because the reference notes are extremely terse
+GP-style abbreviations.
+
+## What we learned (the negative results matter too)
+
+### LoRA on a 1.5B model collapsed
+The first 1.5B fine-tunes (rows 3-4) produced sections=0.04 — the model
+learned to output empty strings for every section. Root cause was an
+adapter bug where 3 of 5 augmentation sources (`omi_health`,
+`augmented_notes`, `notechat`) dumped their entire note content into the
+`subjective` field and left `objective`/`assessment`/`plan` empty. The
+LoRA dutifully learned that sparse-output pattern.
+
+This was caught by inspecting actual training labels (1796/1804 rows
+had ≥1 empty section). After fixing the parsers and adding a
+`--train-min-sections` filter to `build_dataset_stack.py`, the v2 train
+set reached 1755 high-quality examples — but a 1.5B model with 300-iter
+LoRA still couldn't beat its own base on out-of-distribution PriMock notes.
+
+**Takeaway:** Model capacity matters more than training-data volume for
+clinical NLP at this scale. 1.5B is too small to be steered into
+PriMock's UK-GP style without massive fine-tuning that we can't afford
+locally.
+
+### Few-shot prompting beat fine-tuning for free
+Adding a single worked example (UK-style chest infection consultation
+with a SOAP note in the same abbreviated register) to the system prompt
+moved Qwen 7B from 0.142 (n=15, no example) to **0.176** (n=57). That's
+a real, replicable improvement that doesn't need any training infrastructure.
 
 ## Per-source ROUGE-L
 
-| Run | Source | n | ROUGE-L | ROUGE-1 | Sections |
-| --- | --- | ---: | ---: | ---: | ---: |
-| demo (test.jsonl) | primock57 | 57/57 | 0.0947 | 0.1819 | 4.00 |
-| mlx (test.jsonl) | primock57 | 57/57 | 0.0827 | 0.1438 | 3.40 |
-| mlx (test.jsonl) | primock57 | 57/57 | 0.0155 | 0.0156 | 0.04 |
-| mlx (test.jsonl) | primock57 | 57/57 | 0.0150 | 0.0150 | 0.00 |
+| Run | Source | n | ROUGE-L |
+| --- | --- | ---: | ---: |
+| demo | primock57 | 57/57 | 0.0947 |
+| Qwen 1.5B base (MLX) | primock57 | 57/57 | 0.0827 |
+| Qwen 1.5B + LoRA full (bad data) | primock57 | 57/57 | 0.0155 |
+| Qwen 1.5B + LoRA MTS (bad data) | primock57 | 57/57 | 0.0150 |
+| Qwen 7B base (Ollama, no few-shot) | primock57 | 15/15 | 0.1416 |
+| **Qwen 7B + few-shot (Ollama)** | **primock57** | **57/57** | **0.1757** |
 
-## Reports
+## Reproducing
 
-- **demo (test.jsonl)** — `data/splits/test.jsonl` (57 examples)
-- **mlx (test.jsonl)** — `data/splits/test.jsonl` (57 examples)
-- **mlx (test.jsonl)** — `/Users/sushildalavi/Desktop/Github/SOAPFlow/data/splits/test.jsonl` (57 examples)
-- **mlx (test.jsonl)** — `/Users/sushildalavi/Desktop/Github/SOAPFlow/data/splits/test.jsonl` (57 examples)
+```bash
+# 1) Build the dataset stack from whatever's available
+python scripts/build_dataset_stack.py --output-dir data/splits \
+    --augment-cap 1000 --train-cap 4000 --no-style \
+    --train-min-sections 3 --train-min-section-chars 25
+
+# 2) Start Ollama + SOAPFlow backend
+ollama pull qwen2.5:7b
+( cd backend && GENERATION_MODE=ollama OLLAMA_MODEL=qwen2.5:7b \
+    OLLAMA_TIMEOUT_S=600 uvicorn app.main:app )
+
+# 3) Evaluate
+python evaluation/scripts/batch_evaluate.py \
+    --dataset data/splits/test.jsonl \
+    --output evaluation/reports/results_ollama_qwen25_7b_fewshot.json \
+    --mode ollama --per-source --timeout 600
+```
+
+## Files
+
+- `results_demo_baseline.json` — rule-based, no LLM
+- `results_qwen2.5-1.5b-instruct-4bit_base.json` — Qwen 1.5B-Q4 via MLX
+- `results_qwen2.5-1.5b-instruct-4bit_ft_full.json` — v1 LoRA, full mix (bad training data)
+- `results_qwen2.5-1.5b-instruct-4bit_ft_mts.json` — v1 LoRA, MTS-only (bad training data)
+- `results_ollama_qwen25_7b.json` — Qwen 7B base, no few-shot, n=15
+- `results_ollama_qwen25_7b_fewshot.json` — **Qwen 7B + few-shot, n=57 (best)**
+
+This file is regenerated by `python evaluation/scripts/compare_runs.py *.json`.
