@@ -21,9 +21,22 @@ from pathlib import Path
 
 def _label_for(report: dict) -> str:
     cfg = report.get("configuration", {})
+    results = report.get("results") or []
+    model = ""
+    for r in results:
+        gen = r.get("generation") or {}
+        meta = gen.get("metadata") or {}
+        if meta.get("model"):
+            model = meta["model"]
+            break
+    if model and "/" in model:
+        model = model.rsplit("/", 1)[-1]
+    if "+" in model:
+        base, adapter = model.split("+", 1)
+        adapter = adapter.rsplit("/", 1)[-1]
+        model = f"{base} + LoRA({adapter})"
     mode = cfg.get("mode", "?")
-    dataset = Path(cfg.get("dataset", "?")).name
-    return f"{mode} ({dataset})"
+    return f"{mode} / {model}" if model else mode
 
 
 def _row(report: dict) -> dict:
