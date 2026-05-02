@@ -1,0 +1,3765 @@
+{
+  "generated_at": "2026-05-02T02:52:20.277704",
+  "configuration": {
+    "dataset": "/Users/sushildalavi/Desktop/Github/SOAPFlow/data/splits/test.jsonl",
+    "mode": "mlx",
+    "api_url": "http://localhost:8000",
+    "total_examples": 57
+  },
+  "aggregate_statistics": {
+    "total_examples": 57,
+    "successful_generations": 57,
+    "failed_generations": 0,
+    "generation_success_rate": 1.0,
+    "avg_rouge_l": 0.015,
+    "max_rouge_l": 0.0492,
+    "min_rouge_l": 0.0,
+    "avg_rouge_1": 0.015,
+    "avg_bleu": 0.0,
+    "avg_sections_populated": 0.0,
+    "avg_processing_time_ms": 4424.86,
+    "avg_warnings_per_note": 4.3
+  },
+  "results": [
+    {
+      "id": "primock_day1_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1516,
+          "transcript_char_count": 8335,
+          "note_word_count": 8,
+          "processing_time_ms": 6729.78,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0213,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0213,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.069
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.021 (Needs Review). ROUGE-1=0.0213, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1798,
+          "transcript_char_count": 9584,
+          "note_word_count": 8,
+          "processing_time_ms": 2645.36,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.02,
+          "rouge_2": 0.0,
+          "rouge_l": 0.02,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0364,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.020 (Needs Review). ROUGE-1=0.02, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1701,
+          "transcript_char_count": 9356,
+          "note_word_count": 8,
+          "processing_time_ms": 2690.56,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1812,
+          "transcript_char_count": 9535,
+          "note_word_count": 8,
+          "processing_time_ms": 3757.15,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1758,
+          "transcript_char_count": 9579,
+          "note_word_count": 8,
+          "processing_time_ms": 4200.89,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0204,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0204,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0138,
+            "assessment": 0.0,
+            "plan": 0.0488
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.020 (Needs Review). ROUGE-1=0.0204, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2023,
+          "transcript_char_count": 10940,
+          "note_word_count": 8,
+          "processing_time_ms": 3890.57,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2964,
+          "transcript_char_count": 15242,
+          "note_word_count": 8,
+          "processing_time_ms": 4642.93,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0213,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0213,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.05
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.021 (Needs Review). ROUGE-1=0.0213, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1321,
+          "transcript_char_count": 7356,
+          "note_word_count": 8,
+          "processing_time_ms": 4336.51,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1715,
+          "transcript_char_count": 9154,
+          "note_word_count": 8,
+          "processing_time_ms": 4463.87,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2017,
+          "transcript_char_count": 10658,
+          "note_word_count": 8,
+          "processing_time_ms": 4443.85,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2497,
+          "transcript_char_count": 12727,
+          "note_word_count": 8,
+          "processing_time_ms": 4610.25,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1286,
+          "transcript_char_count": 6893,
+          "note_word_count": 8,
+          "processing_time_ms": 4647.7,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0124,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0124,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0159,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.012 (Needs Review). ROUGE-1=0.0124, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation13",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1839,
+          "transcript_char_count": 9863,
+          "note_word_count": 8,
+          "processing_time_ms": 4647.47,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation14",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2047,
+          "transcript_char_count": 10834,
+          "note_word_count": 8,
+          "processing_time_ms": 4513.61,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day1_consultation15",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1391,
+          "transcript_char_count": 7692,
+          "note_word_count": 8,
+          "processing_time_ms": 4491.68,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0217,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0217,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0513,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.022 (Needs Review). ROUGE-1=0.0217, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1232,
+          "transcript_char_count": 6576,
+          "note_word_count": 8,
+          "processing_time_ms": 4159.72,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0194,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0194,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0444,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.019 (Needs Review). ROUGE-1=0.0194, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1827,
+          "transcript_char_count": 9539,
+          "note_word_count": 8,
+          "processing_time_ms": 4283.48,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0412,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0412,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.04,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.041 (Needs Review). ROUGE-1=0.0412, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1527,
+          "transcript_char_count": 8151,
+          "note_word_count": 8,
+          "processing_time_ms": 4180.32,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0167,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0167,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0351,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.017 (Needs Review). ROUGE-1=0.0167, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1993,
+          "transcript_char_count": 10462,
+          "note_word_count": 8,
+          "processing_time_ms": 4165.96,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0238,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0238,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0444,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.024 (Needs Review). ROUGE-1=0.0238, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2040,
+          "transcript_char_count": 11076,
+          "note_word_count": 8,
+          "processing_time_ms": 3952.17,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2087,
+          "transcript_char_count": 11184,
+          "note_word_count": 8,
+          "processing_time_ms": 4873.3,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1461,
+          "transcript_char_count": 7915,
+          "note_word_count": 8,
+          "processing_time_ms": 4474.6,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0127,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0127,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0169,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.013 (Needs Review). ROUGE-1=0.0127, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10516,
+          "note_word_count": 8,
+          "processing_time_ms": 4787.33,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0103,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0103,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0167,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.010 (Needs Review). ROUGE-1=0.0103, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1136,
+          "transcript_char_count": 6022,
+          "note_word_count": 8,
+          "processing_time_ms": 5241.73,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.024,
+          "rouge_2": 0.0,
+          "rouge_l": 0.024,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0143,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.024 (Needs Review). ROUGE-1=0.024, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day2_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1957,
+          "transcript_char_count": 10405,
+          "note_word_count": 8,
+          "processing_time_ms": 4969.95,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0331,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0331,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0198,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.033 (Needs Review). ROUGE-1=0.0331, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1355,
+          "transcript_char_count": 7204,
+          "note_word_count": 8,
+          "processing_time_ms": 5394.96,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1238,
+          "transcript_char_count": 6495,
+          "note_word_count": 8,
+          "processing_time_ms": 4123.51,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.026,
+          "rouge_2": 0.0,
+          "rouge_l": 0.026,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0111,
+            "plan": 0.0426
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.026 (Needs Review). ROUGE-1=0.026, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1968,
+          "transcript_char_count": 10566,
+          "note_word_count": 8,
+          "processing_time_ms": 4519.86,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.036,
+          "rouge_2": 0.0,
+          "rouge_l": 0.036,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0488,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.036 (Needs Review). ROUGE-1=0.036, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1195,
+          "transcript_char_count": 6526,
+          "note_word_count": 8,
+          "processing_time_ms": 4751.27,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0158,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0158,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0109,
+            "plan": 0.0303
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.016 (Needs Review). ROUGE-1=0.0158, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1172,
+          "transcript_char_count": 6411,
+          "note_word_count": 8,
+          "processing_time_ms": 4308.92,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0106,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0106,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0144,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.011 (Needs Review). ROUGE-1=0.0106, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 639,
+          "transcript_char_count": 3588,
+          "note_word_count": 8,
+          "processing_time_ms": 3505.36,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1244,
+          "transcript_char_count": 6946,
+          "note_word_count": 8,
+          "processing_time_ms": 4429.52,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0297,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0297,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.015,
+            "plan": 0.0308
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.030 (Needs Review). ROUGE-1=0.0297, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 982,
+          "transcript_char_count": 5439,
+          "note_word_count": 8,
+          "processing_time_ms": 4034.24,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2201,
+          "transcript_char_count": 11765,
+          "note_word_count": 8,
+          "processing_time_ms": 4164.91,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day3_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1451,
+          "transcript_char_count": 7959,
+          "note_word_count": 8,
+          "processing_time_ms": 5043.63,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0089,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0089,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0148,
+            "objective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.009 (Needs Review). ROUGE-1=0.0089, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1394,
+          "transcript_char_count": 7910,
+          "note_word_count": 8,
+          "processing_time_ms": 6019.7,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1398,
+          "transcript_char_count": 7775,
+          "note_word_count": 8,
+          "processing_time_ms": 5389.48,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1133,
+          "transcript_char_count": 6268,
+          "note_word_count": 8,
+          "processing_time_ms": 5195.78,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1104,
+          "transcript_char_count": 5973,
+          "note_word_count": 8,
+          "processing_time_ms": 4492.69,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1691,
+          "transcript_char_count": 8683,
+          "note_word_count": 8,
+          "processing_time_ms": 5033.57,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0211,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0211,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.1333
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.021 (Needs Review). ROUGE-1=0.0211, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1801,
+          "transcript_char_count": 9960,
+          "note_word_count": 8,
+          "processing_time_ms": 4646.86,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0161,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0161,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0111,
+            "assessment": 0.1538,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.016 (Needs Review). ROUGE-1=0.0161, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1925,
+          "transcript_char_count": 10143,
+          "note_word_count": 8,
+          "processing_time_ms": 4478.36,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0308,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0308,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0161
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.031 (Needs Review). ROUGE-1=0.0308, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10606,
+          "note_word_count": 8,
+          "processing_time_ms": 4397.08,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0367,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0367,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0215,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.037 (Needs Review). ROUGE-1=0.0367, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1883,
+          "transcript_char_count": 10082,
+          "note_word_count": 8,
+          "processing_time_ms": 4932.86,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day4_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1858,
+          "transcript_char_count": 10170,
+          "note_word_count": 8,
+          "processing_time_ms": 5306.75,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1362,
+          "transcript_char_count": 7606,
+          "note_word_count": 8,
+          "processing_time_ms": 4529.34,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0186,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0186,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0124,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.019 (Needs Review). ROUGE-1=0.0186, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1225,
+          "transcript_char_count": 6758,
+          "note_word_count": 8,
+          "processing_time_ms": 4035.05,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.046,
+          "rouge_2": 0.0,
+          "rouge_l": 0.046,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0345,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.046 (Needs Review). ROUGE-1=0.046, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2509,
+          "transcript_char_count": 13229,
+          "note_word_count": 8,
+          "processing_time_ms": 3914.8,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0118,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0118,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.018,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.012 (Needs Review). ROUGE-1=0.0118, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1396,
+          "transcript_char_count": 7579,
+          "note_word_count": 8,
+          "processing_time_ms": 3893.41,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0492,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0492,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0274,
+            "objective": 0.0,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.049 (Needs Review). ROUGE-1=0.0492, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1038,
+          "transcript_char_count": 5705,
+          "note_word_count": 8,
+          "processing_time_ms": 3803.5,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.000 (Needs Review). ROUGE-1=N/A, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1657,
+          "transcript_char_count": 9116,
+          "note_word_count": 8,
+          "processing_time_ms": 3959.24,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0252,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0252,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.019,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.025 (Needs Review). ROUGE-1=0.0252, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1364,
+          "transcript_char_count": 7661,
+          "note_word_count": 8,
+          "processing_time_ms": 3887.45,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0133,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0133,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0333
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.013 (Needs Review). ROUGE-1=0.0133, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1432,
+          "transcript_char_count": 7780,
+          "note_word_count": 8,
+          "processing_time_ms": 3978.04,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0449,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0449,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0204,
+            "assessment": 0.0,
+            "plan": 0.027
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.045 (Needs Review). ROUGE-1=0.0449, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1496,
+          "transcript_char_count": 8283,
+          "note_word_count": 8,
+          "processing_time_ms": 3966.24,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0215,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0215,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.015,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0102
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.021 (Needs Review). ROUGE-1=0.0215, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 1707,
+          "transcript_char_count": 9196,
+          "note_word_count": 8,
+          "processing_time_ms": 4076.08,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.046,
+          "rouge_2": 0.0,
+          "rouge_l": 0.046,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.02,
+            "objective": 0.0,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.046 (Needs Review). ROUGE-1=0.046, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 2116,
+          "transcript_char_count": 11323,
+          "note_word_count": 8,
+          "processing_time_ms": 4345.9,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0102,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0102,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.037
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.010 (Needs Review). ROUGE-1=0.0102, ROUGE-2=N/A, BLEU=N/A."
+      }
+    },
+    {
+      "id": "primock_day5_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Not documented.",
+          "objective": "Not documented.",
+          "assessment": "Not documented.",
+          "plan": "Not documented."
+        },
+        "metadata": {
+          "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit+/Users/sushildalavi/Desktop/Github/SOAPFlow/adapters/qwen2.5-1.5b-instruct-4bit_mts",
+          "mode": "mlx",
+          "transcript_word_count": 904,
+          "transcript_char_count": 5045,
+          "note_word_count": 8,
+          "processing_time_ms": 3858.03,
+          "sections_populated": 0
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_SUBJECTIVE",
+            "message": "The Subjective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "subjective"
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "SPARSE_SECTION_ASSESSMENT",
+            "message": "The Assessment section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "assessment"
+          },
+          {
+            "code": "SPARSE_SECTION_PLAN",
+            "message": "The Plan section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "plan"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0377,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0377,
+          "bleu": 0.0,
+          "section_scores": {
+            "subjective": 0.0323,
+            "assessment": 0.0,
+            "plan": 0.0541
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.038 (Needs Review). ROUGE-1=0.0377, ROUGE-2=N/A, BLEU=N/A."
+      }
+    }
+  ],
+  "per_source_statistics": {
+    "primock57": {
+      "total": 57,
+      "successful": 57,
+      "avg_rouge_l": 0.015,
+      "avg_rouge_1": 0.015,
+      "avg_bleu": 0.0,
+      "avg_sections_populated": 0.0
+    }
+  }
+}

@@ -1,0 +1,2433 @@
+{
+  "generated_at": "2026-05-02T01:41:14.465035",
+  "configuration": {
+    "dataset": "data/splits/test.jsonl",
+    "mode": "demo",
+    "api_url": "http://localhost:8000",
+    "total_examples": 57
+  },
+  "aggregate_statistics": {
+    "total_examples": 57,
+    "successful_generations": 57,
+    "failed_generations": 0,
+    "generation_success_rate": 1.0,
+    "avg_rouge_l": 0.0947,
+    "max_rouge_l": 0.1905,
+    "min_rouge_l": 0.0347,
+    "avg_rouge_1": 0.1819,
+    "avg_bleu": 0.005,
+    "avg_sections_populated": 4.0,
+    "avg_processing_time_ms": 1.62,
+    "avg_warnings_per_note": 1.04
+  },
+  "results": [
+    {
+      "id": "primock_day1_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello, how are you?  Oh hey, um, I've just had some diarrhea for the last three days, um, and it's been affecting me I need to stay close to the toilet. And, um, yeah, it's been affecting my day-to-day activities.  Yeah, so it's like loose and watery stool, going to the toilet quite often, uh and like some pain in my, like, lower stomach?  Um, probably like six or seven times a day? Yeah.",
+          "objective": "Oh hey, um, I've just had some diarrhea for the last three days, um, and it's been affecting me I need to stay close to the toilet. And, um, yeah, it's been affecting my day-to-day activities. Sorry to hear that. Um, and and when you say diarrhea, what'd you mean by diarrhea? Do you mean you're going to the toilet more often? Or are your stools more loose? Come and go. Does the pain move anywhere else, for example towards your back? Okay, fine. And you mentioned you've been feeling quite weak and shaky as well. What do you mean by shaky? Do you mean you've been having, uh have you been feeling feverish, for example? Um, yeah, it doesn't feel like -- yeah, it just makes me feel weak. I haven't had a fever, um, at the moment, but I did notice um a temperature when the symptoms started, so, um, yeah around about three or four days ago. You measure your temperature then?",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "No, okay. Um, and apart from the inhalers, do you take any other medications? Patient: Uh, no, no other medications. At this stage, uh, what, what we'd recommend is just what we say conservative management. So, um, I don't think you need anything like antibiotics. It's really just, um, making sure you're well hydrated, so drinking fluids. Um, and if you are having vomiting diarrhea I would say recommend that in the first, you know, first couple of days."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1516,
+          "transcript_char_count": 8335,
+          "note_word_count": 328,
+          "processing_time_ms": 0.84,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.157,
+          "rouge_2": 0.0139,
+          "rouge_l": 0.097,
+          "bleu": 0.0025,
+          "section_scores": {
+            "subjective": 0.0851,
+            "plan": 0.1091
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.097 (Needs Review). ROUGE-1=0.157, ROUGE-2=0.0139, BLEU=0.0025."
+      }
+    },
+    {
+      "id": "primock_day1_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello. Can you hear me well?  OK.  Yes. So, it's been a few days now. I have like a sore, and a red skin. It's kind of, it's really itchy, and it's like super annoying. So I'd like to find something quick to solve it.  Uh, mostly like my chest, my, my hands, my arms. Like, like really, it's it's super annoying. Like it's itching a lot, like all the time. And",
+          "objective": "Uh uh yes. I think. It's a bit better. It's a bit, it's a bit, it's not very clear. But let's continue anyway. No. And you mentioned it all started three days ago. So for example, have you changed your uh shower gel, any clothing? No, OK. And apart from this, any other symptoms have you noticed? For example, have you noticed any temperature or fevers? OK. That's OK. So um, normally at this stage I like to examine you. Um Sorry to say, there's a couple of questions I wanted to ask you, which I completely forgot, my apologies. Um, apart from the eczema, do you have any other medical problems I should be aware of?",
+          "assessment": "Cough — likely upper respiratory tract infection or bronchitis; atypical pneumonia in differential.",
+          "plan": "Patient: Um so yes. Uh earlier I was like prescribed for my eczema. OK. Not anymore, OK. And do you take any regular medications at the moment? Um from the pharmacy. I wonder whether giving you a stronger prescription of a of a steroid may be beneficial. Uh, which I'm happy to prescribe to you today. As well as, I'm going to give you something, some emollients, which helps to moisturize the skin."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1798,
+          "transcript_char_count": 9584,
+          "note_word_count": 277,
+          "processing_time_ms": 1.66,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1455,
+          "rouge_2": 0.0104,
+          "rouge_l": 0.0675,
+          "bleu": 0.0013,
+          "section_scores": {
+            "subjective": 0.0444,
+            "assessment": 0.0,
+            "plan": 0.0545
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.068 (Needs Review). ROUGE-1=0.1455, ROUGE-2=0.0104, BLEU=0.0013."
+      }
+    },
+    {
+      "id": "primock_day1_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Ohh, I just got a terrible headache since mid-day.  Um on the left side. It's just making me feel so ill. I just feel like I need to vomit.  Well you know, I noticed some zig-zag lines in my vision a few minutes before the headache started.",
+          "objective": "Ohh, I just got a terrible headache since mid-day. I'm sorry to hear that. Um can you tell me a bit more about the headache? My vision blurred. Um, you know, it just I, yeah. Pain's just horrible. Just making me feel so unwell. Um OK. And are you able to describe what kind of headache it was? For example, was it throbbing, or was it more of a sharp pain? Yeah, I guess it's, yeah I guess it's throbbing, um on that left side.",
+          "assessment": "Patient: No. My mum, my mum has, has migraines. But I've, I've not been diagnosed.",
+          "plan": "No, OK. Um in terms of medications, do you take anything on a regular basis? Um, and some anti-inflammatories, such as Ibuprofen and Naproxen. How's that sound to you? Um and uh, you know if your headaches were to become more persistent, then we could maybe think about giving you some medications that will stop your headaches from happening in the first place, something prophylactic medicines. I'd like you to come back and see me, um straight away if possible. So if your headache's getting worse, not responding to medications"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1701,
+          "transcript_char_count": 9356,
+          "note_word_count": 240,
+          "processing_time_ms": 0.88,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2161,
+          "rouge_2": 0.0185,
+          "rouge_l": 0.1241,
+          "bleu": 0.0042,
+          "section_scores": {
+            "subjective": 0.1095,
+            "plan": 0.0945
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.124 (Needs Review). ROUGE-1=0.2161, ROUGE-2=0.0185, BLEU=0.0042."
+      }
+    },
+    {
+      "id": "primock_day1_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Yeah.  Alright, so I've been feeling, I've been feeling kind of uh under the weather for the past four days.  Um it started with the um, uh sore throat and runny nose, and  It's sort of, um, it's sort of going into a cough now. Um, the sort throat is kind of going away, but, um, I'm starting to cough.",
+          "objective": "Um it started with the um, uh sore throat and runny nose, and It's sort of, um, it's sort of going into a cough now. Um, the sort throat is kind of going away, but, um, I'm starting to cough. Sorry to hear that . Mm. OK. I'm sorry to hear that. Seems like there's a lot going on there. Um so let's start with your, your sore throat first. Um tell me a bit more about that, if you can. uh from their kindergarten or something. And uh, you know the it it started as normal sore throat, and uh was quite painful for a couple days, but then it was past. You , did you manage to have a look at the back of your throat in the mirror?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Patient: Um I I had some some fever in the beginning, but it's now sort of uh going down. I I've been taking some Paracetamol and Ibuprofen for that, and uh they, they help. So you are otherwise fit and well. Uh any, any allergies at all to any medications, I should be aware of? Making yourself, pushing fluids and make yourself well-hydrated. Continue with the regular Paracetamol, Ibuprofen. Um and and you should see how things go, really. Um if next week you're still not better, I'd like you to come back and see me. and things to look out for if you're really not getting better, if you if you have a high fever, or your breathing is becoming a bit more labored, or chest pain, I'd like you to come back and see me much sooner, give me a call. Um and we can help you out. OK?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1812,
+          "transcript_char_count": 9535,
+          "note_word_count": 358,
+          "processing_time_ms": 1.01,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1612,
+          "rouge_2": 0.0456,
+          "rouge_l": 0.0992,
+          "bleu": 0.0061,
+          "section_scores": {
+            "subjective": 0.1277,
+            "assessment": 0.0,
+            "plan": 0.0733
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.099 (Needs Review). ROUGE-1=0.1612, ROUGE-2=0.0456, BLEU=0.0061."
+      }
+    },
+    {
+      "id": "primock_day1_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Um, so I'm  Having some, some pain, uh, in my tummy, like the lower part of my tummy. Um and I've just been feeling, quite, hot and sweaty.  About two days ago.  Uh, like below my belly button, it's like quite, sore when I press on it.",
+          "objective": "Right, I'm sorry to hear that. When, when did your symptoms all start? . Mm-hmm. OK. Um, and with the pain have you noticed any other symptoms, at all? So, for example, let's, let's focus first on your bowels. Are your bowels working OK? OK. So you've got no other symptoms, like diarrhea or loose stools? No, I'm , I'm, my bowel movements are normal now. And I did notice I was going to the, I was peeing more, regularly, but I have been drinking lots of fluids. So I wasn't sure, um, I wasn't sure, um, like you know, if that was related to the pain. And I haven't noticed that it really burns or anything like that. Um, just that I'm, peeing more than , more regularly.",
+          "assessment": "Patient: Theoretically, if the Implanon, hasn't been working then I could be pregnant, but I don't suspect . to try and rule out um, what's going on here. Um, which I can organize for you today.",
+          "plan": "Patient: I don't have any previous, I haven't had any operations before, or, and I'm not on any other medication, I just have the Implanon. Yeah, absolutely. So, um I think it's certainly worth, you know covering you with some antibiotics today. Um, take the antibiotics, uh, and give me a call, you know, if you are worried about anything else. Yeah, if I send it straight to your pharmacy, start the antibiotics today, something called Trimethoprim. Um, you can take two tablets, uh, one tablet twice a day for three days."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1758,
+          "transcript_char_count": 9579,
+          "note_word_count": 306,
+          "processing_time_ms": 1.49,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.137,
+          "rouge_2": 0.0079,
+          "rouge_l": 0.0744,
+          "bleu": 0.0024,
+          "section_scores": {
+            "subjective": 0.0718,
+            "assessment": 0.0455,
+            "plan": 0.0593
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.074 (Needs Review). ROUGE-1=0.137, ROUGE-2=0.0079, BLEU=0.0024."
+      }
+    },
+    {
+      "id": "primock_day1_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello there.  Yes, I can hear you.  Are you the doctor?  Um, I'm, contacting you because I've been, quite short of breath lately.",
+          "objective": "Uh, I kind of, normally I can walk to the shops, without a problem but, now I'm having to sort of sit down and catch my breath. And I'm really starting to get a bit breathless, just about the house. And uh, it's got me kind of worried, don't really know what's going on. OK. OK. Is there anything you're particularly worried about? Um, and I got a bit breathless when I was first diagnosed, and put on some medicine that, that um, that helped, but I'm a bit worried it's just getting worse. Um, uh, and you're now feeling more breathless on kind of minimal, minimal exertion you mentioned. Um, have you noticed any other symptoms at all, uh, uh, with your breath? So, for example, any pain in your chest? Um, I'm feeling a little run-down, um, but otherwise, otherwise pretty normal.",
+          "assessment": "Patient: Um, and I got a bit breathless when I was first diagnosed, and put on some medicine that, that um, that helped, but I'm a bit worried it's just getting worse. OK. And when, when you say a small heart attack, did they give you a name, for what happened, a, a name of a diagnosis? It's . So, it seems like your heart's not pumping as well as it should be. Um, and obviously having diagnosed with heart failure, there's obviously",
+          "plan": "OK. Um, do you take any regular medications, apart from your diuretics that you're taking? And do you know which ones? Any other medications? Patient: Uh, yeah. I take Aspirin. And a thousand, OK. Alright. Any allergies at all? Any medications?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2023,
+          "transcript_char_count": 10940,
+          "note_word_count": 293,
+          "processing_time_ms": 1.62,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1058,
+          "rouge_2": 0.0253,
+          "rouge_l": 0.0705,
+          "bleu": 0.0051,
+          "section_scores": {
+            "subjective": 0.025,
+            "assessment": 0.0659,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.070 (Needs Review). ROUGE-1=0.1058, ROUGE-2=0.0253, BLEU=0.0051."
+      }
+    },
+    {
+      "id": "primock_day1_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Yes, yeah I can, I can, cheers.  Uh, I am not feeling, very well.  And I haven't been feeling well, for, a good few days, now, and, I'm really hoping you can do something about it, because it's been, bugging me, for a while now.",
+          "objective": "I'm sorry to. Mmm. OK, well let's start with your cough first. Tell me a bit more about your cough. Is it, for example are you, coughing up anything at all, or is it mainly dry? Yeah, yeah, yeah, aye, aye you're right. Is that, is that coming through loud and clear on the phone yeah the, the sniffling, yeah, . . Yeah, sorry to hear that, yeah no . Um, and uh, any other symptoms, so for example have you any, uh, any sore throats, any ear pain? Yeah, ugh, yeah, yeah. I've, I've had a bit of a sore throat. I mean, I, you know, , I'm doing a lot of uh, you know I'm, , watching the, watching the football as well. So I do a lot of shouting at that, but uh, uh, uh, I'm not sure if that's related or not. Well, all sounds fascinating, well I wish them all the best. nothing table. Um, so, so you mentioned sore throat. Um, and have you had a chance to look in the, in the mirror? Have you had a look at the back of your throat?",
+          "assessment": "You've been diagnosed with high blood pressure, uh, or . OK, all right. So um, moving on. Come to your medications, , which medications do you take on a regular basis?",
+          "plan": ". I understand it's not pretty but as I say it's not, it's not something we, we always um, uh, recommend but um, moving on. In terms of your ears , any dullness or blocked ears, pain in your ears. Uh, your, your breathing is fine is it? your, it's not laboured, or? Yeah, absolutely, , completely uh, recommend that, so keep, keep doing what you're doing. Um, and just lastly, you know any, any, any kind of muscle pain, joint pains? You've been diagnosed with high blood pressure, uh, or . OK, all right. So um, moving on. Come to your medications, , which medications do you take on a regular basis? Patient: Uh, no, no, just, just, just those two. Yeah, I mean a wee bit of like , a wee bit of Aspirin or whatever every now and again, but you know nothing long-term."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2964,
+          "transcript_char_count": 15242,
+          "note_word_count": 417,
+          "processing_time_ms": 2.38,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1294,
+          "rouge_2": 0.0118,
+          "rouge_l": 0.0627,
+          "bleu": 0.001,
+          "section_scores": {
+            "subjective": 0.0625,
+            "assessment": 0.0,
+            "plan": 0.043
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.063 (Needs Review). ROUGE-1=0.1294, ROUGE-2=0.0118, BLEU=0.001."
+      }
+    },
+    {
+      "id": "primock_day1_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: OK. Ohh, OK.  Hello, can you hear me?  Uh, my name's Itha, and I'm twenty six.  Um, so basically, I've been really stressed at work for the past few days.",
+          "objective": "OK. Um, sorry to hear work's been so stressful. Um. OK, all right. Well I'm sorry to hear that, and I hope it gets better. Um, going back to your skin. I mean is it anything you've done perhaps, uh, which may have triggered your symptoms? Anything you've touched or, you know, for example shower gels, soaps, fabric , fabric cleaners? Yeah, I've been drinking, and eating as normal. I'm currently taking . Sorry what was that? You think it's.",
+          "assessment": "I wonder whether you may have something called dermatitis. Um, have you heard of that condition before?",
+          "plan": "Patient: It's pretty good, yeah. I'm not on any medication. And all , we'll get to medication in just a second. Um, , do you, do you feel generally run-down? Do you feel tired? OK. Is there, any other medications that you take? Food allergies? Medication allergies? OK. And um, that's probably what I recommend. Paracetamol on this occasion, wouldn't be helpful."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1321,
+          "transcript_char_count": 7356,
+          "note_word_count": 191,
+          "processing_time_ms": 1.11,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0599,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0449,
+          "bleu": 0.0015,
+          "section_scores": {
+            "subjective": 0.0267,
+            "plan": 0.0444
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.045 (Needs Review). ROUGE-1=0.0599, ROUGE-2=N/A, BLEU=0.0015."
+      }
+    },
+    {
+      "id": "primock_day1_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Hi. Can you hear me?  Yeah, I can hear you now.  Uh, yeah. My name is Jessica Smith, and I'm nineteen years old.",
+          "objective": "Um, yeah so uh, I mean this is, this is a bit embarrassing, but it's, it's uh, hurting when I, , when I use the bathroom, when I pee. And um, it's been going on for a few days, so I'm a, I'm a little bit worried about it. Uh, not sure what to do. And uh, yeah I also maybe sometimes get some like, pain kind of lower down in my tummy, when I, when I go to the bathroom. Uh, yeah. Right, right, OK, OK. Um, fine. And, have you found yourself going to the toilet more often than normal? OK. Any fevers, or temperatures? , sorry, was there any, any fevers or temperatures? Sorry, I didn't hear you. No fever, OK, fine, sorry. Um, OK. Um, in terms of your bowel, are your bowels working OK?",
+          "assessment": "Um, not getting any better, uh, then I'd always , advise getting a pregnancy test, to rule out pregnancy. OK? Um, fine. So just moving on, moving on. Are you otherwise fit and well?",
+          "plan": "OK. Do you take any regular medications? OK. So you've tried that and it didn't help? OK, all right. Um, do you have any allergies to any medications? , recommend it, we need doctors. Um, what about smoking and alcohol? Do you drink much in the way of, , do you, do you smoke, or do you drink much in the way of alcohol? I think probably do have what we call a simple UTI or urinary tract infection, bladder infection, um, which can be readily treated. So, I'll give you a course of antibiotics today. Patient: OK, so three days of the medication, and then wait a little bit, if it still doesn't go away, call back, that OK?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1715,
+          "transcript_char_count": 9154,
+          "note_word_count": 319,
+          "processing_time_ms": 1.42,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0976,
+          "rouge_2": 0.0098,
+          "rouge_l": 0.0634,
+          "bleu": 0.0011,
+          "section_scores": {
+            "subjective": 0.027,
+            "plan": 0.0629
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.063 (Needs Review). ROUGE-1=0.0976, ROUGE-2=0.0098, BLEU=0.0011."
+      }
+    },
+    {
+      "id": "primock_day1_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello. Hi.  Yeah I can hear you, hi.  Sure, um, I'm Amanda Jackson and I'm nineteen years old.  Um, so it's being going on for a few days now. Um, it's not happened before and I'm bit worried. I've uh it quite hurts when I kind of pee.",
+          "objective": "Um, so it's being going on for a few days now. Um, it's not happened before and I'm bit worried. I've uh it quite hurts when I kind of pee. Right OK. I'm sorry to hear there's a lot going on there and I can, see why it's affecting you. Um, so you mentioned it's been going on for last three days, mainly the burning pain when you pass urine. Um, you said you're going to the toilet more often as well, that right? Uh, yeah it's been going on for a little bit longer than three days I think actually, maybe just under a week. Um. Ohh and a week, sorry my . OK, uh. Sorry no I didn't explain it properly before, um yeah no I it's been going on for about just under a week. OK. Any temperatures or fevers?",
+          "assessment": "Um, fine. Moving on, in terms of your health otherwise, do you have any other medical conditions , apart from the IBS, is there anything else I should be aware of?",
+          "plan": "No, OK great. And what about any medications that you take on a regular basis, apart from the, um, combined pill? Yeah OK, and do you have any allergy to any medications? Patient: Um, yeah I think there was an antibiotic, um, called Clindamycin mycin . Sure, uh, and obviously as your doctor I'm here to look after you so yeah I I would strongly recommend you, you know, to avoid if you can. Great, um, fine so, at this stage I wouldn't normally examine you, but I think based on your story I think, um, you know, uh, I'm reassured. Um, would be more worrying for me to hear. Um, so it's something we can treat quite readily with antibiotics. Um, so we've got a choice of two antibiotics something called Trimethoprim or, Nitrofurantoin which is a three day course."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2017,
+          "transcript_char_count": 10658,
+          "note_word_count": 365,
+          "processing_time_ms": 1.83,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0603,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0388,
+          "bleu": 0.0009,
+          "section_scores": {
+            "subjective": 0.0396,
+            "plan": 0.0335
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.039 (Needs Review). ROUGE-1=0.0603, ROUGE-2=N/A, BLEU=0.0009."
+      }
+    },
+    {
+      "id": "primock_day1_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Hello.  Uh I can hear you, but I can't really see you.  Is, is that OK? Am I meant to",
+          "objective": "Um so, um my name is uh Dan Choudhry. I am seven, twenty seven. It's all come from like, uh it's like basically I think it's diarrhoea. And it's like just coming out, like loads of it. Like I go to the toilet and it's just super watery and it Wow, no. Sorry to hear. Seems like there's a lot going on there. Well, when did it all start, your symptoms? So Monday, Tuesday, I I, so I think it was about three, it's been about three days now. OK. And is it mainly diarrhoea? So, you mentioned watery stools. Um Um, so . Sorry?",
+          "assessment": "bit of a basic infection of your tummy. . There's nothing to worry about. Uh um uh uh I suspect this will just settle down in the next few days.",
+          "plan": "I'll take it you don't take any regular medications, then. Patient: No I mean I, I've been taking some like Paracetamols and stuff like that lately. But uh, I haven't been, I'm not on any regular medication or anything like that. OK. And do you have any allergies to any medications? fluid is probably best. But I am obviously worried about the fact that you are losing minerals and vitamins. Um so, you can get things like Diarolyte, which is um, a fluid replacement you can get from the pharmacy. It's probably worth uh recommending that. Patient: Do i need like a prescription for that?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2497,
+          "transcript_char_count": 12727,
+          "note_word_count": 263,
+          "processing_time_ms": 2.07,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0578,
+          "rouge_2": 0.0058,
+          "rouge_l": 0.0347,
+          "bleu": 0.0011,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.0448
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.035 (Needs Review). ROUGE-1=0.0578, ROUGE-2=0.0058, BLEU=0.0011."
+      }
+    },
+    {
+      "id": "primock_day1_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Yes. So, my name is Robert.  Yep.  Um, I'm forty eight.",
+          "objective": "Right, so, uh, I've been having, uh, diarrhoea, for like, let's say past three days, more or less. OK, well I'm sorry to hear that. Uh can you tell me a bit more about your diarrhoea? Yeah, so it's been a, very bad diarrhoea, so it keeps me like, I keep going back and forth, to, to the toilet very often. Um, yeah it started like three days ago. And uh, uh, so it started with vomiting, so I vomited a couple of times. Uh, but then, that went away, and, uh, yeah it's just diarrhoea now. OK. And uh uh uh with the diarrhea have you noticed any other symptoms, like tummy pain?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Uh OK. And do you take any regular medications? Is that the blue inhaler? Blue inhaler. OK, alright. Any other medications that you take? OK. Do you have any allergies to medications? normally you have to be diarrhea-free for about twenty four to forty eight hours, before you return back to work."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1286,
+          "transcript_char_count": 6893,
+          "note_word_count": 194,
+          "processing_time_ms": 0.58,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1356,
+          "rouge_2": 0.0284,
+          "rouge_l": 0.1017,
+          "bleu": 0.0032,
+          "section_scores": {
+            "subjective": 0.0144,
+            "plan": 0.0488
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.102 (Needs Review). ROUGE-1=0.1356, ROUGE-2=0.0284, BLEU=0.0032."
+      }
+    },
+    {
+      "id": "primock_day1_consultation13",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: . Hi there.  Yes, it's um Adriana Katherine . And I'm twenty six year old.  Well, I have this like really crazy headache that's been going on for a few days. And it really annoys me.  Eh, around three days ago, maybe.",
+          "objective": "Eh, around three days ago, maybe. Three days ago, OK. And whereabout in your head, is this pain? Eight. And if I was to ask you describe the headache to me, um, in terms of the nature of the pain. Is it sharp? Is it dull? Is it crampy? Is it throbbing? So, you think the headache is getting worse over the last three days? So, example any, problems your eyesight or your vision? , OK. And um, have you had any loss of vision or blurry vision?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Patient: Um so I tried uh Ibuprofen. Um so I took, like a few. Um for the last two days, basically. Patient: Yeah. I mean I had. But, usually after I I take uh Ibuprofen it kind of goes away. So, but this time it's just not. . OK. Um, fine. I'll ask you a bit more about that in just a second. Before I go any further, can I ask, do you take any regular medication? OK. Do you have any allergies to any medications? OK, all right. Something for you to bear in mind if you feel that you are, your eyes are straining. Um I would always recommend having a repeat eye test done. Um, have you been feeling more stressed or anxious at work recently?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1839,
+          "transcript_char_count": 9863,
+          "note_word_count": 275,
+          "processing_time_ms": 1.02,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2154,
+          "rouge_2": 0.0132,
+          "rouge_l": 0.0923,
+          "bleu": 0.0058,
+          "section_scores": {
+            "subjective": 0.0833,
+            "plan": 0.0617
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.092 (Needs Review). ROUGE-1=0.2154, ROUGE-2=0.0132, BLEU=0.0058."
+      }
+    },
+    {
+      "id": "primock_day1_consultation14",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Uh, yeah. Uh my name is April, and I'm fifty.  Well I've just been having this like, cough, for quite a few days. And my nose is running. Um and it's just been super annoying, and it's not going away.  Uh I think it started like maybe, a bit less than a week ago. Like maybe, maybe five or six days ago.",
+          "objective": "No, OK. So it keeps you up at night. Um you mentioned uh the cold symptoms as well, the runny nose. Do you have a do you have a sore throat at all? I mean, apart from, I mean the coughing is giving me a sore throat. But it's not like, you know not more than, than that. You know just, just my throat is irritated from coughing. But it's not like, it's not that bad when I swallow or anything. OK. You mentioned feeling tired. Um have you felt feverish at all? Have you had a temperature? But I haven't taken my temperature, so I'm not a hundred percent sure if I had a fever. But it feels like I probably did. 'Cause I was just, I was next to my boyfriend. And he was completely warm and totally fine. And I just like couldn't stop shivering. And kept adding more sweaters on, and I was still cold. Um, I had a little bit of diarrhea. Um but, but it didn't, it didn't cut my appetite or anything. I just like, my stomach wasn't feeling great. OK. Has that got better now, the diarrhea?",
+          "assessment": "Cough — likely upper respiratory tract infection or bronchitis; atypical pneumonia in differential.",
+          "plan": "OK, alright. Um fine. In terms of your breathing, how is your , how's your chest? Is your breathing more labored? Patient: Um, I don't think so. Like, I guess I get laboured when I'm coughing and I can't breathe. But I, not, yeah, not, I, I don't think so. Not really. OK. And what do you take for your blood pressure? Any, or what what medications do you take on a regular basis, if you don't mind saying? Zinopril. OK, fine. Any allergies at all, to medications? Patient: Um, that just checks up on it. Same with the high blood pressure. Like I, I have it under control. And since I've started taking this medication, I've just been like regularly checking that it, it's under control."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2047,
+          "transcript_char_count": 10834,
+          "note_word_count": 400,
+          "processing_time_ms": 1.62,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.122,
+          "rouge_2": 0.0245,
+          "rouge_l": 0.0813,
+          "bleu": 0.0043,
+          "section_scores": {
+            "subjective": 0.0684,
+            "plan": 0.0252
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.081 (Needs Review). ROUGE-1=0.122, ROUGE-2=0.0245, BLEU=0.0043."
+      }
+    },
+    {
+      "id": "primock_day1_consultation15",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Yes.  Uh yes. Um Laura Parkinson. And uh I'm forty five.  Uh yeah. So I have uh soreness in my fingers, my finger, like, the skin on my hands is kind of cracked.",
+          "objective": "Um, a couple of months ago. I got it three, four months ago. OK. Sorry, I'm writing notes as we go along. Um, and you mentioned that skin is quite cracked as well. Is that right? Yeah, I think that might be quite important actually. I think there's definitely, maybe a correlation between the two. Yeah. Yeah but isn't, sorry. OK. I'm just going to ask you some very brief yes or no questions, if that's OK. With your symptoms, have you, have you had any other symptoms, such as fever, or temperatures? At a hotel. I have to do the whole thing like bedrooms, bathrooms, .",
+          "assessment": "OK, alright. Fine. Um, in terms of your past medical history, do you have any other conditions at all? Patient: Not that I know of. No, I haven't been diagnosed.",
+          "plan": "No, OK. Which medications do you take? Metformin, OK. Do you have any allergies, either to any medications or in general? Um, so moving forward there's a couple of options. So firstly, what we try and do is, you know, avoid the triggers. In your case, I strongly recommend that you wear gloves when cleaning at all times. I'll I'll I'll do a prescription for you now, and send it over to your pharmacy."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1391,
+          "transcript_char_count": 7692,
+          "note_word_count": 247,
+          "processing_time_ms": 1.3,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.176,
+          "rouge_2": 0.0295,
+          "rouge_l": 0.1114,
+          "bleu": 0.016,
+          "section_scores": {
+            "subjective": 0.1351,
+            "objective": 0.0458,
+            "assessment": 0.0,
+            "plan": 0.0777
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.111 (Needs Review). ROUGE-1=0.176, ROUGE-2=0.0295, BLEU=0.016."
+      }
+    },
+    {
+      "id": "primock_day2_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Yep. Can you find  Uh yeah, uh Jack Smith, uh thirty first October nineteen ninety.  I am, yes  Yeah, so I just feel I can't really hear as well as I used to, like my hearing is kind of deteriorating in some way.",
+          "objective": "Um, that's been, on and off for the six weeks, or is it continuous there throughout that six weeks? Uh it's kind of on and off. Like some things trigger it as well. So, for example, if I'm watching TV or listen to music or something that'll solve the ringing in the ear. um that helps us in terms of conversation about what we do next, if your ear is clear, OK? So, um, I'm going to paste a link to that, um, and you can read about that and",
+          "assessment": "Chest pain — requires further evaluation to rule out cardiac, pulmonary, or musculoskeletal etiology.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1232,
+          "transcript_char_count": 6576,
+          "note_word_count": 185,
+          "processing_time_ms": 1.37,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2431,
+          "rouge_2": 0.014,
+          "rouge_l": 0.1111,
+          "bleu": 0.0046,
+          "section_scores": {
+            "subjective": 0.0899,
+            "assessment": 0.0308
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.111 (Needs Review). ROUGE-1=0.2431, ROUGE-2=0.014, BLEU=0.0046."
+      }
+    },
+    {
+      "id": "primock_day2_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello, good morning.  Nice to see you.  Yes. Uh, my name is John Smith. And I was born on the fifth of April, uh, nineteen seventy three.  Yes. .",
+          "objective": "Yes. Uh, my name is John Smith. And I was born on the fifth of April, uh, nineteen seventy three. No, not really. Um, not that I know of. I haven't noticed anything. I can actually like move it normally. Um, it's just, I , I can just see that. It feels a bit strange, a bit Sure, OK. Uh, and can I um, can I just double-check? Has anyone in your family, got any, kind of rheumatology, diseases, like rheumatoid arthritis, or lupus or anything like that? Um, no, well I, I do, well I think, I think I have something like uh, osteoarthritis. Um, Sure. , so you know you said you think you've got , uh, osteoarthritis. Has anyone ever told you that? Have you ever seen a doctor who's confirmed that, and told you you've got osteoarthritis? GP, OK, all right. Um, look can I just, uh, sorry can I just double-check how old you are please?",
+          "assessment": "'Cause that would be an emergency. That would require more immediate assessment, more immediate treatment. OK?",
+          "plan": "OK. Uh, are you, are, are you allergic to any medication? Sure. , and um, do you um, are you on any medication on a regular basis? Um, what I think we should do is, I think you should be on some anti-inflammatory medication, in the, in the first instance. And, what I would suggest, is, we can arrange a follow-up appointment for you, in one of our clinics, where we can have a look at your joint, feel it, we can review the blood test. OK. So, I, I would take Ibuprofen regularly, OK. You can get that , over the counter. Um, that's four hundred milligrams, two times a day. And you should take, take that after food, not on an empty stomach. If you get any heartburn, stop taking it. OK."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1827,
+          "transcript_char_count": 9539,
+          "note_word_count": 342,
+          "processing_time_ms": 2.2,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1333,
+          "rouge_2": 0.0092,
+          "rouge_l": 0.0644,
+          "bleu": 0.0011,
+          "section_scores": {
+            "subjective": 0.0513,
+            "assessment": 0.0,
+            "plan": 0.0575
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.064 (Needs Review). ROUGE-1=0.1333, ROUGE-2=0.0092, BLEU=0.0011."
+      }
+    },
+    {
+      "id": "primock_day2_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Hi. . Nice to meet you. Hello.  Uh, yeah. Uh, Mary Richards. Uh, and my, I'm forty years old. So.  Yep.",
+          "objective": "Um, it's been, it's been a few weeks now. Um, been about three weeks or something. Sure. Sure, OK. So, are you on any regular medication? You mentioned the spray for your nose. Unfortunately I don't, sorry. We can go into that, explaining what that is, if um, if that's confirmed on, on physical examination. But um, that's not usually a life-threatening problem. But, um, part of the reason why I'd like you to come in, it's just that we can do a, a what we call a, a neurological examination just to make sure there's nothing else going on, and confirm that might be the diagnosis. Have a look, have a look inside the ear, see if there's any, , anything to see within the ear. So, um, um, so, in answer to your question. No, I don't think that you need to worry about that, I , think you know , preliminarily I can, I can reassure you.",
+          "assessment": "OK. so um, uh, obviously we're limited in terms of assessment via the video, uh, portal. But, um, part of the reason why I'd like you to come in, it's just that we can do a, a what we call a, a neurological examination just to make sure there's nothing else going on, and confirm that might be the diagnosis. Have a look, have a look inside the ear, see if there's any, , anything to see within the ear.",
+          "plan": "Patient: Other than that I think they said, ages ago, I had something called, can't quite remember but, labyrinthitis, something like that, but again, nothing, nothing ongoing. Sure. Sure, OK. So, are you on any regular medication? You mentioned the spray for your nose. Patient: Uh, yeah, they gave me a prescription ages ago. that's alright. That's alright. Uh, and you're not on any other medication at all? No, OK. Do you have any , any allergies to any medication?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1527,
+          "transcript_char_count": 8151,
+          "note_word_count": 344,
+          "processing_time_ms": 1.75,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1529,
+          "rouge_2": 0.0171,
+          "rouge_l": 0.0807,
+          "bleu": 0.0029,
+          "section_scores": {
+            "subjective": 0.0253,
+            "objective": 0.0323,
+            "assessment": 0.0632,
+            "plan": 0.0541
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.081 (Needs Review). ROUGE-1=0.1529, ROUGE-2=0.0171, BLEU=0.0029."
+      }
+    },
+    {
+      "id": "primock_day2_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Lovely to meet you.  Uh my name is, Tracy Chapman, and, um, my date of birth is.  God . , I'm forty five.",
+          "objective": "OK. So you can feel your heart kind of, um, beating a little bit, bit faster, do you think than normal? Is that? Couple of weeks, OK. And then, and the last day or so that's when you get the cough and the pain in the side? And you've cough blood, OK, all right. Um, you said you felt a bit warm. , have you measured your temperature at all? A cat, OK. Um, uh, uh, are you on, any medication at all? Regular medication? OK. Um, the first thing I'd like to do, is to try and measure your pulse. So, what, the way we're gonna do this, is that, if you're, if I can get you to try and locate the pulse in your wrist. . Not everyone can do this, so don't worry if you can't.",
+          "assessment": "SLE, OK. Do you have any other , diagnoses? Any other illnesses at all? No, OK. Um, I, I'm not, I'm gonna, not, I'm not going to prescribe anything for you now, because I think you need to have that, basic assessment first. And then, they'll do that assessment, and then we'll take it from there, OK.",
+          "plan": "A cat, OK. Um, uh, uh, are you on, any medication at all? Regular medication? Right, OK. Um, and do you have any allergies to any medication? OK. Um , um, couple of things I'd like to do in order to try and um, get an idea of how, unwell you are. And um, that would involve someone listening to your chest with a stethoscope, and you may need um, an antibiotic. Uh, there's one thing I need to ask you. Have you been, on any long-haul flight recently? You may well need an antibiotic, OK. Um, do you have any allergies to any antibiotics?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1993,
+          "transcript_char_count": 10462,
+          "note_word_count": 327,
+          "processing_time_ms": 1.65,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1792,
+          "rouge_2": 0.0195,
+          "rouge_l": 0.092,
+          "bleu": 0.002,
+          "section_scores": {
+            "subjective": 0.0588,
+            "assessment": 0.0299,
+            "plan": 0.1194
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.092 (Needs Review). ROUGE-1=0.1792, ROUGE-2=0.0195, BLEU=0.002."
+      }
+    },
+    {
+      "id": "primock_day2_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Yeah, it's John Smith, and I am thirty two years old.  I'm thirty two years old.  It's four Park Avenue, and it's AB one CB two.",
+          "objective": "Sorry, I didn't catch your date of birth. Sorry, say that . So, it started with, feeling very tired, but for a couple of days, and then I get back to normal. Yeah, that's correct. Are you happy for us to carry on without the video? I can't see you at the moment. Uh, the pins and needles are in the hand, but I feel like my arm is getting weaker, but it only lasts few days and then goes back to normal. So, it's very weird.",
+          "assessment": "OK, because um, our presumptive, working diagnosis is, mini-stroke or TIA, OK.",
+          "plan": "No. Are you on any medication? Patient: I take an aspirin, seventy five milligrams, once a day, but that's, because of something I read on the internet. OK. Do, have you ever told a doctor before, your GP, that you're on Aspirin? OK. Uh, and, has any GP ever spoken to you about, the risks of Aspirin, and whether you should be on it? Or have you not , told the , the GP in the past? Plastic surgery, OK, great. And, um, do you, have any, um, allergies to any medication at all?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2040,
+          "transcript_char_count": 11076,
+          "note_word_count": 222,
+          "processing_time_ms": 1.74,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1346,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0833,
+          "bleu": 0.0016,
+          "section_scores": {
+            "subjective": 0.0615,
+            "assessment": 0.0667,
+            "plan": 0.0787
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.083 (Needs Review). ROUGE-1=0.1346, ROUGE-2=N/A, BLEU=0.0016."
+      }
+    },
+    {
+      "id": "primock_day2_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Good morning. Hi, .  Yeah, sure. Um, my name is John Doe. Um, and I am twenty seven years old.  Um, so, I was born in nineteen ninety one, um, seventeenth of November.",
+          "objective": ", sorry, , before we start. Could I get your full name and date of birth? Is that possible? Yes, it's, . , perfect, thank you for that. OK. So, tell me what the problem is. You've been having some difficulty breathing. Is that correct? Sure. No you, uh, you did the right thing and I, and I can understand it , it is quite anxiety provoking, OK. All right. Can I just double-check? Before we carry on asking other questions. Have you got history of anaphylaxis? Um, one of the things that, um, we'd be worried about if, someone's going to have an acute allergic reaction. Is to see whether there's any swelling, of the lips, or the tissues inside the mouth, or the. Soft tissues of the airway. And, um, I can, I've got a fairly good view of your lips, but I'd like maybe if you can, bring your device closer to your mouth, and then put your head back, mouth open wide. Sit somewhere where there's good lighting. And I just wanna have a look inside the throat, if that's OK? Um, I don't feel that you're having , a, an, an, a life-threatening, uh, allergic reaction.",
+          "assessment": "Given that it hasn't happened, initially, it's unlikely to happen later. OK we, so we have like a , stage one and stage two reaction, for these types of bites.",
+          "plan": "Sure. OK, all right.Um, now, have you taken any medication? It's probably a , you probably haven't, 'cause it was a few minutes ago. But have you? Is . , not taken , any , antihistamines or anything like that? Right, OK. Have you ever been on medication for that? Or you can just take a one-a-day one, whichever is your preference, that's, that's absolutely fine, there's no, no issue. That should be enough to control this. We may need to think about other treatments, like an antibiotic. Yeah, that's, that's over the, yeah , over the counter. You don't need to, any chemist, will have it, you don't need a prescription for that. Yeah, it's probably cheaper to buy it over the counter actually, than to get it via prescription."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2087,
+          "transcript_char_count": 11184,
+          "note_word_count": 398,
+          "processing_time_ms": 2.3,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2248,
+          "rouge_2": 0.0265,
+          "rouge_l": 0.086,
+          "bleu": 0.0056,
+          "section_scores": {
+            "subjective": 0.0741,
+            "assessment": 0.0889,
+            "plan": 0.094
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.086 (Needs Review). ROUGE-1=0.2248, ROUGE-2=0.0265, BLEU=0.0056."
+      }
+    },
+    {
+      "id": "primock_day2_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi, good morning.  That's the same thing.  Yeah sure! Um, my name is Jim Gowers and I was born in nineteen fifty eight uh on the eighth of August.  Yeah.",
+          "objective": "Does that, that would make you roughly about fifty years old, fifty one, fifty one years old. Is that is that correct or? We're gonna a bit more information to the, to help the ambulance team when they, when they arrive, OK. Sure, OK. And, and how much activity do you do normally? Do you walk a lot or do you run or do you do anything? Right, OK. Can are you aware of any palpitations, like your heart beating faster or more prominently than normal? So, I know you're stressed but, but we've got an ambulance coming on the way, OK? So um, we'll take care of everything, so don't, don't worry. Who's in the house with you at the moment? Fifteen years, OK. Um, do you have, um, high blood pressure or high cholesterol or diabetes or anything?",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "And um, what, what, uh, can I just double check? Do you have, um, any allergies to any medication? Patient: Yes, actually, I have, um, an allergy to aspirin. Sure. Uh, what's the nature of that allergy to aspirin? Do you, does it, does it cause you heartburn? Or is it like an allergic reaction? Um, the detail you just told me, because, um, we, we may need to consider aspirin despite allergy, OK?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1461,
+          "transcript_char_count": 7915,
+          "note_word_count": 255,
+          "processing_time_ms": 1.39,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1401,
+          "rouge_2": 0.0146,
+          "rouge_l": 0.0628,
+          "bleu": 0.0032,
+          "section_scores": {
+            "subjective": 0.0268,
+            "assessment": 0.0465
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.063 (Needs Review). ROUGE-1=0.1401, ROUGE-2=0.0146, BLEU=0.0032."
+      }
+    },
+    {
+      "id": "primock_day2_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello there!  Hello there? Um, I'm wondering if you can help me today.  Yes, it's Sarah Smith, and it's the second of November, um, nineteen ninety two.  I am indeed, yes.",
+          "objective": "OK, alright, sorry to hear that. Now, um, uh, along with this fever and this any other symptoms at all? Sure, and when you say it's not helping, is it bringing the temperature down at all? OK, alright. And can I just double check have you gotten any cough or cold or sore throat or anything like that? OK, um, just, I just need to check for any other causes of infection in the body. So I'm gonna go through some, um, kind of systemic questions. Have you had any diarrhoea? OK, so, you know your normal headache, where is that, in the back of your head or the front of the head? It's something that I've struggled with through, years really, just related to a screen use, or, uum, like changes in weather patterns. Yeah, high pressure days, sometimes I struggle with migraines, and headaches.",
+          "assessment": "Have they, have they give you any kind of diagnosis at all?",
+          "plan": "OK, uh, and have you been taking your medication? Patient: Uh, I've been trying to, like, take ibuprofen and paracetamol just to from over the counter, but it's not really helping, just been taking the recommended dose every day of those. Uh, and, um, uh, did you take malaria preventative medication when you went out there? OK. Um, are you on any medication at all? OK. Uh, do you have any allergies at all? medication?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10516,
+          "note_word_count": 266,
+          "processing_time_ms": 1.68,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2035,
+          "rouge_2": 0.0348,
+          "rouge_l": 0.0909,
+          "bleu": 0.0072,
+          "section_scores": {
+            "subjective": 0.039,
+            "assessment": 0.0392,
+            "plan": 0.0374
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.091 (Needs Review). ROUGE-1=0.2035, ROUGE-2=0.0348, BLEU=0.0072."
+      }
+    },
+    {
+      "id": "primock_day2_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello there. Uh, good afternoon. This is Jack.  I do.  Yes, uh, my name is Jack Armani.  And my date of birth is",
+          "objective": "Hi there, good morning. Or good afternoon, sorry. Hi. Uh so I'm a bit worried 'cause I woke up this morning, about an hour ago, and I couldn't move my left arm any more. OK. Any problems with your speech? Is your, is your, is your speech different to how it, um, sounds normally? Is this something I should be worried about? Yeah I'm, I'm happy to do that. Um, what we need to do is to make sure that they've got access to you when you come. So, um, maybe you could, uh, leave the front door, um, unlocked, sit in the hallway. But I'm gonna arrange one of my colleagues next to me to, um, call an ambulance to your home address now. I have, uh, type two diabetes and, uh, high blood pressure.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "OK. And, um, are you on any medication for that? OK. Do you have any, um, uh, allergies to any medication?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1136,
+          "transcript_char_count": 6022,
+          "note_word_count": 191,
+          "processing_time_ms": 1.09,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1854,
+          "rouge_2": 0.0339,
+          "rouge_l": 0.1067,
+          "bleu": 0.0185,
+          "section_scores": {
+            "subjective": 0.0368,
+            "assessment": 0.1333
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.107 (Needs Review). ROUGE-1=0.1854, ROUGE-2=0.0339, BLEU=0.0185."
+      }
+    },
+    {
+      "id": "primock_day2_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hiya.  Hi there. My name's Atan.  Sure. So, it's Ayrton Warren. Um, and my date of birth, is the sixteenth of May, nineteen, eighty two.  I am, yes.",
+          "objective": "Sure. So, it's Ayrton Warren. Um, and my date of birth, is the sixteenth of May, nineteen, eighty two. Um, so I kind of woke up this morning, um, and I've just got this, really horrible pain on the left side of my head. Um, a real kind of headachy feeling. And, what time do you normally get up? Um, I normally get up at about, seven o'clock. Um, not so much on the one side, it tends to be, a bit of a cluster at the front of my head in a way. Um, but this time it's just kind of more prominent on the left side which, I've never really had it, normally they kind of spread across the front of my head. Um, yeah, I just seem to have like, a lot of, kind of, a backlog of work that I need to go through at the moment. So, I've kind of, been, doing a lot of late nights as well.",
+          "assessment": "OK. Um, and um, can I just double-check, does anyone in your family have any migraines or anything like that? They've been diagnosed with migraines? OK. Do you have, have you ever been diagnosed with anxiety, or depression or stress in the past? Have you ever been diagnosed with high blood pressure?",
+          "plan": "OK, all right. And um, are you on any medication? Do you have any allergies to any medication? So, um, the medication-wise, the things that we'd start off first line, if someone had migraine was to, would be to start Ibuprofen. And um, uh, that, the doses of Ibuprofen can be a bit, more than the normal doses Ibuprofen so that's one thing we can start. You can keep on taking Paracetamol as well if you like, but the, the Ibuprofen's um, actually more effective , for migraine. And, um, yeah, so the, the guidelines have changed, recently we used, we, before that we used to give Paracetamol as first line but now it's, um, Ibuprofen or Aspirin."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1957,
+          "transcript_char_count": 10405,
+          "note_word_count": 364,
+          "processing_time_ms": 1.85,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2323,
+          "rouge_2": 0.0219,
+          "rouge_l": 0.0907,
+          "bleu": 0.0036,
+          "section_scores": {
+            "subjective": 0.0611,
+            "assessment": 0.0345,
+            "plan": 0.0937
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.091 (Needs Review). ROUGE-1=0.2323, ROUGE-2=0.0219, BLEU=0.0036."
+      }
+    },
+    {
+      "id": "primock_day3_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi, hi I'm Maria.  I'm all right, thank you. Well I feel a little weird today, to be honest.  Yes. Maria Trabalotsa.  That is the first of October, ninety-nine.",
+          "objective": "Good, right, you've mentioned in in, in your patient notes that you're having some sort of lip swelling, and you after you had a sandwich. Is that correct? And, we, we regularly have like usually I have like a normal vegetarian soup or something. OK. So, just a few more questions. Um, so you mentioned about your swelling of your lips. Is there any feeling of swelling in in your throat, like your throat is closing up, any feeling like that? I've woke up the next morning quite swollen up and had also I, felt really bad and quite difficult breathing, but I don't know what it was I had it was like a curry or something I think. Yeah, so I do take that regularly but I've always taken it. I generally have asthma. Yeah is that well I was like six or something I, I, I think. Ohh sorry, the swelling is getting, ohh my god ohh, yeah I think when I was six.",
+          "assessment": "Yes K. Do that straight away and if mum can call. Mum, if you can call the uh nine nine , nine nine nine yeah, and say that your there is a suspected anaphylactic reaction and they need to come straight away. OK.",
+          "plan": "Patient: Um, so what happened was, I, I ordered a prawn soup it it's it it's called it's like a soup, I ordered a prawn one this time."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1355,
+          "transcript_char_count": 7204,
+          "note_word_count": 268,
+          "processing_time_ms": 1.35,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3053,
+          "rouge_2": 0.0551,
+          "rouge_l": 0.1544,
+          "bleu": 0.0098,
+          "section_scores": {
+            "subjective": 0.0729,
+            "objective": 0.1343,
+            "plan": 0.1481
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.154 (Needs Review). ROUGE-1=0.3053, ROUGE-2=0.0551, BLEU=0.0098."
+      }
+    },
+    {
+      "id": "primock_day3_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Yep, uh, John Doe.  Uhh, twenty-one twelve and nineteen uh eighty-six.  Is, uh, number one London Street. Um, NW three six PQ.",
+          "objective": "Is, uh, number one London Street. Um, NW three six PQ. That's correct. And just to confirm that you're in a secure location and we can have a confidential conversation? OK. So I understand you're having a a headache is that correct? Uh yeah, iIve had a, um a sort of a, a, a very sort of bad, severe headache, the past four days. Um, and um I've been sort of feeling a bit hot as well. Um, I've got, got a bit of a temperature, I think. cold, yeah? OK, right. And are you using you mentioned about the paracetamol and now, but are you on any regular, any medication, anything that you're using at all? OK and... OK, so uh I, I believe that it is quite important for us to actually examine you, yeah?",
+          "assessment": "Okay, and um just a few more questions to you, because I don't have any of your background history. Um, do you suffer from any medical conditions? Um you know things like we have to rule out is Meningitis and all, but Ben, you just have a general muscle ache. You didn't say that you had things like, you had problems looking at the light or something Those are things when you think of Meningitis",
+          "plan": "Patient: Um, so I've had some Paracetamol and some Ibuprofen, but it's not really helping at the moment. cold, yeah? OK, right. And are you using you mentioned about the paracetamol and now, but are you on any regular, any medication, anything that you're using at all? So um, I'll recommend that you would need to be urgently seen by the doctor, preferably in the next few hours time. OK? And um, in any case if that's not available I'd like you to take yourself to . Alright? Any questions at all? But and then, it's the uh, in meningitis you get a non-blanching rash. While in any kind of virus the rash usually goes away. Saying that, we don't know whether these are the beginning stage. So that's why I'd rather, but I would rather you see a GP as soon as possible, if uh, we've got a slot available. But if not, I think you need to be seen, and maybe have some blood tests and examinations. OK?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1238,
+          "transcript_char_count": 6495,
+          "note_word_count": 407,
+          "processing_time_ms": 1.21,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3533,
+          "rouge_2": 0.0678,
+          "rouge_l": 0.1905,
+          "bleu": 0.0315,
+          "section_scores": {
+            "subjective": 0.0195,
+            "plan": 0.1681
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.191 (Needs Review). ROUGE-1=0.3533, ROUGE-2=0.0678, BLEU=0.0315."
+      }
+    },
+    {
+      "id": "primock_day3_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi, I can hear you. Can you hear me?  Hello, I'm Peter. I'm, I'm doing OK, I guess.  That's Peter Peterson.  Um, I'm, I'm thirty five years old. That's gonna be difficult now.",
+          "objective": "That's correct. And just to confirm that you're in a secure location, and we can have a confidential conversation. Alright. So, you've mentioned that you're not having much of an appetite and energy lately. I'm sorry to hear that. Could you tell me a bit more about it please? Um, who likes to be a lawyer? Sorry, that was mean. Um And have you lost any weight? We talking about two months, three months, or six months ? Three months ago, three and a half months ago, that was.",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1968,
+          "transcript_char_count": 10566,
+          "note_word_count": 174,
+          "processing_time_ms": 1.99,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1649,
+          "rouge_2": 0.0,
+          "rouge_l": 0.1237,
+          "bleu": 0.0021,
+          "section_scores": {
+            "subjective": 0.0741,
+            "plan": 0.0777
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.124 (Needs Review). ROUGE-1=0.1649, ROUGE-2=N/A, BLEU=0.0021."
+      }
+    },
+    {
+      "id": "primock_day3_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Hi there.  get to my name  Fourteenth November nineteen ninety six.",
+          "objective": "That's correct. And just to confirm that you're in a secure location, and we can have a confidential conversation. Yeah about two to three days ago, I was running with a friend. And usually I can talk to her whilst I run, but I found myself actually short of breath. I'm not really sure of that when I'm walking. Um, but definitely um, if I'm walking briskly now. Um, and I've used my blue inhaler but to no avail. It hasn't really helped me. What's that, sorry? Um, about three to four years ago. Three to four years ago. And what, what did the GP do at that time? Um, just, um, encourage me to carry on using my inhalers as a preventative.",
+          "assessment": "Cough — likely upper respiratory tract infection or bronchitis; atypical pneumonia in differential.",
+          "plan": "OK. So you didn't have any oral steroids or antibiotics? OK. Now any allergies to medication? Make you do the peak flow reading. So depending on what we find, you might need some antibiotics and some steroids. Yeah. So, book an call support, book an appointment to see and I will recommend that meet her face to face."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1195,
+          "transcript_char_count": 6526,
+          "note_word_count": 208,
+          "processing_time_ms": 1.36,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2993,
+          "rouge_2": 0.0349,
+          "rouge_l": 0.1258,
+          "bleu": 0.0047,
+          "section_scores": {
+            "subjective": 0.0308,
+            "plan": 0.1626
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.126 (Needs Review). ROUGE-1=0.2993, ROUGE-2=0.0349, BLEU=0.0047."
+      }
+    },
+    {
+      "id": "primock_day3_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  I'm OK, thank you. Um, not feeling that great actually.  I'm Mary Jane Grey, um.  Date of birth, um nineteen eighty.",
+          "objective": "Alright. I can't see your face properly , just, yeah that's it. That's good. Thank you. So, I'm sorry to hear that. But just before we start, is it alright if you could confirm your name for me please? That's correct. And just to confirm that you're in a secure location, and we can have a confidential conversation. OK. Do you have a temperature at all? Um, I've had premature ovarian failure, um, and I've taken HRT. while you're with the doctors, we'd like to do your blood pressure, just examine your, you know, you know, how your walking and everything is. But if not, wait for the appointment for the doctor to examine you um and we'll take it from there.",
+          "assessment": "Righty-ho. And, I don't have much information of your past medical history. So is there any medical conditions you'd like to tell me, surgical, medical conditions? OK. Right. OK so , talking to you today, um, in the , the most common um, you know, diagnosis we would you're suffering from at the moment is something called labyrinthitis. Yeah?",
+          "plan": "OK charting premature hearing failure. OK, and um any other medications at all? OK. Right. OK so , talking to you today, um, in the , the most common um, you know, diagnosis we would you're suffering from at the moment is something called labyrinthitis. Yeah? OK? So that's what we need to . Because to actually make you function a bit more, we'll start you on certain medications. So i'll, i'll send the a prescription at cross pharmacy looks like it's the Lloyd pharmacy on our system. Is that correct? Yeah. So we'll send you across that prescription. Um, it's called , yeah? It's one tablet three times a day. So I'll give you about ten days worth."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1172,
+          "transcript_char_count": 6411,
+          "note_word_count": 324,
+          "processing_time_ms": 1.43,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3048,
+          "rouge_2": 0.0382,
+          "rouge_l": 0.1333,
+          "bleu": 0.0046,
+          "section_scores": {
+            "subjective": 0.0491,
+            "plan": 0.0828
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.133 (Needs Review). ROUGE-1=0.3048, ROUGE-2=0.0382, BLEU=0.0046."
+      }
+    },
+    {
+      "id": "primock_day3_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: I have been  Uh, not really.  My name is Jonathan Irving.  Uh, six, twelve, uh, eighty.",
+          "objective": "correct, and just to confirm that you're in a secure location and we can have a confidential conversation. OK. So, is there any swelling of your lips, you feel your throat is closing up? Not throat, but I can , yeah, I can I can definitely feel something in the lips, yeah. OK. Are you on any regular medication at all? Uh, no, I wouldn't want your wife to take you, I would like, I'd like her to call the ambulance because that might take a bit longer, and, you know, we need to deal with it quickly. So, what we are worried about is, you know, in case you develop an anaphylactic reaction.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "OK. Are you on any regular medication at all?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 639,
+          "transcript_char_count": 3588,
+          "note_word_count": 150,
+          "processing_time_ms": 1.17,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2459,
+          "rouge_2": 0.0331,
+          "rouge_l": 0.1557,
+          "bleu": 0.0046,
+          "section_scores": {
+            "subjective": 0.0682,
+            "plan": 0.0645
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.156 (Needs Review). ROUGE-1=0.2459, ROUGE-2=0.0331, BLEU=0.0046."
+      }
+    },
+    {
+      "id": "primock_day3_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Thank you.  I'm I'm I'm good. I mean I I'm uh, so, I'm bad.  Seventeen of January, nineteen eighty seven.",
+          "objective": "Sorry? Right, fine. Otherwise, other than those rash, you're feeling well in yourself. There's no temperature, no joint pains, yeah? No fever? who who has hypothroidism? So, what we're going to do is, we're going to send off the prescription to your pharmacy. It looks like Boots on the systems, is that correct?",
+          "assessment": "No allergies, OK. And you don't, other than eczema you don't have any other medical condition. OK. If, if there's no improvement, you need to get back to us. Or, if you have any kind of adverse reaction, like an allergic reaction, which is unlikely, but if it still happens you need to get in touch with us. OK?",
+          "plan": "Yeah? 'Cause you're having it all over your chest and hands and things like that. Um. So do you have any allergies to any medication at all? OK. So, she has hyperthyroidism. OK. That's fine. Right here, you mentioned you have asthma. So, what medications are you using for asthma? What we'll do, we need a couple of minutes. Because to keep your a bit comfortable, we'll, you would probably need some antihistamines, which I'm going to prescribe. So, what we're going to do is, we're going to send off the prescription to your pharmacy. It looks like Boots on the systems, is that correct? If things are getting worse in the next two weeks, call us before hand. Otherwise, wait for two weeks, take the medication and the cream."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1244,
+          "transcript_char_count": 6946,
+          "note_word_count": 265,
+          "processing_time_ms": 1.38,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.318,
+          "rouge_2": 0.0546,
+          "rouge_l": 0.159,
+          "bleu": 0.0121,
+          "section_scores": {
+            "subjective": 0.0252,
+            "plan": 0.16
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.159 (Needs Review). ROUGE-1=0.318, ROUGE-2=0.0546, BLEU=0.0121."
+      }
+    },
+    {
+      "id": "primock_day3_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi there!  I, uh  Uh, , that's, uh, John Jones.  Uh, that's, uh, the, twenty ninth of September, nineteen eighty.",
+          "objective": "OK. So, you've mentioned on our notes that you're having a bit of a cough and a cold. Is that correct? is it two to three days, or longer? Uh, so, uh, just like pain killers and such. I mean that I, I, um, in addition to like my normal medication and such. Um, but like Well you mentioned, uh, you've come to your normal medications but you've mentioned you've taken some painkillers like, would you tell me the names please? No, OK. And also um you mentioned some regular medication. Unfortunately I don't have your medical, complete medical history. So if you could tell me what your medications are, and what you use them for? Yeah, but the like slight blood pressure.",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Patient: Uh, so, uh, just like pain killers and such. I mean that I, I, um, in addition to like my normal medication and such. Um, but like Well you mentioned, uh, you've come to your normal medications but you've mentioned you've taken some painkillers like, would you tell me the names please? Paracetamol, OK. Any Ibuprofen at all? No, OK. And also um you mentioned some regular medication. Unfortunately I don't have your medical, complete medical history. So if you could tell me what your medications are, and what you use them for? OK. Do you monitor your blood sugars at home?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 982,
+          "transcript_char_count": 5439,
+          "note_word_count": 262,
+          "processing_time_ms": 1.3,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1989,
+          "rouge_2": 0.0324,
+          "rouge_l": 0.1022,
+          "bleu": 0.0137,
+          "section_scores": {
+            "subjective": 0.0206,
+            "assessment": 0.0,
+            "plan": 0.0469
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.102 (Needs Review). ROUGE-1=0.1989, ROUGE-2=0.0324, BLEU=0.0137."
+      }
+    },
+    {
+      "id": "primock_day3_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Sure, my name is Mary Smith.  My date of birth is August sixteen, nineteen seventy six.  My email address is Mary dot Smith at gmail dot com.",
+          "objective": "That's correct. And just to confirm, that you're in a secure location, and we can have a confidential conversation. Right. So you've mentioned that you have some pain in your jaw. Is that correct? I think that's just, like, the first thing that I typed, but, uh, uh, it wasn't really what I, you know, I just typed it and then I clicked submit, so, that was uh, um. I'm just kind of getting a little worried. I mean, I was out, you know, drinking with, uh, friends, um, one of our co-workers just had his three year anniversary and Uh, or sometimes like this morning for example, I just felt really, fatigued and I couldn't even get myself to the gym. But, you know, since I have this numbness it's kind of like, hard to workout right?",
+          "assessment": "Yeah, right. Any neurological conditions in the family? there are related conditions. No, OK, that's fine. No, that's something we can't do. The treatment for it is actually some steroids and things like that, uh, when you have an acute you know, acute reaction or things like that. But, saying that, first we need to firm diagnosis.",
+          "plan": "Right. So, have you mentioned that message and a warm bath, any medications that you've taken so far? Patient: You know it's, it's numb and I, I kind of looked at stuff online, um, but you know I, I do take Ibuprofen because my muscles were sore, a little bit, and I've been taking this boxing class. Patient: So, you know, I kind of hurt like my knuckles on my right hand. So that's been a little bit painful, so I've just kind of taken ibuprofen for that. Sure, OK. Um, OK. So is there any regular medications that you're using? Patient: Not really. I just take ibuprofen every once in a while, I take vitamin D. Um, I take some I, I like my my GP really wants me to take iron supplements, but you know, they're just like huge pills so I, I, most of the time I just forget."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2201,
+          "transcript_char_count": 11765,
+          "note_word_count": 377,
+          "processing_time_ms": 2.42,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2007,
+          "rouge_2": 0.022,
+          "rouge_l": 0.0876,
+          "bleu": 0.0033,
+          "section_scores": {
+            "subjective": 0.0523,
+            "plan": 0.0426
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.088 (Needs Review). ROUGE-1=0.2007, ROUGE-2=0.022, BLEU=0.0033."
+      }
+    },
+    {
+      "id": "primock_day3_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Nice to meet you.  Michael John .  Oh nine two nine eighty-three.",
+          "objective": "Oh nine two nine eighty-three. Two three one, Leonard, London street uh, sorry, London. OK and that's correct, and just to confirm that you're in a secure location and we can have a confidential conversation. OK, uh, you've mentioned on our notes that you're suffering from bad diarrhea. I'm sorry to hear about it. So if you tell me a bit more about it, please. Uh, it's been happening for about, three days now? Um, yeah it, started off uh, was, I don't know it's just something that I thought would go away pretty quickly. No, no no no, just a little bit, yeah I I don't know I mean it's pretty standard diarrhoea, where it's was like a little bit of abdominal pain. I threw up once, that was a little worrying, uh.",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "OK. Um, that's fine. Any other medication that you're using? No, no, no preferably just don't because, what why do we say this? It's because it takes much more time for meat to get digested. So because your gut flora, you know, the, the, the bacteria in your gut is not you know as it should be, it takes a bit more effort for one to digest these food. So those kinda, now, things to look out for, if your diarrhoea doesn't go away in a week's time, or if you're passing blood, we need a stool sample, because that means you you may have , um, some particular bugs that might need treatment with antibiotics."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1451,
+          "transcript_char_count": 7959,
+          "note_word_count": 273,
+          "processing_time_ms": 1.64,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2648,
+          "rouge_2": 0.0317,
+          "rouge_l": 0.1186,
+          "bleu": 0.0073,
+          "section_scores": {
+            "subjective": 0.0135,
+            "objective": 0.0123,
+            "plan": 0.1596
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.119 (Needs Review). ROUGE-1=0.2648, ROUGE-2=0.0317, BLEU=0.0073."
+      }
+    },
+    {
+      "id": "primock_day4_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello. Can you hear me?  I am, yes.  Uh, it's Joe Bloggs. It's the seventh, of June, nineteen seventy four.  Sorry, fifty four . I'm, suppose I'd be fifty three, well, yeah.",
+          "objective": "Sorry, fifty four . I'm, suppose I'd be fifty three, well, yeah. Great, and it says here, um, it says you're having chest discomfort. Is that correct? That, that is correct, yes. I'm experiencing discomfort in my chest. OK, and are you normally fit and well? So, are you normally OK to garden as you would? OK, so that's high blood pressure, and high cholesterol. Do you take any medicines for that? OK. So, let me confirm. You have the pressure at the moment, and you have shortness of breath, is that correct?",
+          "assessment": "Chest pain — requires further evaluation to rule out cardiac, pulmonary, or musculoskeletal etiology.",
+          "plan": "Don't take any of those medications."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1394,
+          "transcript_char_count": 7910,
+          "note_word_count": 147,
+          "processing_time_ms": 1.65,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1485,
+          "rouge_2": 0.05,
+          "rouge_l": 0.0891,
+          "bleu": 0.0055,
+          "section_scores": {
+            "subjective": 0.026,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.089 (Needs Review). ROUGE-1=0.1485, ROUGE-2=0.05, BLEU=0.0055."
+      }
+    },
+    {
+      "id": "primock_day4_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  . Yes, I can hear fine.  Uh, I am, uh, Patrick Smith.  Uh, thirty five years old.",
+          "objective": "ninety , three something. OK. So it says here, um, you are feeling hot, and have had severe headaches. Is that correct? . And, like, especially if, for example when I, come into the elevator, in the morning. So, it's normally at work? And, do you normally get headaches, before all of this started? And, is that normal for you?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Patient: So, like, that could be what, you we're, referring to. OK. And, do you take medications for that? And, are you remembering to take your medications? I think before we give you any medications, we should see you in person."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1398,
+          "transcript_char_count": 7775,
+          "note_word_count": 135,
+          "processing_time_ms": 1.85,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1417,
+          "rouge_2": 0.0084,
+          "rouge_l": 0.075,
+          "bleu": 0.0023,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0323,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.075 (Needs Review). ROUGE-1=0.1417, ROUGE-2=0.0084, BLEU=0.0023."
+      }
+    },
+    {
+      "id": "primock_day4_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hey.  Yeah. I can hear you.  OK.  Uh, uh, my name is Sarah Smith. And, my date of birth is the twentieth of April nineteen eighty.",
+          "objective": "Nineteen eighty three. And, are you in a space that's private and quiet, and you can talk? Good. So, it says, erm, I've got a note to say, it says you're feeling short of breath. Is that correct? OK. So, you're feeling your heart more than normal? Um, I mean, yeah. My chest feels sore, but so does my C-section scar. You know, it's, it's all tender. And, have you had to use that regularly? Uh, yeah. I, I've been taking that fairly, fairly regularly. But, probably haven't taken it for a week.",
+          "assessment": "Cough — likely upper respiratory tract infection or bronchitis; atypical pneumonia in differential.",
+          "plan": "And, since your C-section, did you have to take any medications? Patient: tell you, I'm allergic to Ibuprofen, though. And, what happens when you take Ibuprofen? Which one would you prefer? And, if you're taking any medications like Codeine, don't, don't take them for the time being."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1133,
+          "transcript_char_count": 6268,
+          "note_word_count": 181,
+          "processing_time_ms": 1.59,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.0974,
+          "rouge_2": 0.0151,
+          "rouge_l": 0.0599,
+          "bleu": 0.0017,
+          "section_scores": {
+            "subjective": 0.0449,
+            "objective": 0.0374,
+            "plan": 0.0339
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.060 (Needs Review). ROUGE-1=0.0974, ROUGE-2=0.0151, BLEU=0.0017."
+      }
+    },
+    {
+      "id": "primock_day4_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Uh, , yeah. I'm all right, thanks. Um, though, I'm actually feeling a bit wheezy.  Like .  Uh, yeah.",
+          "objective": "Um, just getting a little bit worried about it now. And, have you taken anything for the wheeze? OK. And so, and the wheeze has been getting worse. And, today you're particularly worried. Is it because you're finding it hard to breathe or finding it hard to talk? OK. And, have you noticed yourself feeling dizzy or the rooms spinning more than normal? OK. And, are you normally fit and well? Or do you have any other medical problems? But, you don't see your doctor regularly for asthma?",
+          "assessment": "But, we want to rule out asthma or an allergy first.",
+          "plan": "And, when you get hay fever, do you take any medications for it? You might be able to get one on your way to the doctor's surgery. If not, they can prescribe you one."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1104,
+          "transcript_char_count": 5973,
+          "note_word_count": 155,
+          "processing_time_ms": 1.54,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1238,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0857,
+          "bleu": 0.0017,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0215,
+            "assessment": 0.25,
+            "plan": 0.0488
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.086 (Needs Review). ROUGE-1=0.1238, ROUGE-2=N/A, BLEU=0.0017."
+      }
+    },
+    {
+      "id": "primock_day4_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Hi, hi.  , I can hear you well.  Uh, hi doctor. My name is.",
+          "objective": "Ohh sorry, I um, of nineteen ninety, sorry I'm forty eight. Sorry, I forgot that . Yes, so I have uh, I have um. I don't know how do you say it properly, in English. Uh, I mean without sounding good, like diarrhoea, for, for, yeah. So, it's lasting for like three days. And, uh, yeah, I, I don't know, uh, I don't know, what could cause it. I, uh, um. OK. Tell me how you were three days ago, before this started. Uh, my, my worries. I, I don't know . OK. So, you've, you've had the diarrhoea for three days, and now you're having pain and vomiting. Was the diarrhoea been getting better or worse?",
+          "assessment": "OK. It's very unlikely for an inhaler to cause tummy pain, like this. Normally, it's when you eat, um, bad food or food that has gone off, and you normally get symptoms like you have suggested. But just to double-check, have you noticed any problems with your breathing? So, the, the things that you've told me are most suggestive of an infection of your tummy and less likely to be something your father had, but if your things don't get worse, then that's something that we can look up from the GP.",
+          "plan": "Normally, things like antibiotics don't help, they make the situation worse."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1691,
+          "transcript_char_count": 8683,
+          "note_word_count": 237,
+          "processing_time_ms": 1.39,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1662,
+          "rouge_2": 0.0119,
+          "rouge_l": 0.0831,
+          "bleu": 0.0029,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.08
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.083 (Needs Review). ROUGE-1=0.1662, ROUGE-2=0.0119, BLEU=0.0029."
+      }
+    },
+    {
+      "id": "primock_day4_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Uh, yeah, I'm Maria.  Yeah.  Sorry?",
+          "objective": "Sorry? So, it started in the morning. Um, I feel like um, uh, dizzy. Uh, my vision is a little bit blurred. Um, like, it's, it's really painful, and I'm getting really concerned. Especially because I'm having like these, uh, changes in the vision. Sorry? My vision is quite blurred. Um, it, it's, it's really weird, like some zigzag lines. Uh, well, uh, the headache started like four year, four hours ago. So, I would say like, maybe three hours ago, because I couldn't stand it. Sorry?",
+          "assessment": "And that should be something to try between now and when we see you to do the, um, to do the assessment. assessment to where we can see you today at some point.",
+          "plan": "And do you take any regular medications? Are you allergic to any medications? Fine. And so, you're not allergic to any medications. Fine from. Now, um, uh, obviously, if the headache is really severe, and I'll suggest some medications you can try, if that doesn't work, we would want to see you, um, as soon as possible, to do like a full neurological exam as well. Um, I I would recommend in the time between now and when we can see you, uh, if you take some medications, maybe something like ibuprofen?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1801,
+          "transcript_char_count": 9960,
+          "note_word_count": 221,
+          "processing_time_ms": 1.86,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2326,
+          "rouge_2": 0.017,
+          "rouge_l": 0.1184,
+          "bleu": 0.0035,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0952
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.118 (Needs Review). ROUGE-1=0.2326, ROUGE-2=0.017, BLEU=0.0035."
+      }
+    },
+    {
+      "id": "primock_day4_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Ohh yes, I can. Can you hear me?  Uh, my name's Vincent.  Uh.  Uh, ninth of May, two thousand and sixteen.",
+          "objective": "And are you in a, uh, a safe place, ohh sorry, a safe and , confidential place to talk and just, happy to go ahead with the consultation? Yeah, so, have a . I've been having a cough and a sore throat, for about a week, and, it's been causing me problems. I've had to stay away from work, for about three or four of those days, because of how bad is. OK, I'm sorry to hear that. So, you've had a cough, and a sore throat, for about a week? Uh, the, sore throat came first, and then, after a day or two, the cough. OK, So I'm, I'm just gonna ask a few questions about the, uh, your current symptoms. And a little bit about your background. So, um, you mentioned that you started with sore throat about a week ago, developed into bit of a dry cough. Um, , I'll just ask a few questions around those. So, um, do you have any shortness of breath?",
+          "assessment": "So, I just need to ask a few, uh, things about your background as well. So, um, do you have any other medical conditions, or medical history?",
+          "plan": "Patient: Uh. Uh, well, uh yeah, so reassurance. So like, hopefully some sense that it's not anything too serious. But also, is there anything you can prescribe me to make it better? Or any advice? Um. Uh, are you taking any medications, currently, at the moment? OK. Are you allergic to any medications? Patient: Not to any medication, but I'm allergic to peanuts."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1925,
+          "transcript_char_count": 10143,
+          "note_word_count": 282,
+          "processing_time_ms": 1.78,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1699,
+          "rouge_2": 0.0195,
+          "rouge_l": 0.1068,
+          "bleu": 0.0064,
+          "section_scores": {
+            "subjective": 0.0411
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.107 (Needs Review). ROUGE-1=0.1699, ROUGE-2=0.0195, BLEU=0.0064."
+      }
+    },
+    {
+      "id": "primock_day4_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi there.  , yeah. Uh, my name's .  Name was Brian.  Hi.",
+          "objective": "So, . Sorry, your name is? Yeah just like, doing most things that I would normally find, easy , is become quite difficult. OK. I'm sorry to hear that. And that's been going on for a few weeks. When you say a few weeks, do you mean two or three or five? how many hours of sleep? Well, um, I, I know that it's not really normal for me, so, before this phase. So I'd have thing, you know I wouldn't have, uh, any problems sort of. So, you've not, so you're saying you have not noticed morning erections, and usually you would. So, normal thing to have, uh, waking up in the morning with something. But you have not noticed those recently.",
+          "assessment": "Patient: Yeah, and uh, also in the past, I mean, I haven't had any kind of specific, uh, medical diagnoses, along these lines. No allergies. And you mentioned the , the suicide of your father fifteen years ago. I'm very sorry to hear that. Is there any other, um, uh, significant family history of medical conditions, or psychiatric conditions?",
+          "plan": "Patient: , eating, what I want to eat, or you know, doing standard things in life, and, and, what I want, to do is just like, kind of return to that previous state. Uh, do you take any medications? Cool. And any drug allergies? Are you allergic to any medications? Patient: No, I have no uh, medication allergies, no."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10606,
+          "note_word_count": 255,
+          "processing_time_ms": 1.81,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1833,
+          "rouge_2": 0.0335,
+          "rouge_l": 0.0944,
+          "bleu": 0.0172,
+          "section_scores": {
+            "subjective": 0.0385,
+            "assessment": 0.0,
+            "plan": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.094 (Needs Review). ROUGE-1=0.1833, ROUGE-2=0.0335, BLEU=0.0172."
+      }
+    },
+    {
+      "id": "primock_day4_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Hi.  Yeah, sure. My name's Daniel .  Yeah. May .",
+          "objective": "Three hours now. OK. And, so, tight chest, three hours. Um, and, so you're born in ninety two, so that makes you twenty six? Uh, any cough? Wheeze? Slight cough, yeah. , sore throat? Runny nose? Sore ears? You know I had a cold last week, and, it's not as bad as it was, but yeah, I had a sore throat, I had a runny nose. Uh, just feeling under the weather. Because , because um, sorry, they ran out and I, I forgot to, go and grab the next one.",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "You have any, inhalers? Or any, any medications? OK, fine. So, what, what I think, um, and just to, just to go over, . Is there anything you had hoped about getting other than the uh, a, prescription for your inhalers? Was there anything else you'd hoped about getting from this? Sure, yeah, no, absolutely. Well, I'm really glad you have talked to me today. I think what we can do is, is give you a prescription for, uh, some more of the inhalers. We can get that to you, within the hour, I would hope. Um, now there are some side effects to the steroids. Which I should really tell you about, but please read the label, that's associated with. Don't be too worried about the side effects. Um, uh, what I'd like to do is, is send you these, the, some prescriptions for your, uh, inhalers, , ongoing. So you, um, you can, once you get better from this asthma attack, you can, you can, use the Clenil Modulite in the morning, with Ventolin as a PRN. , so, a Ventolin when you need to, um, when you're getting wheezy."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1883,
+          "transcript_char_count": 10082,
+          "note_word_count": 310,
+          "processing_time_ms": 1.84,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1282,
+          "rouge_2": 0.0129,
+          "rouge_l": 0.0737,
+          "bleu": 0.002,
+          "section_scores": {
+            "subjective": 0.03,
+            "assessment": 0.0,
+            "plan": 0.0442
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.074 (Needs Review). ROUGE-1=0.1282, ROUGE-2=0.0129, BLEU=0.002."
+      }
+    },
+    {
+      "id": "primock_day4_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Hi. Good, thank you. How are you?  you. Um, my name's Lizzy Irvine. Um.  Twenty third of July, nineteen ninety five.",
+          "objective": "Um, and I've had a bit of a temperature, so feeling quite like hot and sweaty. And it's yeah, getting really uncomfortable. OK. So a bit um. Feeling, hot, sweaty, unwell, for three days. Uh, feeling sick, nausea, um, with an ache in your lower tummy. Any actual vomiting? Two days yeah. OK. Um, and uh, any problems with your waterworks or diarrhoea? You're having regular bowel motions now. You said you had a, bit of, diarrhoea, or a bit of watery, did you say? No, it was more like I was just, a little bit bunged up, and then, about a week ago that kinda cleared, and I'm a, normal now. Uh, no. Just , it seems, normal yeah.",
+          "assessment": "was there anything that you'd hoped to, get out of having this specific consultation? Other than a diagnosis, and getting better, and, you know, being on the right track to, to, feeling better? Um, we need to definitely rule out pregnancy, with you. And possibly, um, do some other examinations or, or further tests. So, would you be happy to actually see a GP face-to-face, um, soon?",
+          "plan": "Um, and, do you take any medications at the moment? Patient: Um, no, no medications, but I'm on the implants. I think it's called um, Implanon."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1858,
+          "transcript_char_count": 10170,
+          "note_word_count": 237,
+          "processing_time_ms": 1.67,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1681,
+          "rouge_2": 0.0292,
+          "rouge_l": 0.1043,
+          "bleu": 0.0031,
+          "section_scores": {
+            "subjective": 0.0385,
+            "objective": 0.0155,
+            "assessment": 0.0,
+            "plan": 0.0541
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.104 (Needs Review). ROUGE-1=0.1681, ROUGE-2=0.0292, BLEU=0.0031."
+      }
+    },
+    {
+      "id": "primock_day5_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Uh, yeah it's uh, . Um, and, five, um, Kings Place.  Uh, it's the twentieth, of the fourth, nineteen ninety.  Yes, I am.  Um, I've got a really bad headache, had it for about a day now.",
+          "objective": "Hello. I'm Doctor Geraghty. Ohh, sorry. . Can I take your, full name, date of birth, and, your home address please? Um, yeah, just ever since yesterday morning, since I woke up really. Um, just yeah, kind of throbbing headache, haven't really wanted to leave the house much since then. Um, it just, kind of feels like it's throbbing, it's quite intense, sort of comes and goes. Um, yeah, quite sensitive to light, um, but yeah, quite painful. Any abnormal smells or tastes? OK. And, normally, do you get any headaches? OK. And, has it occurred at a particular term in your menstrual cycle?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Do you take any medication? Have you had it checked, when you've had the , repeat prescription done? Patient: Uh, just Paracetamol. Um, I'm allergic to Aspirin, so I haven't been taking that. What happens when you get a, when you take Aspirin? OK. And have you ever, taken any, non-steroidal anti-inflammatories, like Ibuprofen, Naproxen, anything like that?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1362,
+          "transcript_char_count": 7606,
+          "note_word_count": 215,
+          "processing_time_ms": 1.47,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2181,
+          "rouge_2": 0.0093,
+          "rouge_l": 0.1067,
+          "bleu": 0.0033,
+          "section_scores": {
+            "subjective": 0.05,
+            "assessment": 0.2143,
+            "plan": 0.0833
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.107 (Needs Review). ROUGE-1=0.2181, ROUGE-2=0.0093, BLEU=0.0033."
+      }
+    },
+    {
+      "id": "primock_day5_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi. My name is Susan. Um, thirty, Redbridge Street, SW two two HZ.  forty, oh two, nineteen seventy four.  Yes I am.  It hurts when I pee.",
+          "objective": "Um, and, have you had a temperature? Do you feel like you've been feverish, or had a temperature with this? And was there anything you were doing recently, which you think may have contributed to it? Have you , have you been doing lots of exercise, been dehydrated, um, been having regular sexual intercourse or anything? No. Do you have regular periods? In your, OK. Um, any change in your bowel habit? Any weight loss or anything? Do you take regular medications? Do you take that regularly?",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "Do you take regular medications? Um, normally we can treat this infection without having to test your urine. Uh, with, with a course of antibiotics. Um, how do you feel about that? Are you happy to take a course of antibiotics? Patient: , get my prescription. Yes, so I can send a prescription through to your requested pharmacy for that. If you take them, as soon as you can, get them, pick them up as soon as you can, and start taking them."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1225,
+          "transcript_char_count": 6758,
+          "note_word_count": 207,
+          "processing_time_ms": 1.51,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1338,
+          "rouge_2": 0.0071,
+          "rouge_l": 0.0704,
+          "bleu": 0.0028,
+          "section_scores": {
+            "subjective": 0.0235,
+            "plan": 0.0762
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.070 (Needs Review). ROUGE-1=0.1338, ROUGE-2=0.0071, BLEU=0.0028."
+      }
+    },
+    {
+      "id": "primock_day5_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Yeah. Uh, my name is Valerie Cole. My date of birth is the nineteenth of September, nineteen ninety three.  My address is, uh, sixty four, Cliveden Place, in, South Wimbledon.  Yes I am, yeah.",
+          "objective": "Yeah. Uh, my name is Valerie Cole. My date of birth is the nineteenth of September, nineteen ninety three. Um, I've been feeling really anxious over the past few months. Um, I just get really nervous every morning about leaving the house, and it's started to really worry me, and just add up, and build up on that anxiety. And I just didn't know, who to talk to or, so I wanted to check with my GP. But I also think that, it's just been, I just really dread, going there. I just hate, speaking to her, I hate like seeing everyone and, really worried about whether I'm doing well or not. But it's also because, when I leave I just, when I've left work, I just feel so stressed and so worried about everything I've done, I can't get to sleep for hours and hours and hours. So I. , I just, I can't even tell because I feel like I'm, even when I'm in sleep it's such a shallow sleep, but maybe, three, four hours, I'm getting now. Probably, not, significant changes maybe. No I wouldn't say that, I wouldn't say that I'm eating like, much differently. Ohh that, I probably have more chocolate than normal, just because I feel, so down.",
+          "assessment": "Um, in terms of palpitations, it is most likely to be a, , associated with anxiety, but it's probably worth having couple of basic blood tests just to make sure that, there's not something triggering that off. And then arranging a GP follow-up a week after you've had the tests, so we can just go through the results with you.",
+          "plan": "Patient: But um, I did talk to my mum about it but I haven't sought any, she recommended that I come to the GP, um, but I haven't sought any other. OK. I mean what we would suggest in the first instance is to, to. So you can self-refer via the NHS, for what we call like, talking therapy which is a type of inter-behavioural, where they can really look at your situation. How you're reacting to, the, , why, what's provoking anxiety, and what you can do, to try and overcome that. I mean some people, with anxiety they, do need to take medication to control that but that's, not something that we'd suggest in the first instance. Um, in terms of palpitations, it is most likely to be a, , associated with anxiety, but it's probably worth having couple of basic blood tests just to make sure that, there's not something triggering that off. And then arranging a GP follow-up a week after you've had the tests, so we can just go through the results with you."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2509,
+          "transcript_char_count": 13229,
+          "note_word_count": 490,
+          "processing_time_ms": 1.95,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1853,
+          "rouge_2": 0.0177,
+          "rouge_l": 0.0912,
+          "bleu": 0.002,
+          "section_scores": {
+            "subjective": 0.0274,
+            "assessment": 0.0299,
+            "plan": 0.1013
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.091 (Needs Review). ROUGE-1=0.1853, ROUGE-2=0.0177, BLEU=0.002."
+      }
+    },
+    {
+      "id": "primock_day5_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Hello, I'm .  Okay.  My, my name is and I'm twenty, twenty three years old.",
+          "objective": "My, my name is and I'm twenty, twenty three years old. yeah. Sorry, I, I, I can't hear you. My um, last month , two weeks ago. I'm sorry. About two weeks, two or three weeks ago. OK. And are you having sexual intercourse regularly? Yes. Yes, I do. Four weeks ago. four days ago, sorry. I just had regularly, or are they sporadic?",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1396,
+          "transcript_char_count": 7579,
+          "note_word_count": 126,
+          "processing_time_ms": 1.65,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1469,
+          "rouge_2": 0.0165,
+          "rouge_l": 0.098,
+          "bleu": 0.0047,
+          "section_scores": {
+            "subjective": 0.0,
+            "objective": 0.0,
+            "assessment": 0.0
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.098 (Needs Review). ROUGE-1=0.1469, ROUGE-2=0.0165, BLEU=0.0047."
+      }
+    },
+    {
+      "id": "primock_day5_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Yes. Italy.  And,  Sorry?  Uh, yes.",
+          "objective": "Sorry? Um, so, I don't, what, sorry? OK. Any change in your bowel habit recently, or any diarrhoea? Constipation? Sorry? And was it normal? Are you having to go more often than normal?",
+          "assessment": "Low back pain — likely musculoskeletal; herniated disc and radiculopathy in differential.",
+          "plan": "OK, nothing significant. Any allergies to medications? OK. Do you take any regular medications? Any over the counter medications? Um, it might be worth taking a three day course of antibiotics. OK. So, are you happy to take a course of antibiotics, if I send it through to the pharmacy?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1038,
+          "transcript_char_count": 5705,
+          "note_word_count": 103,
+          "processing_time_ms": 1.82,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1749,
+          "rouge_2": 0.0221,
+          "rouge_l": 0.0984,
+          "bleu": 0.0033,
+          "section_scores": {
+            "subjective": 0.0,
+            "plan": 0.1039
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.098 (Needs Review). ROUGE-1=0.1749, ROUGE-2=0.0221, BLEU=0.0033."
+      }
+    },
+    {
+      "id": "primock_day5_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello?  Uh, hi, Doctor Smith.  Um, I.  Yeah, my name is Barbara .",
+          "objective": "Um, I've just been for the past couple of days. I've been having this serious diarrhoea and this really, It was three days ago. OK. And when you say diarrhoea, what do you mean by that? Is it watery or just loose? OK. And any, any high temperatures? Are you feeling feverish? Yes, I've been running a serious temperature. I'm literally boiling. Have you checked your temperature with a thermometer?",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "Um, and do you take any medication regularly? Patient: No. Like I said, I only take, um, vitamins. And for my menstrual cramps, when they come, maybe I might take a, a, an ibuprofen just to ease the pain, but. Um, sometimes you do require certain medication to help this, if it's, sometimes if it's caused by a bacteria. Um, what I would say, probably worth as it's been going on for a few days and you feel like it's not starting to ease off."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1657,
+          "transcript_char_count": 9116,
+          "note_word_count": 178,
+          "processing_time_ms": 2.35,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.197,
+          "rouge_2": 0.006,
+          "rouge_l": 0.0896,
+          "bleu": 0.004,
+          "section_scores": {
+            "subjective": 0.0171,
+            "assessment": 0.0,
+            "plan": 0.0902
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.090 (Needs Review). ROUGE-1=0.197, ROUGE-2=0.006, BLEU=0.004."
+      }
+    },
+    {
+      "id": "primock_day5_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Uh, Sandra Bullock, uh, twentieth of February, nineteen fifty eight.  Uh, seven three four, court in St. .  Yeah, yeah, I am.",
+          "objective": "Uh, seven three four, court in St. . OK. And, and are you normally fit and well? Yeah, normally I'm diabetic, but other than that, like, generally pretty good. Chest what, sorry? Right, OK. Any other symptoms, like sore ears? Sore throat? Have you checked your temperature with a thermometer?",
+          "assessment": "um, or any shortness of breath, chest pain, then we certainly would need to speak to you again. With the diabetes you are a bit more likely to get a bacterial infection than if you didn't have the diabetes, so it's something we do need to be careful of.",
+          "plan": "Any . Any allergies to any medications at all? Patient: OK. So, then we would at potentially antibiotics at that time, perhaps?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1364,
+          "transcript_char_count": 7661,
+          "note_word_count": 146,
+          "processing_time_ms": 1.54,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1806,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0625,
+          "bleu": 0.0026,
+          "section_scores": {
+            "subjective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.0506
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.062 (Needs Review). ROUGE-1=0.1806, ROUGE-2=N/A, BLEU=0.0026."
+      }
+    },
+    {
+      "id": "primock_day5_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Uh, date of birth twenty second of december, nineteen ninety. Uh, address, uh, sixteen avenue.  Yeah, sure.  So, um, recently I'm wheezy. Uh, I have feel like kind of short of breath.",
+          "objective": "Mmm, two, three days. Yeah, quite recently. Sorry? Oh, as a , as a adult, yeah. Sorry? I can't remember, sorry. Uh, yes, I had asthma. I also had, uh, hay fever and eczema , sorry. Few years ago, like, three or four years ago I think? Yeah.",
+          "assessment": "Chest pain — requires further evaluation to rule out cardiac, pulmonary, or musculoskeletal etiology.",
+          "plan": "Did you have to take medication? OK. And when do you think it last, when do you think that asthma stopped? At what age did you get to a point where you weren't taking medication anymore? Have you taken any medication? OK. What about when you exercise normally, do you have to use medication? Uh, inhalers? OK, um, and do you take any other medications?"
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1432,
+          "transcript_char_count": 7780,
+          "note_word_count": 162,
+          "processing_time_ms": 1.61,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2169,
+          "rouge_2": 0.0182,
+          "rouge_l": 0.1024,
+          "bleu": 0.005,
+          "section_scores": {
+            "subjective": 0.0455,
+            "assessment": 0.0,
+            "plan": 0.1014
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.102 (Needs Review). ROUGE-1=0.2169, ROUGE-2=0.0182, BLEU=0.005."
+      }
+    },
+    {
+      "id": "primock_day5_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hello.  Hi there.  Yeah, it's Matt Carter, and it's fourteenth of August, nineteen eighty nine, and what was the last bit?  And it's one Babylon Avenue.",
+          "objective": "Uh, where are we now, we've just started April. I, definitely Christmas, New Year, I felt relatively well, I think. Did you get any infections, chest infections, diarrhoea, vomiting, anything like that? OK. So, just tell me what symptoms you've been having, in terms of just your general health. Any persistent cold symptoms or earaches, sore throat, chest cough, shortness of breath, phlegm, anything like that? Any change in your weight at all? Uh, I don't think so. Like, I'm probably less hungry, but no, no weight change, just a bit. Any difficulty swallowing or acid in your throat, or abdominal pain?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Do you take your regular inhalers or other medication? And any, erm, do you take any other medications? So that's something we would do a test for, as well. Um, and if that comes back positive, then there are specific antibiotics that we would give you to treat it. So if you're happy to do that, if you book that through the support line, and then when you've had the test arrange a follow up about a week after, after you've had the test done. Patient: OK, so, do the test first and then, and that follow up we can just do over the phone again? Or, yeah."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1496,
+          "transcript_char_count": 8283,
+          "note_word_count": 252,
+          "processing_time_ms": 1.88,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2424,
+          "rouge_2": 0.0096,
+          "rouge_l": 0.0925,
+          "bleu": 0.0025,
+          "section_scores": {
+            "subjective": 0.0494,
+            "objective": 0.0593,
+            "assessment": 0.0,
+            "plan": 0.0523
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.092 (Needs Review). ROUGE-1=0.2424, ROUGE-2=0.0096, BLEU=0.0025."
+      }
+    },
+    {
+      "id": "primock_day5_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Um, it's .  Uh, can you hear me better now?  Um, OK. Sorry about that.  Uh, yes.",
+          "objective": "Um, OK. Sorry about that. Um, it just started all of a sudden. I woke up one morning with a headache, and that was three days ago, and I just keep having it. Sometimes when I stand up, quickly I get a bit of a, stabbing pain. Um, or if I throw my head like, it I kind of feel like something is moving inside. OK. And have you had any cold symptoms, sore throat, sore ears, or pain over the sinuses? Any cough or flem? And just recently, have you been well, or have you had any general problems? Any change in your weight? Or, tiredness, lack of energy, anything like that? Um, no change of weight, maybe um, lack of energy but it might be because, I'm just having these headaches. so I'm find it quite difficult to go through my daily activities , you know when you have this constant headache.",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Patient: Not really just they're, on and off. Um, I recently had a, a one for like two days, um, but it just went away with Ibuprofen, so nothing like, more, longer than two days before. Patient: Doesn't really go away with Ibuprofen either, I try that, but it just. It gets a little bit better but like, doesn't go away. Patient: Kinda all the time. Um, so when I take Ibuprofen it gets a bit better, so it's a bit, like less um, it, it bothered me less, but then I still have it, it's still there. Do you take any medications? Patient: Um, no apart from the Ibuprofen that I take, sometimes when, the headache gets really bad, nothing else."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 1707,
+          "transcript_char_count": 9196,
+          "note_word_count": 309,
+          "processing_time_ms": 1.48,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2287,
+          "rouge_2": 0.0125,
+          "rouge_l": 0.0956,
+          "bleu": 0.0026,
+          "section_scores": {
+            "subjective": 0.0171,
+            "objective": 0.0543,
+            "assessment": 0.0755
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.096 (Needs Review). ROUGE-1=0.2287, ROUGE-2=0.0125, BLEU=0.0026."
+      }
+    },
+    {
+      "id": "primock_day5_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Hi Doctor Smith.  Yes. My name is Mary Jo. Date of birth is January first, nineteen eighty.  And my address is uh, sixty Sloane Avenue, London.",
+          "objective": "So, a couple of things. I, I, think I may have, overdone my workouts, and now my knees are hurting, and they're clicking a lot, and it's starting to worry me. OK, So, um, at the moment, just tell me about the exercise that you're doing, normally. So I'm training, well, I'm currently training for a marathon, um, that's gonna happen in, June. And so, I'm trying to run like. You know I would say probably starts off like after, uh, maybe, twenty minutes or so. Which is, probably I don't know like somewhere around mile, three maybe, two and a half or three miles. Um. And, um, do you have to stop running, or can you run through the pain? OK. Have you noticed any tenderness when you press over any areas in the knee?",
+          "assessment": "Um, so, the best thing I would, suggest, getting a appointment with the physiotherapist first, who can do like a long, assessment, and examination of the knee. And then we can make an assessment as to whether we need to do any, um, imagery to , have a look inside the knee, and see if there's any problem with the, cartilage. Um, it's, it's not really possible to, diagnose that over the , over the video. So we definitely would need to, see you. And, the, a physio is the best point of call, because they'll probably be the most likely initial treatment.",
+          "plan": "OK. Are you taking any medication for the knee? Patient: Well, um, since you're asking. Um, yes I , I take Ibuprofen, um, and I'll just kinda, use it sometime like uh, um, like sometimes I have some joint issues, but you know, that kind of, is not very frequent. So I'll take Ibuprofen for that. OK, and, do you take any other medications, apart from the ones you told me about? Patient: Uh, I take melatonin. Sometimes, you know, just for cramps, I'll take, like, uh, um, ibuprofen, or actually , uh, I'll take, what am I taking? Aleve. Whatever Aleve is. Patient: Um, but, I prefer Melatonin, it's just sometimes Melatonin doesn't work."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 2116,
+          "transcript_char_count": 11323,
+          "note_word_count": 383,
+          "processing_time_ms": 2.38,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2078,
+          "rouge_2": 0.0239,
+          "rouge_l": 0.0954,
+          "bleu": 0.0028,
+          "section_scores": {
+            "subjective": 0.0392,
+            "assessment": 0.0678,
+            "plan": 0.0814
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.095 (Needs Review). ROUGE-1=0.2078, ROUGE-2=0.0239, BLEU=0.0028."
+      }
+    },
+    {
+      "id": "primock_day5_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Hi.  Hey. How are you?  Um, yes I can. Uh, it's, Mary Smith.  Um, I'm twenty eight, and I live at apartment four oh five, nine C, Clerkenwell Road.",
+          "objective": "Um, just quite, intense, and kinda quite throbbing. It kind of built up gradually after, over. OK, and, uh. Sorry . Um, any blurred vision, or any pain over your eyes? Yes, yes, like normal. And last night, did you manage to sleep through the night OK? . And, have you had your blood pressure checked ?",
+          "assessment": "Headache — etiology to be determined. Differentials include tension-type headache, migraine, or secondary causes.",
+          "plan": "Anything you take medication for? Um, any over-the-counter medications or allergies? Patient: No, only the, Nurofen I took yesterday, Ibuprofen. Uh, so, similar to Ibuprofen, but taking instead of Ibuprofen not at the same time, and taking that regularly with food. Then certainly give us a call back, if, when you've tried the medication that I've prescribed from the pharmacy."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 904,
+          "transcript_char_count": 5045,
+          "note_word_count": 162,
+          "processing_time_ms": 2.74,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2129,
+          "rouge_2": 0.0307,
+          "rouge_l": 0.1217,
+          "bleu": 0.0043,
+          "section_scores": {
+            "subjective": 0.0215,
+            "assessment": 0.1176,
+            "plan": 0.1616
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.122 (Needs Review). ROUGE-1=0.2129, ROUGE-2=0.0307, BLEU=0.0043."
+      }
+    }
+  ],
+  "per_source_statistics": {
+    "primock57": {
+      "total": 57,
+      "successful": 57,
+      "avg_rouge_l": 0.0947,
+      "avg_rouge_1": 0.1819,
+      "avg_bleu": 0.005,
+      "avg_sections_populated": 4.0
+    }
+  }
+}

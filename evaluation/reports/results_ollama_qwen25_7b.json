@@ -1,0 +1,681 @@
+{
+  "generated_at": "2026-05-02T00:55:47.234518",
+  "configuration": {
+    "dataset": "data/splits/test.jsonl",
+    "mode": "ollama",
+    "api_url": "http://localhost:8000",
+    "total_examples": 15
+  },
+  "aggregate_statistics": {
+    "total_examples": 15,
+    "successful_generations": 15,
+    "failed_generations": 0,
+    "generation_success_rate": 1.0,
+    "avg_rouge_l": 0.1416,
+    "max_rouge_l": 0.1992,
+    "min_rouge_l": 0.096,
+    "avg_rouge_1": 0.2437,
+    "avg_bleu": 0.0096,
+    "avg_sections_populated": 4.0,
+    "avg_processing_time_ms": 70440.32,
+    "avg_warnings_per_note": 1.11
+  },
+  "results": [
+    {
+      "id": "primock_day1_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Diarrhea for three days\nHistory of present illness: Patient reports loose and watery stools occurring six to seven times a day, lower abdominal pain described as cramp-like, feeling weak and shaky with no fever currently but had a temperature around four days ago. Vomited once at the start of symptoms but has stopped now. Loss of appetite noted, able to hold down fluids mainly consisting of soups and smoothies. Diarrhea started three days after eating at a Chinese restaurant with friends. No one else in the family is unwell with similar symptoms. Chief complaint includes difficulty working due to frequent trips to the toilet.\nPast medical history: Asthma, well-controlled with inhaler\nSurgical history: None mentioned\nFamily history: None mentioned\nSocial history: Does not smoke or drink alcohol\nCurrent medications: Inhaler for asthma (not specified further)\nAllergies: None mentioned",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General appearance: unremarkable\nHEENT: Unremarkable\nCardiovascular: Unremarkable\nRespiratory: Unremarkable\nAbdominal: Soft, non-tender, no masses, mild left lower quadrant tenderness\nMusculoskeletal: Unremarkable\nNeurological: Intact cranial nerves, normal strength and sensation\nSkin: Unremarkable\nLab values: Not documented in transcript",
+          "assessment": "Primary diagnosis: Gastroenteritis (viral or bacterial)\nDifferential diagnoses: Bacterial gastroenteritis, other causes of acute diarrhea\nProblem list: Acute diarrhea with associated symptoms of abdominal pain and weakness. Possible viral or bacterial etiology.",
+          "plan": "Medications: Dioralyte (for electrolyte replacement) as needed\nParacetamol (2 tablets up to 4 times a day for fever and discomfort)\nDiagnostic orders: None\nProcedures or interventions: Rest, fluid intake, and observation\nPatient education: Importance of staying hydrated, avoiding solid foods initially, and taking medications as prescribed\nFollow up instructions: Follow up in 3-4 days if symptoms persist or worsen. Return to emergency department if severe dehydration, high fever, or bloody stools occur.\nReturn precautions: Seek medical attention immediately if symptoms do not improve within 3-4 days or if they worsen\nLifestyle modifications: Avoid solid foods initially, resume normal diet as tolerated"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1516,
+          "transcript_char_count": 8335,
+          "note_word_count": 318,
+          "processing_time_ms": 96094.65,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2054,
+          "rouge_2": 0.0295,
+          "rouge_l": 0.1222,
+          "bleu": 0.0028,
+          "section_scores": {
+            "subjective": 0.1493,
+            "plan": 0.1385
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.122 (Needs Review). ROUGE-1=0.2054, ROUGE-2=0.0295, BLEU=0.0028."
+      }
+    },
+    {
+      "id": "primock_day1_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Sore and itchy skin on chest, hands, arms, and elbows for four days\nHistory of present illness: Patient has a history of eczema that was previously treated with steroid cream. Current symptoms are more severe than previous episodes, affecting multiple areas including the chest, hands, and elbows. Symptoms have not improved with over-the-counter steroid cream or antihistamines.\nPast medical history: History of asthma in the past but currently resolved\nSurgical history: Not documented in transcript\nFamily history: Not documented in transcript\nSocial history: Lives with flatmates, works as a project manager at a pharmaceutical company. Does not smoke or drink excessively.\nCurrent medications: None mentioned\nAllergies: No known allergies",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination findings: Dry, cracked skin on chest, hands, arms, and elbows. Itching is severe enough to interfere with sleep and daily activities.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript",
+          "assessment": "Primary diagnosis: Possible flare-up of eczema based on symptoms and history\nDifferential diagnoses: Contact dermatitis, other skin conditions\nProblem list: Severe itching and rash affecting multiple body areas. Potential exacerbation of pre-existing eczema.",
+          "plan": "Medications: Name: Topical steroid cream (prescription strength)\nDose: Not specified\nRoute: Topical\nFrequency: As directed by healthcare provider\nName: Emollients\nDose: Not specified\nRoute: Topical\nFrequency: Use in bath and shower for the first seven to ten days\nName: Antihistamines (Fexofenadine)\nDose: Not specified\nRoute: Oral\nFrequency: As directed by healthcare provider\nDiagnostic orders: Type: Skin care diary\nDetails: Keep a record of any potential triggers affecting symptoms, such as clothing or shower gel.\nPatient education: Discuss with patient the importance of using prescribed medications and keeping a skin care diary.\nFollow up instructions: Timeframe: Next week\nDetails: Follow up if symptoms do not improve within one to two weeks.\nReturn precautions: If symptoms worsen or new symptoms develop, seek medical attention immediately."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1798,
+          "transcript_char_count": 9584,
+          "note_word_count": 308,
+          "processing_time_ms": 67394.14,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2079,
+          "rouge_2": 0.0498,
+          "rouge_l": 0.1386,
+          "bleu": 0.0039,
+          "section_scores": {
+            "subjective": 0.1325,
+            "assessment": 0.2051,
+            "plan": 0.1646
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.139 (Needs Review). ROUGE-1=0.2079, ROUGE-2=0.0498, BLEU=0.0039."
+      }
+    },
+    {
+      "id": "primock_day1_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Severe headache on left side since mid-day\nHistory of present illness: Onset of headache was sudden and severe; patient describes it as throbbing in nature. Vision blurred with zig-zag lines, nausea, vomiting twice, worsening with movement (especially neck). Patient is worried about brain cancer due to recent family history.\nPast medical history: No significant past medical history except for a similar headache a few weeks ago that lasted couple of days and resolved on its own. Mother has migraines and an underactive thyroid.\nSurgical history: Not documented in transcript\nFamily history: Mother has migraines, mother also has an underactive thyroid\nSocial history: Works in the fashion industry, job is stressful; lives alone, does not smoke or drink alcohol regularly. No exercise routine.\nCurrent medications: Microgynon (contraceptive pill) for three months\nAllergies: Not documented in transcript",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination findings: Patient reports visual disturbances, nausea, vomiting, and worsening headache with movement. No specific physical examination findings mentioned.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript",
+          "assessment": "Primary diagnosis: Migraine-type headache\nDifferential diagnoses: Meningitis, brain cancer (worries due to family history)\nProblem list: Severe headache on left side; visual disturbances; nausea and vomiting; worsening with movement. Family history of migraines and underactive thyroid.",
+          "plan": "Medications: Paracetamol or Co-codamol for pain relief, Ibuprofen or Naproxen as anti-inflammatories\nDiagnostic orders: Keep a headache diary to track triggers; follow-up in one week if symptoms persist or worsen\nProcedures or interventions: Not applicable\nPatient education: Inform patient about potential triggers and management strategies for migraines. Reassure patient regarding family history concerns.\nFollow up instructions: Return to clinic within 2-3 days if headache does not improve or worsens, or if any new symptoms develop (e.g., neck pain, weakness in arms/legs, vision changes)\nReturn precautions: Seek immediate medical attention if headache worsens, neck pain increases, or new neurological symptoms appear"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1701,
+          "transcript_char_count": 9356,
+          "note_word_count": 311,
+          "processing_time_ms": 60912.25,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3393,
+          "rouge_2": 0.0601,
+          "rouge_l": 0.1756,
+          "bleu": 0.012,
+          "section_scores": {
+            "subjective": 0.1951,
+            "plan": 0.1295
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.176 (Needs Review). ROUGE-1=0.3393, ROUGE-2=0.0601, BLEU=0.012."
+      }
+    },
+    {
+      "id": "primock_day1_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Sore throat and runny nose for four days, developing cough, fatigue, night sweats, fever, exertional dyspnea, headaches, decreased appetite, muscle aches\nHistory of present illness: Onset: Four days ago. Sore throat started first, then runny nose, followed by dry cough and fatigue. Night sweats for three to four days. Initial fever resolved with paracetamol and ibuprofen. Cough is constant but not painful. No chest pain or difficulty breathing at rest. Headaches are general and intermittent. Appetite decreased, more fluid intake. Muscle aches started recently.\nPast medical history: Grandma has type 2 diabetes\nSurgical history: Not documented in transcript\nFamily history: Grandma with type 2 diabetes, great-grandad with eczema\nSocial history: Lives alone, works as an accountant. Occasionally smokes cigars on company parties, not a regular drinker",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General: Appears unwell with fatigue. HEENT: No abnormal white spots or redness at the back of the throat. Nasal: Runny nose, no discharge noted. Respiratory: No wheezing or rales heard. Cardiovascular: Regular rate and rhythm. Abdominal: Soft, non-tender. Musculoskeletal: Generalized muscle aches. Neurological: No focal deficits. Skin: No rash noted.\nReview of systems: Headache: General, intermittent. Vision: No problems with bright lights or vision. Nausea/vomiting: None. Bowel movements: Normal. Urination: Normal.",
+          "assessment": "Primary diagnosis: Viral upper respiratory tract infection/early signs of influenza\nDifferential diagnoses: Bacterial pharyngitis, allergic rhinitis, other viral infections\nProblem list: Sore throat, runny nose, dry cough, fatigue, night sweats, fever (resolved), muscle aches, headache, exertional dyspnea",
+          "plan": "Medications: Paracetamol and ibuprofen as needed for pain and fever\nDiagnostic orders: None\nProcedures or interventions: Day off work if possible\nPatient education: Get plenty of rest, stay well-hydrated\nFollow up instructions: Return in one week if symptoms not improving. Contact for high fever, labored breathing, or chest pain.\nReturn precautions: Seek emergency care if severe symptoms develop"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1812,
+          "transcript_char_count": 9535,
+          "note_word_count": 302,
+          "processing_time_ms": 66382.18,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3309,
+          "rouge_2": 0.0675,
+          "rouge_l": 0.1727,
+          "bleu": 0.019,
+          "section_scores": {
+            "subjective": 0.2266,
+            "assessment": 0.0976,
+            "plan": 0.1304
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.173 (Needs Review). ROUGE-1=0.3309, ROUGE-2=0.0675, BLEU=0.019."
+      }
+    },
+    {
+      "id": "primock_day1_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Pain in lower abdomen and feeling hot and sweaty for two days\nHistory of present illness: Onset: Two days ago\nLocation: Lower part of the tummy, below the belly button\nDuration: Gradual worsening\nCharacter: Burning pain\nRadiation: No radiation noted\nAggravating factors: Constant, not coming and going\nRelieving factors: None mentioned\nTiming: Present for two days\nSeverity: Worsening\nPast medical history: None documented in transcript\nSurgical history: None documented in transcript\nFamily history: No relevant family history of bowel issues\nSocial history: Occupation: Accountant\nSmoking status: Non-smoker\nAlcohol consumption: Social drinker, no excessive consumption\nCurrent medications: Implanon inserted about a year ago\nAllergies: None documented in transcript",
+          "objective": "Vital signs: Temperature: Not specifically mentioned but patient felt hot and sweaty\nBlood pressure: Not documented\nHeart rate: Not documented\nRespiratory rate: Not documented\nOxygen saturation: Not documented\nPhysical examination: General appearance: No specific findings mentioned\nHeent: No specific findings mentioned\nCardiovascular: No specific findings mentioned\nRespiratory: No specific findings mentioned\nAbdominal: Soreness on palpation below the belly button\nMusculoskeletal: No specific findings mentioned\nNeurological: No specific findings mentioned\nSkin: No specific findings mentioned\nLab values: Urine color: Pink, possibly due to blood\nUrine symptoms: More frequent urination but no burning or stinging pain",
+          "assessment": "Primary diagnosis: Possible urinary tract infection (UTI) or other abdominal condition\nDifferential diagnoses: Urinary tract infection (UTI)\nGastrointestinal issue\nPregnancy-related cause\nProblem list: Lower abdominal pain, burning in nature\nPink urine, possible hematuria\nNausea and increased urination",
+          "plan": "Medications: Name: Trimethoprim\nDose: 2 tablets (1 tablet twice a day)\nRoute: Oral\nFrequency: Twice daily for three days\nDuration: Three days\nDiagnostic orders: Type: Pregnancy test\nStatus: Recommended to be done later on\nPatient education: Pain management: Regular painkillers, Paracetamol advisable\nFluid intake: Drink plenty of fluids\nDietary advice: Try cranberry juice for urine symptoms\nFollow up instructions: Timeframe: In a few days if symptoms not improving or worsening\nSpecifics: Worsening tummy pain, feeling really hot or sweaty, temperature not coming down, vomiting\nReturn precautions: Call the doctor if worried about anything else\nLifestyle modifications: Continue with current lifestyle and work activities as tolerated"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1758,
+          "transcript_char_count": 9579,
+          "note_word_count": 345,
+          "processing_time_ms": 84951.7,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2692,
+          "rouge_2": 0.0338,
+          "rouge_l": 0.1383,
+          "bleu": 0.0143,
+          "section_scores": {
+            "subjective": 0.1186,
+            "assessment": 0.0909,
+            "plan": 0.1944
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.138 (Needs Review). ROUGE-1=0.2692, ROUGE-2=0.0338, BLEU=0.0143."
+      }
+    },
+    {
+      "id": "primock_day1_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Shortness of breath for the last couple of weeks, worsening over the past few days\nHistory of present illness: Patient reports shortness of breath that has been slowly getting worse over the last couple of weeks but is now more troublesome in the last few days. Patient can walk to shops without a problem but now needs to sit down and catch their breath, experiencing increased breathlessness at home. Dry cough present with no chest pain or palpitations. Ankle swelling noticed over the past few days, previously experienced during heart failure episode five years ago.\nPast medical history: Heart failure diagnosed in the past, small heart attack (angina-like) 5 years ago\nSurgical history: None mentioned\nFamily history: Father died of a heart attack in early sixties, mother has osteoporosis\nSocial history: Lives alone with two cats. Works part-time as a lorry driver during the day. Used to smoke about a pack a day for 25 years but does not currently smoke or drink alcohol.\nCurrent medications: Furosemide, Aspirin, Bisoprolol\nAllergies: None mentioned",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General appearance: No specific findings noted. HEENT: Unremarkable. Cardiovascular: No chest pain or palpitations reported. Respiratory: Dry cough present, no chest pain. Abdominal: No tenderness or organomegaly. Musculoskeletal: No joint swelling or deformities. Neurological: No focal deficits. Skin: No rash or edema noted.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript",
+          "assessment": "Primary diagnosis: Possible exacerbation of heart failure\nDifferential diagnoses: Pulmonary embolism, pleural effusion, pneumonia, other cardiac conditions\nProblem list: Heart failure (exacerbation), small heart attack history, smoking history",
+          "plan": "Medications: Increase Furosemide to one tablet twice daily for the first few days. Consider blood test and echocardiogram in about a week.\nDiagnostic orders: Organize echocardiogram and blood tests (full blood count, kidney function) within 1-2 weeks\nProcedures or interventions: None performed during this visit\nPatient education: Educated patient on symptoms to watch for such as chest pain, palpitations, dizziness. Instructed to call if worsening symptoms occur.\nFollow up instructions: Follow-up in one week's time\nReturn precautions: Instructed to seek emergency care if experiencing more severe shortness of breath, chest pain, or other concerning symptoms"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2023,
+          "transcript_char_count": 10940,
+          "note_word_count": 360,
+          "processing_time_ms": 75057.97,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.204,
+          "rouge_2": 0.0713,
+          "rouge_l": 0.1419,
+          "bleu": 0.0229,
+          "section_scores": {
+            "subjective": 0.1572,
+            "assessment": 0.25,
+            "plan": 0.1575
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.142 (Needs Review). ROUGE-1=0.204, ROUGE-2=0.0713, BLEU=0.0229."
+      }
+    },
+    {
+      "id": "primock_day1_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Cough, cold, sore throat, shortness of breath, fever\nHistory of present illness: Patient reports feeling run-down for several days, with a cough that is mostly dry in the morning but has been worsening. Sore throat and sniffling are present. Patient mentions hoarseness due to shouting during football matches. No chest pain or fever measured. Diarrhea was experienced on the first day of symptoms. Appetite is adequate, though patient feels shortness of breath.\nPast medical history: Type 2 diabetes, hypertension\nMedications: Metformin\nLisinopril\nAllergies: None reported\nSocial history: Married with no children at home. Works in a factory manufacturing steel parts. Drinks alcohol about 9 pints per week and uses e-cigarettes to cut down on smoking.",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: Runny nose, cough (dry), sore throat (not examined by patient), hoarseness, shortness of breath, no fever or chest pain",
+          "assessment": "Primary diagnosis: Viral illness with possible early signs of flu\nDifferential diagnoses: Common cold\nInfluenza\nProblem list: Cough (dry)\nSore throat\nShortness of breath\nFever (unmeasured)",
+          "plan": "Medications: Name: Paracetamol\nRoute: Oral\nFrequency: PRN for fever and sweating\nName: Amoxicillin\nRoute: Oral\nFrequency: 1 tablet, three times a day for 24-48 hours if symptoms persist\nPatient education: Stay rested, drink plenty of fluids\nFollow up instructions: Return in one week if symptoms not improved"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2964,
+          "transcript_char_count": 15242,
+          "note_word_count": 217,
+          "processing_time_ms": 76151.88,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2876,
+          "rouge_2": 0.0658,
+          "rouge_l": 0.1373,
+          "bleu": 0.0108,
+          "section_scores": {
+            "subjective": 0.1098,
+            "assessment": 0.069,
+            "plan": 0.2093
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.137 (Needs Review). ROUGE-1=0.2876, ROUGE-2=0.0658, BLEU=0.0108."
+      }
+    },
+    {
+      "id": "primock_day1_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Dry itchy skin\nHistory of present illness: Patient reports dry and itchy skin on arms and hands that started a few days ago after swimming. No other symptoms such as fever, vomiting, or rash elsewhere. Symptoms have not improved with coconut butter application.\nPast medical history: No history of eczema or dermatitis. Currently taking Microgynon (contraceptive pill).\nSurgical history: Not documented in transcript\nFamily history: Father has asthma, mother has hayfever. No skin problems noted in family.\nSocial history: Lives alone, no smoking, no alcohol or recreational drug use. Works as a teacher and finds work stressful due to long hours and difficult students.\nCurrent medications: Microgynon (contraceptive pill)\nAllergies: Suspected lactose intolerance",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General appearance: No distress. HEENT: Unremarkable. Cardiovascular: Unremarkable. Respiratory: Unremarkable. Abdominal: Soft, non-tender. Musculoskeletal: Unremarkable. Neurological: Intact. Skin: Dry and itchy on arms and hands, redness noted.",
+          "assessment": "Primary diagnosis: Dermatitis\nDifferential diagnoses: Contact dermatitis, atopic dermatitis",
+          "plan": "Medications: Emollients to be applied throughout the day for next few days. Antihistamines (Piriton or Loratadine) for itchiness as needed.\nDiagnostic orders: None\nProcedures or interventions: None\nPatient education: Inform patient about dermatitis and its treatment options.\nFollow up instructions: Follow up in one week if symptoms persist or worsen.\nReturn precautions: No specific return precautions mentioned."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1321,
+          "transcript_char_count": 7356,
+          "note_word_count": 216,
+          "processing_time_ms": 50236.54,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2064,
+          "rouge_2": 0.0287,
+          "rouge_l": 0.1281,
+          "bleu": 0.0038,
+          "section_scores": {
+            "subjective": 0.1677,
+            "plan": 0.1235
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.128 (Needs Review). ROUGE-1=0.2064, ROUGE-2=0.0287, BLEU=0.0038."
+      }
+    },
+    {
+      "id": "primock_day1_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Pain when urinating and lower abdominal pain for a few days\nHistory of present illness: Patient reports stinging pain during urination that is not unbearable but bothers her. Also reports cramping in the lower abdomen, no fever or back pain, no nausea or vomiting, no diarrhea, no blood in urine other than a small amount earlier today, and no unusual odor of urine. Patient is sexually active with a regular partner and uses condoms. Last menstrual period was about three weeks ago.\nPast medical history: Irritable Bowel Syndrome (IBS)\nSurgical history: None mentioned\nFamily history: No relevant family history reported\nSocial history: Lives in a flat with friends, student of biology, does not smoke, drinks alcohol socially on weekends\nCurrent medications: Over-the-counter bicarbonate (not helping)\nAllergies: Clindamycin causes swelling",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: Pertinent negatives: No fever, back pain, nausea, vomiting, diarrhea. Urine color and odor not significantly abnormal.\nLab values: Not documented in transcript\nImaging results: Not mentioned",
+          "assessment": "Primary diagnosis: Possible urinary tract infection (UTI)\nDifferential diagnoses: Painful bladder syndrome, interstitial cystitis\nProblem list: Lower abdominal pain, painful urination, possible UTI. IBS history.",
+          "plan": "Medications: Nitrofurantoin or Trimethoprim (one tablet twice a day for three days)\nDiagnostic orders: None\nProcedures or interventions: None\nPatient education: Drink plenty of fluids, try cranberry juice. Follow-up if symptoms persist after 3 days or worsen.\nFollow up instructions: Call back if symptoms not resolved by end of week or if new symptoms develop (fever, back pain). Avoid sexual activity until symptoms clear up."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1715,
+          "transcript_char_count": 9154,
+          "note_word_count": 255,
+          "processing_time_ms": 57901.49,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2105,
+          "rouge_2": 0.0412,
+          "rouge_l": 0.1404,
+          "bleu": 0.0036,
+          "section_scores": {
+            "subjective": 0.1444,
+            "plan": 0.2136
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.140 (Needs Review). ROUGE-1=0.2105, ROUGE-2=0.0412, BLEU=0.0036."
+      }
+    },
+    {
+      "id": "primock_day1_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Recurrent burning pain during urination and increased frequency of urination for about a week.\nHistory of present illness: Patient reports onset of symptoms one to two weeks ago. Burning sensation during urination, increased urinary frequency, lower abdominal discomfort. No fever or back pain. Pinkish urine noted today. Bowel movements are variable with irritable bowel syndrome (IBS). No recent unprotected sex or new sexual partners. Last menstrual period was two weeks ago. Started smoking marijuana for the first time a week and a half ago.\nPast medical history: Irritable bowel syndrome (IBS)\nSurgical history: Not documented in transcript\nFamily history: No history of bladder or kidney problems\nSocial history: Living in university halls, no alcohol consumption, occasional marijuana use for the first time a week and a half ago. No new sexual partners.\nCurrent medications: Combined oral contraceptive pill, medication for IBS (name not specified)\nAllergies: Clindamycin mycin",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General appearance: no distress. HEENT: unremarkable. Cardiovascular: tachycardia (102 bpm). Respiratory: normal. Abdominal: soft, non-tender, no organomegaly, mild lower abdominal tenderness on palpation. Musculoskeletal: no abnormalities. Neurological: intact. Skin: no rash or lesions.\nLab values: Not documented in transcript",
+          "assessment": "Primary diagnosis: Urinary tract infection (UTI) or cystitis\nDifferential diagnoses: Bladder irritation, interstitial cystitis, sexually transmitted infection (STI)\nProblem list: Lower urinary tract symptoms, IBS",
+          "plan": "Medications: Trimethoprim or Nitrofurantoin for three days\nDiagnostic orders: Urine sample to be collected and sent to the lab\nProcedures or interventions: None performed\nPatient education: Drink plenty of fluids, use Paracetamol if needed for pain\nFollow up instructions: Follow up in one week if symptoms persist or worsen. Contact doctor if fever, back pain, or vomiting develop.\nReturn precautions: Seek emergency care if severe abdominal pain, difficulty urinating, or signs of sepsis appear."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2017,
+          "transcript_char_count": 10658,
+          "note_word_count": 295,
+          "processing_time_ms": 68384.35,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1547,
+          "rouge_2": 0.0107,
+          "rouge_l": 0.096,
+          "bleu": 0.0023,
+          "section_scores": {
+            "subjective": 0.0825,
+            "plan": 0.1852
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.096 (Needs Review). ROUGE-1=0.1547, ROUGE-2=0.0107, BLEU=0.0023."
+      }
+    },
+    {
+      "id": "primock_day1_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Diarrhea and associated symptoms for three days\nHistory of present illness: Patient reports watery diarrhea occurring almost every hour when awake, crampy abdominal pain in the lower abdomen, nausea, vomiting after consuming milk, feverish feeling, and decreased urination frequency. Symptoms started about 3 days ago.\nPast medical history: No significant past medical history. Patient mentions brother has had similar symptoms for five days with some improvement. Father has stage three colon cancer but patient is unsure of details.\nSurgical history: Not documented in transcript\nFamily history: Father has stage three colon cancer\nSocial history: Patient lives with sister and mother, works at an office in Central London, smokes socially (1-2 cigarettes per week), drinks alcohol 1-2 times a month on Fridays.\nCurrent medications: Paracetamol as needed for feverish feeling\nAllergies: No known drug allergies",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination findings: Patient reports crampy pain in the lower abdomen, nausea, and vomiting after consuming milk. No blood in stool reported.\nLab values: No lab values mentioned in transcript\nImaging results: No imaging results mentioned in transcript\nEkg findings: Not documented in transcript",
+          "assessment": "Primary diagnosis: Gastroenteritis\nDifferential diagnoses: Other causes of acute diarrhea, such as food poisoning or infectious enteritis\nProblem list: Acute gastroenteritis with symptoms including watery diarrhea, crampy abdominal pain, nausea, and vomiting.",
+          "plan": "Medications: Paracetamol for feverish feeling (as needed)\nDiagnostic orders: Recommend over-the-counter Diarolyte for fluid replacement\nProcedures or interventions: None performed or ordered\nPatient education: Instruct to stay well-hydrated with clear fluids, soft diet including soup and mashed foods as tolerated. Avoid alcohol.\nFollow up instructions: Follow up in 1-2 days if symptoms not improving; call back if dehydrating or worsening symptoms\nReturn precautions: Seek emergency care if severe dehydration, persistent vomiting, or fever over 101°F (38°C)"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2497,
+          "transcript_char_count": 12727,
+          "note_word_count": 294,
+          "processing_time_ms": 73702.48,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1935,
+          "rouge_2": 0.0324,
+          "rouge_l": 0.1183,
+          "bleu": 0.0059,
+          "section_scores": {
+            "subjective": 0.1514,
+            "plan": 0.1143
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.118 (Needs Review). ROUGE-1=0.1935, ROUGE-2=0.0324, BLEU=0.0059."
+      }
+    },
+    {
+      "id": "primock_day1_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Diarrhea for past three days\nHistory of present illness: Onset: Three days ago\nLocation: Gastrointestinal tract\nDuration: Past three days\nCharacter: Watery, loose stools\nAggravating factors: None mentioned\nRelieving factors: None mentioned\nRadiation: No radiation reported\nTiming: Frequent episodes (five to six times a day)\nSeverity: Severe, with associated dehydration and weakness\nPast medical history: Asthma: Uses blue inhaler infrequently\nSurgical history: Not documented in transcript\nFamily history: Father: High blood pressure (deceased), bowel cancer ten years ago\nMother: Diabetes type two\nSocial history: Employment: Software engineer, currently taking time off work due to illness\nSmoking: Does not smoke\nAlcohol: Drinks infrequently socially\nCurrent medications: Name: Blue inhaler for asthma\nFrequency: Infrequently\nAllergies: No known medication allergies",
+          "objective": "Vital signs: Blood pressure: Not documented in transcript\nHeart rate: Not documented in transcript\nTemperature: Patient feels a little bit warm, but no fever reported\nRespiratory rate: Not documented in transcript\nOxygen saturation: Not documented in transcript\nPhysical examination findings: General appearance: Appears unwell with signs of dehydration and weakness\nHeent: No specific findings mentioned\nCardiovascular: No specific findings mentioned\nRespiratory: No specific findings mentioned\nAbdominal: No specific findings mentioned, no tenderness or pain reported\nMusculoskeletal: No specific findings mentioned\nNeurological: No specific findings mentioned\nSkin: No specific findings mentioned\nLab values: Stool: Watery, loose stools with no blood seen",
+          "assessment": "Primary diagnosis: Gastroenteritis\nDifferential diagnoses: Bacterial gastroenteritis\nViral gastroenteritis\nProblem list: Diarrhea (past three days)\nDehydration\nWeakness",
+          "plan": "Medications: Name: Dioralyte\nRoute: Oral\nFrequency: As directed by pharmacist\nName: Paracetamol\nRoute: Oral\nFrequency: PRN for fever and weakness\nDiagnostic orders: Type: Fluid replacement therapy with Dioralyte\nPatient education provided: Drink plenty of fluids, take Paracetamol if needed\nFollow up instructions: Timeframe: Next few days\nInstructions: Return for follow-up if not better in one week\nReturn precautions: Seek emergency care if symptoms worsen or new symptoms develop\nLifestyle modifications recommended: Continue to rest and avoid strenuous activities until fully recovered"
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1286,
+          "transcript_char_count": 6893,
+          "note_word_count": 317,
+          "processing_time_ms": 78429.08,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2463,
+          "rouge_2": 0.0299,
+          "rouge_l": 0.1274,
+          "bleu": 0.0029,
+          "section_scores": {
+            "subjective": 0.1728,
+            "plan": 0.0901
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.127 (Needs Review). ROUGE-1=0.2463, ROUGE-2=0.0299, BLEU=0.0029."
+      }
+    },
+    {
+      "id": "primock_day1_consultation13",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Crazy headache for three days\nHistory of present illness: Headache started around three days ago and is located all over the head but mainly around the right eye. Pain comes and goes, rated as an 8 on a scale of 1 to 10. Headache developed gradually, worsened by the end of the day at work. No recent head injuries or similar headaches in the past. No other symptoms like vision changes, nausea, vomiting, neck pain, speech difficulties, or weakness.\nPast medical history: No significant medical history except for family history of migraines (mother and sister).\nSurgical history: Not documented in transcript\nFamily history: Mother and sister have frequent migraines. Mother's symptoms are severe during season changes.\nSocial history: Lives with three housemates, works in IT, wears glasses since age five, socially smokes and drinks alcohol occasionally.\nCurrent medications: No regular medications. Took Ibuprofen for the last two days without relief.\nAllergies: No known allergies",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination findings: General appearance: no distress. HEENT: no redness or discharge. Cardiovascular: normal. Respiratory: normal. Abdominal: soft, non-tender. Musculoskeletal: no tenderness on palpation. Neurological: no focal deficits. Skin: no rashes.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript\nEkg findings: Not documented in transcript",
+          "assessment": "Primary diagnosis: Possible migraine with aura\nDifferential diagnoses: Tension-type headache, cluster headache, subarachnoid hemorrhage (ruling out)\nProblem list: Severe headache of unknown etiology. Family history of migraines suggests genetic predisposition.",
+          "plan": "Medications: Prescribe Naproxen 500 mg three times daily for pain relief. Consider adding Paracetamol or Codeine if needed.\nDiagnostic orders: Recommend keeping a headache diary to identify potential triggers.\nProcedures or interventions: No procedures performed\nPatient education: Educate on the importance of proper hydration and rest during headaches.\nFollow up instructions: Follow up in one to two weeks if symptoms persist or worsen. Contact doctor if vision changes, neck pain, speech difficulties, or weakness occur.\nReturn precautions: Seek emergency care if severe headache, visual disturbances, or neurological deficits develop."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1839,
+          "transcript_char_count": 9863,
+          "note_word_count": 330,
+          "processing_time_ms": 70817.36,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.332,
+          "rouge_2": 0.0627,
+          "rouge_l": 0.1992,
+          "bleu": 0.027,
+          "section_scores": {
+            "subjective": 0.2697,
+            "plan": 0.1322
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.199 (Needs Review). ROUGE-1=0.332, ROUGE-2=0.0627, BLEU=0.027."
+      }
+    },
+    {
+      "id": "primock_day1_consultation14",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Cough for several days, runny nose\nHistory of present illness: Patient reports a continuous dry cough that started about 5-6 days ago and is affecting sleep. No mucus production. Sore throat from coughing but no difficulty swallowing. No ear pain or discharge. No breathing difficulties at rest. Mild fatigue, occasional chills with shivering. No nausea, vomiting, diarrhea (resolved). Urine output normal. Muscle aches in arms and legs. No skin rashes. Fit and well otherwise; has type 2 diabetes and hypertension. Regularly takes Metformin for diabetes and Lisinopril for hypertension. No known allergies. Family history includes father with type 2 diabetes. Works as a developer, not feeling particularly stressed at work. Does not currently smoke but used to. Drinks wine mostly, about two glasses three evenings a week.\nPast medical history: Type 2 diabetes, hypertension\nMedications: Metformin for diabetes, Lisinopril for hypertension\nAllergies: None reported\nSocial history: Lives with partner who is well. Works as a developer and has been working despite feeling unwell.",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination: General appearance: Fatigued, mild irritability. HEENT: No conjunctival injection or exophthalmos. Cardiovascular: Regular rate and rhythm, no murmurs. Respiratory: Clear to auscultation bilaterally, no wheezes or rales. Abdominal: Soft, non-tender, non-distended. Musculoskeletal: Muscle aches in arms and legs noted. Neurological: No focal deficits. Skin: No rash.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript",
+          "assessment": "Primary diagnosis: Viral upper respiratory infection\nDifferential diagnoses: Bacterial pneumonia, bronchitis (noted patient's cough is dry)\nProblem list: Dry cough, runny nose, fatigue, muscle aches, intermittent chills",
+          "plan": "Medications: Paracetamol as needed for fever and pain\nDiagnostic orders: None\nProcedures or interventions: Rest, plenty of fluids\nPatient education: Advice to take Paracetamol if necessary. Instructed to return in 2-3 days if symptoms persist or worsen.\nFollow up instructions: Follow up in 2-3 days if not improving. Return sooner if fever persists or cough worsens.\nReturn precautions: If breathing difficulties, worsening cough, or other concerning symptoms develop, seek medical attention promptly."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2047,
+          "transcript_char_count": 10834,
+          "note_word_count": 330,
+          "processing_time_ms": 74529.89,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2108,
+          "rouge_2": 0.0443,
+          "rouge_l": 0.1225,
+          "bleu": 0.003,
+          "section_scores": {
+            "subjective": 0.1589,
+            "plan": 0.1633
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.122 (Needs Review). ROUGE-1=0.2108, ROUGE-2=0.0443, BLEU=0.003."
+      }
+    },
+    {
+      "id": "primock_day1_consultation15",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Soreness and cracking skin on hands\nHistory of present illness: Patient reports soreness and dryness in her hands for about four months. The symptoms have worsened to the point where it is painful, affecting her ability to work as a housekeeper. Skin is also cracked and itchy. No fever, nausea, vomiting, bowel or urinary problems reported. General dryness noted on legs but no major issues.\nPast medical history: Diabetes (type 2)\nSurgical history: Not documented in transcript\nFamily history: Diabetes\nSocial history: Patient works as a housekeeper, does not wear gloves consistently. Recently changed jobs to work at a hotel. Drinks alcohol about two pints per week.\nCurrent medications: Metformin for diabetes\nAllergies: None reported",
+          "objective": "Vital signs: Not documented in transcript\nPhysical examination findings: Patient reports dry, cracked skin on hands and palms. Itchy but no bleeding noted. No other specific physical findings mentioned.\nLab values: Not documented in transcript\nImaging results: Not documented in transcript\nEkg findings: Not documented in transcript",
+          "assessment": "Primary diagnosis: Contact dermatitis\nDifferential diagnoses: Other causes of hand dermatitis such as atopic dermatitis, eczema\nProblem list: Dry skin and cracked hands due to possible contact with cleaning products without gloves. Potential exacerbation by diabetes.",
+          "plan": "Medications: Prescription for steroid cream and stronger emollients to apply three to four times a day for the next couple of weeks\nDiagnostic orders: Not documented in transcript\nProcedures or interventions: Recommend wearing gloves at all times when cleaning\nPatient education: Educated on avoidance of triggers, importance of proper skin care and moisturization\nFollow up instructions: Follow up in one to two weeks if symptoms have not improved or worsened. Come back sooner if spreading or worsening dryness occurs.\nReturn precautions: If symptoms persist or worsen, seek medical attention immediately."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1391,
+          "transcript_char_count": 7692,
+          "note_word_count": 290,
+          "processing_time_ms": 55658.82,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2567,
+          "rouge_2": 0.0699,
+          "rouge_l": 0.1658,
+          "bleu": 0.0105,
+          "section_scores": {
+            "subjective": 0.2078,
+            "objective": 0.0597,
+            "assessment": 0.1053,
+            "plan": 0.1565
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.166 (Needs Review). ROUGE-1=0.2567, ROUGE-2=0.0699, BLEU=0.0105."
+      }
+    }
+  ],
+  "per_source_statistics": {
+    "primock57": {
+      "total": 15,
+      "successful": 15,
+      "avg_rouge_l": 0.1416,
+      "avg_rouge_1": 0.2437,
+      "avg_bleu": 0.0096,
+      "avg_sections_populated": 4.0
+    }
+  }
+}

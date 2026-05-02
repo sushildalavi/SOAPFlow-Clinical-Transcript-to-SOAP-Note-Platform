@@ -1,0 +1,358 @@
+{
+  "generated_at": "2026-05-01T14:41:59.780452",
+  "configuration": {
+    "dataset": "data/synthetic/synthetic_soap_examples.json",
+    "mode": "demo",
+    "api_url": "http://127.0.0.1:8765",
+    "total_examples": 8
+  },
+  "aggregate_statistics": {
+    "total_examples": 8,
+    "successful_generations": 8,
+    "failed_generations": 0,
+    "generation_success_rate": 1.0,
+    "avg_rouge_l": 0.2493,
+    "max_rouge_l": 0.3721,
+    "min_rouge_l": 0.1893,
+    "avg_rouge_1": 0.3424,
+    "avg_bleu": 0.0296,
+    "avg_sections_populated": 4.0,
+    "avg_processing_time_ms": 0.16,
+    "avg_warnings_per_note": 1.0
+  },
+  "results": [
+    {
+      "id": "syn_001",
+      "chief_complaint": "Hypertension follow-up",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: Still high at home, around 155/95.  Yes, 10mg every morning. Duration: 4 weeks",
+          "objective": "Good morning. How has your blood pressure been? BP today is 158/92. Let me increase your lisinopril to 20mg and add amlodipine 5mg. Follow up in 4 weeks.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "BP today is 158/92. Let me increase your lisinopril to 20mg and add amlodipine 5mg. Follow up in 4 weeks."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 48,
+          "transcript_char_count": 287,
+          "note_word_count": 72,
+          "processing_time_ms": 0.29,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4341,
+          "rouge_2": 0.189,
+          "rouge_l": 0.3721,
+          "bleu": 0.0656,
+          "section_scores": {
+            "subjective": 0.375,
+            "objective": 0.2286,
+            "assessment": 0.1333,
+            "plan": 0.5106
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.372 (Fair). ROUGE-1=0.4341, ROUGE-2=0.189, BLEU=0.0656."
+      }
+    },
+    {
+      "id": "syn_002",
+      "chief_complaint": "Acute upper respiratory infection",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: I have a sore throat, runny nose, and cough for 3 days.  Low-grade, about 99.5. Duration: 3 days",
+          "objective": "I have a sore throat, runny nose, and cough for 3 days. Throat looks red but no exudate. Rapid strep is negative. This looks like a viral URI. Rest, fluids, and acetaminophen for comfort. No antibiotics needed.",
+          "assessment": "Cough — likely upper respiratory tract infection or bronchitis; atypical pneumonia in differential.",
+          "plan": "Throat looks red but no exudate. Rapid strep is negative. This looks like a viral URI. Rest, fluids, and acetaminophen for comfort. No antibiotics needed."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 51,
+          "transcript_char_count": 306,
+          "note_word_count": 95,
+          "processing_time_ms": 0.07,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3214,
+          "rouge_2": 0.1084,
+          "rouge_l": 0.2619,
+          "bleu": 0.0167,
+          "section_scores": {
+            "subjective": 0.4211,
+            "objective": 0.1569,
+            "assessment": 0.375,
+            "plan": 0.1905
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.262 (Fair). ROUGE-1=0.3214, ROUGE-2=0.1084, BLEU=0.0167."
+      }
+    },
+    {
+      "id": "syn_003",
+      "chief_complaint": "Type 2 diabetes management",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: My morning fasting numbers are around 160-180. The numbers after meals are 220-250.  I've been eating more carbs lately due to stress.",
+          "objective": "Vital signs and physical examination findings not explicitly stated in transcript. Clinical assessment pending formal documentation.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 65,
+          "transcript_char_count": 377,
+          "note_word_count": 85,
+          "processing_time_ms": 0.11,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2485,
+          "rouge_2": 0.0599,
+          "rouge_l": 0.1893,
+          "bleu": 0.0158,
+          "section_scores": {
+            "subjective": 0.3846,
+            "objective": 0.0714,
+            "assessment": 0.0,
+            "plan": 0.1408
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.189 (Needs Review). ROUGE-1=0.2485, ROUGE-2=0.0599, BLEU=0.0158."
+      }
+    },
+    {
+      "id": "syn_004",
+      "chief_complaint": "Chest pain — rule out ACS",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: About 2 hours ago. It's a crushing feeling in the middle of my chest, 8 out of 10.  Down my left arm and up into my jaw.  Yes, I'm sweating a lot and a bit short of breath.  My father died of a heart attack at 58. I have high blood pressure and I smoke. Duration: 2 hours Pain severity noted as 8 out of 10.",
+          "objective": "My father died of a heart attack at 58. I have high blood pressure and I smoke.",
+          "assessment": "Chest pain — requires further evaluation to rule out cardiac, pulmonary, or musculoskeletal etiology.",
+          "plan": "EKG shows ST elevations in leads II, III, and aVF. This is an inferior STEMI. Activating the cath lab now. Aspirin 325mg, heparin drip, ticagrelor loading dose."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 111,
+          "transcript_char_count": 607,
+          "note_word_count": 126,
+          "processing_time_ms": 0.17,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3482,
+          "rouge_2": 0.1143,
+          "rouge_l": 0.2591,
+          "bleu": 0.0224,
+          "section_scores": {
+            "subjective": 0.3208,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.1972
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.259 (Fair). ROUGE-1=0.3482, ROUGE-2=0.1143, BLEU=0.0224."
+      }
+    },
+    {
+      "id": "syn_005",
+      "chief_complaint": "Depression screening",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: For the past 6 weeks I've had no energy, I can't sleep, and I've lost interest in everything I used to enjoy.  No active thoughts, but I've thought that it would be easier if I just wasn't here. Duration: 6 weeks",
+          "objective": "I appreciate you telling me that. Starting sertraline 50mg daily. Referral to CBT therapist. Follow up in 2 weeks.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "I appreciate you telling me that. Starting sertraline 50mg daily. Referral to CBT therapist. Follow up in 2 weeks."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 83,
+          "transcript_char_count": 471,
+          "note_word_count": 90,
+          "processing_time_ms": 0.13,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "MISSING_OBJECTIVE_DATA",
+            "message": "Objective section may be missing measurable clinical data (vitals, lab values, physical exam findings).",
+            "severity": "info",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2927,
+          "rouge_2": 0.1281,
+          "rouge_l": 0.1951,
+          "bleu": 0.0208,
+          "section_scores": {
+            "subjective": 0.2105,
+            "objective": 0.0,
+            "assessment": 0.0,
+            "plan": 0.2817
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.195 (Needs Review). ROUGE-1=0.2927, ROUGE-2=0.1281, BLEU=0.0208."
+      }
+    },
+    {
+      "id": "syn_006",
+      "chief_complaint": "Pediatric fever",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reported symptoms as described in transcript. Duration: 3 days",
+          "objective": "She's 18 months old. Let me examine her. Right tympanic membrane is erythematous and bulging, decreased light reflex. Left ear normal. Lungs clear. Throat clear.",
+          "assessment": "Fever — probable infectious etiology; further workup indicated.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 84,
+          "transcript_char_count": 511,
+          "note_word_count": 79,
+          "processing_time_ms": 0.2,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4088,
+          "rouge_2": 0.1229,
+          "rouge_l": 0.2541,
+          "bleu": 0.0682,
+          "section_scores": {
+            "subjective": 0.1081,
+            "objective": 0.4255,
+            "assessment": 0.0,
+            "plan": 0.2353
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.254 (Fair). ROUGE-1=0.4088, ROUGE-2=0.1229, BLEU=0.0682."
+      }
+    },
+    {
+      "id": "syn_007",
+      "chief_complaint": "Knee pain — sports injury",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: I was playing soccer and felt a pop in my right knee when I pivoted. Immediate swelling and I couldn't put weight on it.  Yes, it feels like it wants to give out when I try to walk.",
+          "objective": "I was playing soccer and felt a pop in my right knee when I pivoted. Immediate swelling and I couldn't put weight on it. Knee immobilizer and crutches. Ice and ibuprofen. Orthopedic surgery referral.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "Lachman test positive, anterior drawer positive, significant effusion. This is highly concerning for an ACL tear. Getting an MRI today. Knee immobilizer and crutches. Ice and ibuprofen. Orthopedic surgery referral."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 84,
+          "transcript_char_count": 507,
+          "note_word_count": 113,
+          "processing_time_ms": 0.18,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.355,
+          "rouge_2": 0.1048,
+          "rouge_l": 0.2424,
+          "bleu": 0.0192,
+          "section_scores": {
+            "subjective": 0.2286,
+            "objective": 0.0727,
+            "assessment": 0.1333,
+            "plan": 0.2632
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.242 (Fair). ROUGE-1=0.355, ROUGE-2=0.1048, BLEU=0.0192."
+      }
+    },
+    {
+      "id": "syn_008",
+      "chief_complaint": "GERD / heartburn",
+      "generation": {
+        "soap_note": {
+          "subjective": "Patient reports: I've had burning in my chest after meals for about 2 months. It's worse when I lie down and sometimes I get a sour taste in my mouth.  No difficulty swallowing and my weight has been stable.  I drink about 3 cups of coffee a day and a glass of wine with dinner. Duration: 2 months",
+          "objective": "Any difficulty swallowing or weight loss? No difficulty swallowing and my weight has been stable.",
+          "assessment": "Clinical assessment to be determined based on full evaluation.",
+          "plan": "1. Symptomatic management as appropriate. 2. Order relevant diagnostic workup based on clinical findings. 3. Patient education provided. 4. Follow-up in 1-2 weeks or sooner if symptoms worsen. 5. Return to ED/urgent care if acute deterioration."
+        },
+        "metadata": {
+          "model": "demo-rule-based",
+          "mode": "demo",
+          "transcript_word_count": 92,
+          "transcript_char_count": 543,
+          "note_word_count": 118,
+          "processing_time_ms": 0.14,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3305,
+          "rouge_2": 0.0598,
+          "rouge_l": 0.2203,
+          "bleu": 0.0085,
+          "section_scores": {
+            "subjective": 0.2418,
+            "objective": 0.1481,
+            "assessment": 0.1,
+            "plan": 0.2245
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.220 (Fair). ROUGE-1=0.3305, ROUGE-2=0.0598, BLEU=0.0085."
+      }
+    }
+  ]
+}
