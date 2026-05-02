@@ -1,5 +1,5 @@
 #!/bin/bash
-# ScribeAI — One-command project setup
+# SOAPFlow — One-command project setup
 # Usage: bash scripts/setup.sh
 
 set -e
@@ -23,7 +23,7 @@ print_warn() {
 }
 
 echo -e "${BOLD}╔══════════════════════════════════════╗${NC}"
-echo -e "${BOLD}║        ScribeAI Setup Script          ║${NC}"
+echo -e "${BOLD}║        SOAPFlow Setup Script          ║${NC}"
 echo -e "${BOLD}╚══════════════════════════════════════╝${NC}"
 
 # Check prerequisites

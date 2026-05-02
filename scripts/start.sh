@@ -1,5 +1,5 @@
 #!/bin/bash
-# ScribeAI — Start both backend and frontend concurrently
+# SOAPFlow — Start both backend and frontend concurrently
 # Usage: bash scripts/start.sh
 
 set -e
@@ -9,7 +9,7 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-echo -e "${BOLD}Starting ScribeAI...${NC}"
+echo -e "${BOLD}Starting SOAPFlow...${NC}"
 
 # Check if backend virtual environment exists
 if [ ! -d "backend/venv" ]; then
