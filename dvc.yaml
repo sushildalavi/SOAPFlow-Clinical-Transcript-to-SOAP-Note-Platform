@@ -1,0 +1,93 @@
+stages:
+  prepare_synthetic:
+    cmd: python training/scripts/prepare_dataset.py --source synthetic --output data/training/synthetic.jsonl
+    deps:
+      - training/scripts/prepare_dataset.py
+      - data/synthetic/synthetic_soap_examples.json
+    outs:
+      - data/training/synthetic.jsonl
+
+  prepare_mts_dialog:
+    cmd: python training/scripts/prepare_dataset.py --source mts_dialog --output data/training/mts_dialog.jsonl
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/mts_dialog_adapter.py
+    outs:
+      - data/training/mts_dialog.jsonl
+
+  prepare_aci_bench:
+    cmd: python training/scripts/prepare_dataset.py --source aci_bench --output data/training/aci_bench.jsonl
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/aci_bench_adapter.py
+    outs:
+      - data/training/aci_bench.jsonl
+
+  prepare_primock57:
+    cmd: python training/scripts/prepare_dataset.py --source primock57 --output data/training/primock57.jsonl
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/primock57_adapter.py
+    outs:
+      - data/training/primock57.jsonl
+
+  prepare_notechat:
+    cmd: python training/scripts/prepare_dataset.py --source notechat --output data/training/notechat.jsonl --count 10000
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/notechat_adapter.py
+    outs:
+      - data/training/notechat.jsonl
+
+  prepare_augmented_notes:
+    cmd: python training/scripts/prepare_dataset.py --source augmented_notes --output data/training/augmented_notes.jsonl --count 10000
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/augmented_notes_adapter.py
+    outs:
+      - data/training/augmented_notes.jsonl
+
+  prepare_omi_health:
+    cmd: python training/scripts/prepare_dataset.py --source omi_health --output data/training/omi_health.jsonl --count 5000
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/omi_health_adapter.py
+    outs:
+      - data/training/omi_health.jsonl
+
+  prepare_mimic_note:
+    cmd: python training/scripts/prepare_dataset.py --source mimic_note --output data/training/mimic_note.jsonl --count 5000
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/mimic_note_adapter.py
+    outs:
+      - data/training/mimic_note.jsonl
+
+  prepare_mtsamples:
+    cmd: python training/scripts/prepare_dataset.py --source mtsamples --output data/training/mtsamples.jsonl
+    deps:
+      - training/scripts/prepare_dataset.py
+      - datasets/adapters/mtsamples_adapter.py
+      - data/mtsamples/mtsamples.csv
+    outs:
+      - data/training/mtsamples.jsonl
+
+  build_splits:
+    cmd: python scripts/build_dataset_stack.py --output-dir data/splits
+    deps:
+      - scripts/build_dataset_stack.py
+      - datasets/adapters
+    outs:
+      - data/splits/train.jsonl
+      - data/splits/val.jsonl
+      - data/splits/test.jsonl
+      - data/splits/style.jsonl
+      - data/splits/manifest.json
+
+  evaluate:
+    cmd: python evaluation/scripts/batch_evaluate.py --dataset data/splits/test.jsonl --output evaluation/reports/results.json --per-source
+    deps:
+      - evaluation/scripts/batch_evaluate.py
+      - data/splits/test.jsonl
+    outs:
+      - evaluation/reports/results.json
