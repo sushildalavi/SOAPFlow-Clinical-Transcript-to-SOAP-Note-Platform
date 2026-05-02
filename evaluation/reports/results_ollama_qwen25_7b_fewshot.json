@@ -1,0 +1,2517 @@
+{
+  "generated_at": "2026-05-02T05:06:24.892010",
+  "configuration": {
+    "dataset": "data/splits/test.jsonl",
+    "mode": "ollama",
+    "api_url": "http://localhost:8000",
+    "total_examples": 57
+  },
+  "aggregate_statistics": {
+    "total_examples": 57,
+    "successful_generations": 57,
+    "failed_generations": 0,
+    "generation_success_rate": 1.0,
+    "avg_rouge_l": 0.1757,
+    "max_rouge_l": 0.2987,
+    "min_rouge_l": 0.1005,
+    "avg_rouge_1": 0.3223,
+    "avg_bleu": 0.0135,
+    "avg_sections_populated": 3.98,
+    "avg_processing_time_ms": 57587.78,
+    "avg_warnings_per_note": 1.24
+  },
+  "results": [
+    {
+      "id": "primock_day1_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3/7 hx of diarrhea, loose watery stool, 6-7 times/day, lower abdominal pain (cramp-like), weakness, shakiness, no fever currently but felt hot at start, no blood in stool or vomit, no night sweats, no vomiting now, loss of appetite, able to hold down fluids (soups, smoothies). No other symptoms. Chinese takeaway 4 days ago, no one else unwell with similar symptoms. PMH: asthma, inhaler use only. SMH: none. DH: none. Social history: non-smoker, non-drinker.",
+          "objective": "O/E: No fever (measured), abdominal exam: mild tenderness in left lower quadrant, no rebound or guarding, bowel sounds present and active. No skin changes, no jaundice, no icterus. No respiratory distress, no cyanosis, no clubbing of fingers.",
+          "assessment": "Acute gastroenteritis likely due to viral or bacterial infection (most probable viral). Differential: bacterial enterocolitis, food poisoning from Chinese takeaway. CURB-65 score: 0 - outpatient management appropriate.",
+          "plan": "1. Hydration with oral rehydration solution (Dioralyte) as needed. 2. Paracetamol 500mg PO TID PRN for fever and pain, up to 4 times/day. 3. Rest advised, take time off work for 2-3 days if possible. 4. Follow-up in 3-4 days if symptoms persist or worsen. 5. If necessary, stool sample collection for further testing."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1516,
+          "transcript_char_count": 8335,
+          "note_word_count": 191,
+          "processing_time_ms": 89385.52,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2847,
+          "rouge_2": 0.0559,
+          "rouge_l": 0.1667,
+          "bleu": 0.0103,
+          "section_scores": {
+            "subjective": 0.2029,
+            "plan": 0.1647
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.167 (Needs Review). ROUGE-1=0.2847, ROUGE-2=0.0559, BLEU=0.0103."
+      }
+    },
+    {
+      "id": "primock_day1_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "4-day hx of itchy, sore skin on chest, hands, and arms; also inside elbows. No face involvement. Sleep disturbed due to itching. Unable to focus at work. Eczema history; previously treated with topical steroid cream without success. No fever or other systemic symptoms. Bowel movements normal. Chest pain or shortness of breath absent. No recent changes in hygiene products or clothing. No known triggers. PMH: asthma (resolved), no current medications, no allergies. Social history: 31 years old, full-time job at a pharmaceutical company, non-smoker, occasional alcohol consumption (a few beers per week).",
+          "objective": "General appearance: alert and oriented. HEENT: no rash or lesions noted on face. Neck: supple, no lymphadenopathy. Cardiovascular: normal S1 and S2 heard, no murmurs. Respiratory: clear to auscultation bilaterally, no wheezes or crackles. Abdominal: soft, non-tender, no organomegaly. Musculoskeletal: no tenderness on palpation. Neurological: intact cranial nerves, no focal deficits. Skin: dry, cracked skin noted on chest, hands, and inside elbows; no rash, bleeding, or discharge observed.",
+          "assessment": "Flare-up of atopic dermatitis (eczema) based on patient history and clinical presentation. Differentials include contact dermatitis or irritant dermatitis given the recent onset and localized nature of symptoms. No evidence of infection or other systemic issues.",
+          "plan": "1. Topical corticosteroid cream (strength to be determined by provider) applied twice daily for 7-10 days. 2. Emollients recommended for use in bath and shower, to be used regularly over the next week. 3. Oral antihistamine (Fexofenadine 60mg) taken once daily as needed for itching. 4. Keep a diary of potential triggers (e.g., hygiene products, clothing). 5. Follow-up appointment in one week if symptoms persist or worsen. 6. Return precautions: seek medical attention if symptoms become severe, particularly if accompanied by fever, chest pain, or difficulty breathing."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1798,
+          "transcript_char_count": 9584,
+          "note_word_count": 283,
+          "processing_time_ms": 97062.49,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2872,
+          "rouge_2": 0.0577,
+          "rouge_l": 0.1828,
+          "bleu": 0.004,
+          "section_scores": {
+            "subjective": 0.1892,
+            "assessment": 0.1951,
+            "plan": 0.272
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.183 (Needs Review). ROUGE-1=0.2872, ROUGE-2=0.0577, BLEU=0.004."
+      }
+    },
+    {
+      "id": "primock_day1_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Severe headache on left side since mid-day. Vision blurred and zig-zag lines seen before headache onset. Nausea and vomiting twice. No fever or difficulty with speech, arms, legs, balance, coordination, or recent head injury. Family history of migraines and underactive thyroid. Social history: Works in fashion industry, stressed at work, no exercise, lives alone, takes Microgynon for contraception, no smoking or alcohol use. Current medications: Microgynon (three months).",
+          "objective": "General appearance: Alert and oriented. HEENT: No rash, conjunctival injection, or photophobia. Cardiovascular: No murmurs, rubs, or gallops. Respiratory: Clear to auscultation bilaterally, no wheezes or rales. Abdominal: Soft, non-tender, non-distended. Neurological: Cranial nerves intact, no focal deficits. Skin: Intact without lesions.",
+          "assessment": "Primary diagnosis: Migraine with aura. Differential diagnoses include tension-type headache and cluster headache. Problem list includes stress-related symptoms and possible hormonal influence from oral contraceptive use.",
+          "plan": "1. Prescribe Paracetamol 500mg TID PRN for pain relief. 2. Recommend Co-codamol 300/60mg TID PRN if Paracetamol is insufficient. 3. Suggest Ibuprofen 400mg TID and Naproxen 500mg BID for anti-inflammatory effects. 4. Advise keeping a headache diary to identify triggers. 5. Schedule follow-up in one week or sooner if symptoms worsen, particularly if headache becomes more persistent, vision changes, neck pain increases, or weakness develops. 6. Provide stress management advice and encourage regular exercise."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1701,
+          "transcript_char_count": 9356,
+          "note_word_count": 212,
+          "processing_time_ms": 76384.51,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3623,
+          "rouge_2": 0.0698,
+          "rouge_l": 0.1886,
+          "bleu": 0.0143,
+          "section_scores": {
+            "subjective": 0.2182,
+            "plan": 0.2162
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.189 (Needs Review). ROUGE-1=0.3623, ROUGE-2=0.0698, BLEU=0.0143."
+      }
+    },
+    {
+      "id": "primock_day1_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "4/7 hx of sore throat, runny nose, and dry cough. Started with sore throat that was painful for a couple days, now improving. Fatigue, night sweats (3-4 days). No fever currently. Runny nose is clearing up. Cough is constant but not painful. No chest pain or shortness of breath at rest. Winded on exertion. Headaches are intermittent and not affecting vision. No ear symptoms. Bowel movements and urination normal. Appetite decreased, drinking more fluids. No rashes, muscle aches, joint pain. PMH: asthma, type 2 diabetes in grandmother, eczema in great-grandfather. Social history: lives alone, works as an accountant, occasional cigar smoking at company parties, not a heavy drinker. No current medications or allergies mentioned.",
+          "objective": "No abnormal white spots or redness noted on throat examination. Clear nasal discharge. Mild congestion. Dry cough present but no wheezing or rales heard on auscultation. No chest pain or shortness of breath at rest. Headaches are general and intermittent, no visual disturbances. Bowel movements and urination normal. Appetite decreased but drinking more fluids.",
+          "assessment": "Viral upper respiratory tract infection or early signs of influenza. Differentials include common cold or viral bronchitis. No significant acute illness noted; patient appears to be managing symptoms with over-the-counter medications.",
+          "plan": "1. Rest and take a day or two off work if possible. 2. Increase fluid intake. 3. Continue Paracetamol and Ibuprofen as needed for fever and pain. 4. Follow-up in one week if not improving, particularly if symptoms worsen (fever >38.5°C, shortness of breath, chest pain). 5. Return to clinic sooner if any concerning symptoms develop."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1812,
+          "transcript_char_count": 9535,
+          "note_word_count": 255,
+          "processing_time_ms": 82588.47,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3646,
+          "rouge_2": 0.0755,
+          "rouge_l": 0.2038,
+          "bleu": 0.0213,
+          "section_scores": {
+            "subjective": 0.2723,
+            "assessment": 0.1111,
+            "plan": 0.2174
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.204 (Fair). ROUGE-1=0.3646, ROUGE-2=0.0755, BLEU=0.0213."
+      }
+    },
+    {
+      "id": "primock_day1_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-day hx of lower abdominal pain, described as burning and worsening. No chest pain or shortness of breath. Pink urine noted but no burning or stinging on urination. Bowel movements are normal. Nausea present but no vomiting. Felt hot and sweaty. PMH: none. SH: works as an accountant, does not smoke or drink heavily. FH: none. Sexual history: uses Implanon, last period 2 weeks ago, no other partners in the past 4 days.",
+          "objective": "General appearance: alert and oriented. HEENT: unremarkable. Cardiovascular: regular rate and rhythm, no murmurs. Respiratory: clear to auscultation bilaterally. Abdomen: soft, non-tender, mild tenderness below umbilicus. Genitalia: unremarkable. Neurological: intact. Skin: no rash or lesions.",
+          "assessment": "Possible urinary tract infection (UTI) or gynecological issue given the symptoms and recent sexual activity. Differential includes acute abdomen or early pregnancy complications. No signs of severe illness at this time.",
+          "plan": "1. Empirical treatment with Trimethoprim 2 tablets BID x 3 days. 2. Advise Paracetamol for pain relief as needed. 3. Increase fluid intake, consider cranberry juice. 4. Home pregnancy test recommended if not already done. 5. Follow-up in 3-7 days or sooner if symptoms worsen (worsening abdominal pain, fever >100.4°F, vomiting)."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1758,
+          "transcript_char_count": 9579,
+          "note_word_count": 190,
+          "processing_time_ms": 76046.25,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3906,
+          "rouge_2": 0.0838,
+          "rouge_l": 0.2135,
+          "bleu": 0.0159,
+          "section_scores": {
+            "subjective": 0.2212,
+            "assessment": 0.1081,
+            "plan": 0.2766
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.213 (Fair). ROUGE-1=0.3906, ROUGE-2=0.0838, BLEU=0.0159."
+      }
+    },
+    {
+      "id": "primock_day1_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "10/7 hx of shortness of breath (SOB) for past few weeks, worsening over last couple days. SOB on minimal exertion (walking to shops). Dry cough present but not troublesome. Ankle swelling noticed in past few days, both ankles. No chest pain or palpitations. Appetite and urination normal. Furosemide 20mg daily, Aspirin 100mg daily, Bisoprolol 5mg daily. PMH: heart failure, small heart attack 5 years ago (details unclear). FH: father died of heart attack in early sixties, mother had osteoporosis. SMOKING: used to smoke 25 pack-years. ALCOHOL: no current consumption. EXERCISE: walks to shops daily.",
+          "objective": "O/E: No chest pain or palpitations. Ankle swelling noted (both). Sats 96% on RA, BP normal. No respiratory distress at rest.",
+          "assessment": "Possible exacerbation of heart failure with SOB and ankle edema. Differentials include worsening heart failure, acute bronchitis, or early signs of pneumonia. CURB-65 score not applicable due to lack of fever, confusion, uremia, rash, or prior respiratory infection.",
+          "plan": "1. Increase Furosemide to 40mg BID for next few days. 2. Arrange blood tests and echocardiogram within 1-2 weeks. 3. Follow-up in 7 days if symptoms not improving. 4. Advise patient on signs of worsening condition (chest pain, palpitations, dizziness) to seek urgent care. 5. Continue current medications as tolerated. 6. Smoking cessation advice provided, leaflet given."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2023,
+          "transcript_char_count": 10940,
+          "note_word_count": 210,
+          "processing_time_ms": 86373.68,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.351,
+          "rouge_2": 0.12,
+          "rouge_l": 0.2185,
+          "bleu": 0.0319,
+          "section_scores": {
+            "subjective": 0.2013,
+            "assessment": 0.186,
+            "plan": 0.2955
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.218 (Fair). ROUGE-1=0.351, ROUGE-2=0.12, BLEU=0.0319."
+      }
+    },
+    {
+      "id": "primock_day1_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "52-year-old male presents with a 4-5 day history of cough, runny nose, sore throat, shortness of breath, fever-like symptoms (feeling hot and cold), and muscle stiffness. Denies chest pain or nausea/vomiting. Reports drinking about 9 pints of alcohol per week and smoking occasionally but trying to cut down with a vaporizer. Past medical history includes type 2 diabetes and hypertension. Medications: Metformin, Lisinopril. Allergies: None reported. Socially, lives with his wife, works in a factory manufacturing steel parts, no children at home.",
+          "objective": "O/E: Runny nose, sore throat (patient avoids looking), mild shortness of breath, fever-like symptoms (feeling hot and cold). No chest pain or redness in the back of the throat. Denies recent weight loss, abdominal pain, or vomiting. Blood pressure not documented.",
+          "assessment": "Viral illness with early signs of possible influenza. Differential diagnoses include acute bronchitis. Patient's diabetes and hypertension are under control with medications.",
+          "plan": "1. Advise rest and increased fluid intake. 2. Prescribe Paracetamol for fever-like symptoms. 3. Consider Amoxicillin (1 tablet, three times a day) if symptoms persist after 48 hours. 4. Follow-up in one week or sooner if symptoms worsen. 5. Smoking cessation support provided with vaporizer recommendation. 6. Encourage alcohol moderation."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2964,
+          "transcript_char_count": 15242,
+          "note_word_count": 195,
+          "processing_time_ms": 100786.58,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.323,
+          "rouge_2": 0.0623,
+          "rouge_l": 0.1787,
+          "bleu": 0.0044,
+          "section_scores": {
+            "subjective": 0.1515,
+            "assessment": 0.0769,
+            "plan": 0.2667
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.179 (Needs Review). ROUGE-1=0.323, ROUGE-2=0.0623, BLEU=0.0044."
+      }
+    },
+    {
+      "id": "primock_day1_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "26-year-old female presents with a dry, itchy rash on arms and hands that started a few days ago after swimming. No fever, no spots, no chest pain or haemoptysis. Reports stress at work due to long hours and difficult students. Denies other symptoms such as soreness, cracking skin, vomiting, diarrhea, or loose stools. Lactose intolerant. Family history includes asthma in father and hayfever in mother. Lives alone, does not smoke or drink alcohol, no recreational drug use. Works as a primary school teacher.",
+          "objective": "No respiratory distress at rest. No fever. Bowel movements and urination normal. Skin examination reveals dry, red rash on arms and hands with itching but no cracking or bleeding noted.",
+          "assessment": "Dermatitis likely due to stress and recent swimming. Differential diagnoses include contact dermatitis from pool chemicals or irritants. Mild acute eczema cannot be ruled out given the context of recent environmental changes.",
+          "plan": "1. Prescribe hydrocortisone cream for topical application as needed. 2. Recommend emollients for dry skin. 3. Suggest over-the-counter loratadine for itchiness if necessary. 4. Advise patient to return in one week if symptoms persist or worsen. 5. Encourage stress management techniques and lifestyle modifications."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1321,
+          "transcript_char_count": 7356,
+          "note_word_count": 189,
+          "processing_time_ms": 64242.39,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2646,
+          "rouge_2": 0.0471,
+          "rouge_l": 0.1712,
+          "bleu": 0.0038,
+          "section_scores": {
+            "subjective": 0.176,
+            "plan": 0.2571
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.171 (Needs Review). ROUGE-1=0.2646, ROUGE-2=0.0471, BLEU=0.0038."
+      }
+    },
+    {
+      "id": "primock_day1_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day hx of burning pain on urination, crampy lower abdominal pain. No fever, back pain, nausea, vomiting, or diarrhea. Blood in urine noted today. No recent STD screens or pregnancy concerns. Regular sexual activity with condom use. PMH: IBS. Allergies: Clindamycin (swelling). Social history: Non-smoker, drinks socially on weekends. Home situation: Lives in a flat near college with friends. Studying biology at university. Aspirations include becoming a doctor someday. No other medical problems or medications.",
+          "objective": "No significant findings on examination. Patient appears well within limits of exam. No rash, no lymphadenopathy, no organomegaly noted. Urinalysis not documented in transcript.",
+          "assessment": "Suspected uncomplicated urinary tract infection (UTI) based on symptoms. Differential diagnoses include interstitial cystitis or other lower genital tract pathology given patient's sexual activity and symptoms.",
+          "plan": "1. Prescribe Nitrofurantoin 100mg BID x 3 days OR Trimethoprim 200mg BID x 3 days. 2. Advise increased fluid intake to flush out infection. 3. Recommend cranberry juice for symptomatic relief. 4. Follow-up in 7 days if symptoms persist or worsen. 5. Avoid sexual activity until resolution of symptoms. 6. Return precautions: call if fever >101°F, severe flank pain, or worsening symptoms."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1715,
+          "transcript_char_count": 9154,
+          "note_word_count": 187,
+          "processing_time_ms": 113881.36,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2681,
+          "rouge_2": 0.0511,
+          "rouge_l": 0.1667,
+          "bleu": 0.0047,
+          "section_scores": {
+            "subjective": 0.129,
+            "plan": 0.297
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.167 (Needs Review). ROUGE-1=0.2681, ROUGE-2=0.0511, BLEU=0.0047."
+      }
+    },
+    {
+      "id": "primock_day1_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "1 week hx of dysuria, described as burning and stinging pain when urinating. Increased frequency of urination affecting daily activities. Lower abdominal pain, described as an achey pain, worse on voiding. Urine pinkish in color today, possibly frank blood. No nausea or vomiting. Bowel movements variable with irritable bowel syndrome (IBS). No recent unprotected sex or new sexual partners. Last period two weeks ago. Smoking marijuana for the first time a week and a half ago. Taking medication for IBS but name not provided. Allergic to Clindamycin. No family history of bladder or kidney issues. Living in university halls with one flatmate, studying English. Drinks socially occasionally. No recent fever or back pain.",
+          "objective": "No significant findings on review of systems. No respiratory symptoms, no chest pain, no joint pain, no skin changes. IBS noted as a past medical history.",
+          "assessment": "Suspected urinary tract infection (UTI) with possible cystitis based on symptoms. Differential includes interstitial cystitis or other lower genital tract issues given the recent onset of dysuria and hematuria.",
+          "plan": "1. Start Trimethoprim 400mg BID for 3 days or Nitrofurantoin 100mg TID for 3 days as appropriate. 2. Advise increased fluid intake to stay well hydrated. 3. Provide Paracetamol PRN for pain relief if needed. 4. Collect urine sample on-site and send off for lab testing. 5. Follow-up in one week or sooner if symptoms persist or worsen, particularly if fever >100.4°F, back pain, vomiting, or hematuria increases. 6. Smoking cessation advice given with leaflet provided."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2017,
+          "transcript_char_count": 10658,
+          "note_word_count": 244,
+          "processing_time_ms": 84866.41,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "MISSING_OBJECTIVE_DATA",
+            "message": "Objective section may be missing measurable clinical data (vitals, lab values, physical exam findings).",
+            "severity": "info",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2508,
+          "rouge_2": 0.0185,
+          "rouge_l": 0.1651,
+          "bleu": 0.003,
+          "section_scores": {
+            "subjective": 0.1392,
+            "plan": 0.2807
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.165 (Needs Review). ROUGE-1=0.2508, ROUGE-2=0.0185, BLEU=0.003."
+      }
+    },
+    {
+      "id": "primock_day1_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day hx of profuse watery diarrhea, occurring every hour when awake. No blood in stools. Mild crampy pain in the lower abdomen, intermittent. Nausea and vomiting, not as prominent as diarrhea. Feels hot but no measured fever. Urination seems normal. No recent food or medication triggers identified. Brother has had similar symptoms for 5 days. No regular medications or allergies. Family history: father with stage III colon cancer. Socially, lives with sister and mother; works in government office in Central London. Smokes socially (1-2 cigarettes per week), drinks alcohol occasionally (1-2 times/month).",
+          "objective": "No significant findings on examination.",
+          "assessment": "Gastroenteritis likely based on symptoms of profuse watery diarrhea, crampy abdominal pain, and nausea/vomiting. No signs of dehydration or severe illness at this time.",
+          "plan": "1. Encourage clear fluids and soft diet (e.g., soup, mashed foods). 2. Recommend Diarolyte over-the-counter for fluid replacement. 3. Paracetamol as needed for feverishness or pain (400mg PRN). 4. Follow-up in 1-2 days if symptoms not improving; return sooner if dehydration or worsening symptoms occur."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2497,
+          "transcript_char_count": 12727,
+          "note_word_count": 166,
+          "processing_time_ms": 79224.48,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3333,
+          "rouge_2": 0.0492,
+          "rouge_l": 0.2195,
+          "bleu": 0.0251,
+          "section_scores": {
+            "subjective": 0.2517,
+            "plan": 0.2466
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.220 (Fair). ROUGE-1=0.3333, ROUGE-2=0.0492, BLEU=0.0251."
+      }
+    },
+    {
+      "id": "primock_day1_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day history of severe diarrhea, 5-6 episodes per day, watery and loose stools without blood. Vomited twice initially but no vomiting now. No abdominal pain or fever. Reports feeling weak and dehydrated. No recent takeaway food or exposure to unwell individuals. Asthma with occasional use of blue inhaler. Father had high blood pressure and died from bowel cancer 10 years ago, mother has type 2 diabetes. Lives alone, works as a software engineer, no recent time off work due to illness. Drinks alcohol infrequently but does not smoke.",
+          "objective": "Not documented.",
+          "assessment": "Gastroenteritis likely causing severe diarrhea and dehydration. No other significant symptoms present.",
+          "plan": "1. Encourage increased fluid intake (e.g., Dioralyte). 2. Consider Paracetamol for fever or weakness if needed. 3. Advise to take time off work for the next day or two. Return to work only after diarrhea-free for 24-48 hours. 4. Follow-up in one week if symptoms persist."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1286,
+          "transcript_char_count": 6893,
+          "note_word_count": 148,
+          "processing_time_ms": 55365.93,
+          "sections_populated": 3
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (2 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3974,
+          "rouge_2": 0.059,
+          "rouge_l": 0.2541,
+          "bleu": 0.0062,
+          "section_scores": {
+            "subjective": 0.2617,
+            "plan": 0.1772
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.254 (Fair). ROUGE-1=0.3974, ROUGE-2=0.059, BLEU=0.0062."
+      }
+    },
+    {
+      "id": "primock_day1_consultation13",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Severe headache for three days, worsening over time. Pain is dull but can become sharper, located around right eye and spreading to whole head. On a scale of 1-10, patient rates pain an 8. Headache comes and goes. No fever or loss of vision. Light sensitivity noted. Nausea not present. Neck pain and difficulty focusing at work reported. No recent head injuries. Family history: mother and sister have migraines, mother's symptoms are more severe. Socially active, works in IT with frequent screen use. No current smoking or alcohol consumption. Last eye test five years ago.",
+          "objective": "Patient appears well-nourished and in no acute distress. General appearance: alert and oriented. HEENT: no rash, conjunctival injection, or nuchal rigidity. Cardiovascular: regular rate and rhythm without murmurs. Respiratory: clear to auscultation bilaterally. Abdominal: soft, non-tender, non-distended. Neurological: cranial nerves intact, no focal deficits. Skin: no rashes or lesions.",
+          "assessment": "Probable migraine with aura. Differential diagnoses include tension-type headache and cluster headache. Family history of migraines supports this diagnosis. No evidence of secondary causes such as infection or intracranial pathology.",
+          "plan": "1. Prescribe Naproxen 500mg TID for next five days. 2. Recommend increasing ibuprofen dose to two tablets, three times daily if needed. 3. Consider adding Paracetamol or Codeine for additional pain relief as needed. 4. Advise patient on maintaining a headache diary to identify potential triggers. 5. Schedule follow-up in one to two weeks if symptoms persist or worsen. 6. Instruct patient to return if experiencing vision changes, weakness, or other concerning symptoms. 7. Recommend scheduling an eye examination within the next year."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1839,
+          "transcript_char_count": 9863,
+          "note_word_count": 259,
+          "processing_time_ms": 64007.72,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3506,
+          "rouge_2": 0.0497,
+          "rouge_l": 0.1753,
+          "bleu": 0.0093,
+          "section_scores": {
+            "subjective": 0.1951,
+            "plan": 0.1552
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.175 (Needs Review). ROUGE-1=0.3506, ROUGE-2=0.0497, BLEU=0.0093."
+      }
+    },
+    {
+      "id": "primock_day1_consultation14",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "5-day hx of continuous dry cough, no mucus production. Runny nose and sore throat from coughing. No chest pain or haemoptysis. Fatigue, chills, muscle aches (especially arms and legs). No nausea, vomiting, diarrhea, ear symptoms, or fever. Type 2 diabetes and hypertension managed with Metformin 500mg daily and Lisinopril 10mg daily. No allergies. Family history: father has type 2 diabetes. Social history: non-smoker for six months, drinks wine (2-3 glasses) three evenings a week. Works as an IT developer, no recent stressors at work.",
+          "objective": "No respiratory distress at rest. No chest pain or rales on auscultation. Temperature not measured but patient reports feeling cold with shivers. No skin rash or joint symptoms noted.",
+          "assessment": "Viral upper respiratory tract infection (URTI) with possible early signs of lower respiratory involvement given the cough and muscle aches. Differentials include bronchitis or early pneumonia. CURB-65 score not applicable due to lack of fever, confusion, urea, rash, or age >65.",
+          "plan": "1. Paracetamol PRN for symptomatic relief. 2. Increase fluid intake and rest. 3. Return in two to three days if no improvement. 4. Consider antibiotics if cough persists beyond four days with worsening symptoms. 5. Take a day or two off work if coughing, otherwise continue working. 6. Follow up if breathing worsens or fever persists."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2047,
+          "transcript_char_count": 10834,
+          "note_word_count": 210,
+          "processing_time_ms": 60080.06,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2937,
+          "rouge_2": 0.0634,
+          "rouge_l": 0.1818,
+          "bleu": 0.0046,
+          "section_scores": {
+            "subjective": 0.237,
+            "plan": 0.225
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.182 (Needs Review). ROUGE-1=0.2937, ROUGE-2=0.0634, BLEU=0.0046."
+      }
+    },
+    {
+      "id": "primock_day1_consultation15",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "45-year-old female presents with soreness and cracked skin on hands for 3-4 months, worsening over time. No fever, nausea, vomiting, bowel or urinary complaints. Reports dryness in legs but no severe symptoms. Past medical history includes type 2 diabetes (on metformin). Social history: works as a housekeeper, does not smoke, drinks 1-2 pints of alcohol per week. No known allergies. Family history: diabetes only. Dermatitis or contact dermatitis suspected due to recent change in job and frequent use of cleaning products without gloves.",
+          "objective": "No fever, no respiratory symptoms, no chest pain, no bleeding from skin. Skin on hands is cracked and itchy. No bowel or urinary complaints noted during exam.",
+          "assessment": "Contact dermatitis likely secondary to frequent exposure to cleaning chemicals at work without protective gloves. Differential diagnoses include hand eczema or irritant dermatitis.",
+          "plan": "1. Advise patient to wear gloves when handling cleaning products. 2. Prescribe hydrocortisone cream for inflammation and emollients (apply 3-4 times daily) for moisturization. 3. Follow up in one to two weeks if symptoms persist or worsen."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1391,
+          "transcript_char_count": 7692,
+          "note_word_count": 170,
+          "processing_time_ms": 41901.96,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3552,
+          "rouge_2": 0.1012,
+          "rouge_l": 0.2162,
+          "bleu": 0.032,
+          "section_scores": {
+            "subjective": 0.2097,
+            "objective": 0.0426,
+            "assessment": 0.16,
+            "plan": 0.254
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.216 (Fair). ROUGE-1=0.3552, ROUGE-2=0.1012, BLEU=0.032."
+      }
+    },
+    {
+      "id": "primock_day2_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Six-week history of progressive hearing loss in left ear, intermittent ringing (tinnitus), occasional dizziness and mild imbalance. No chest pain or palpitations. One-year history of brief, self-limiting hearing issue. Uses no medications for ears. No known allergies. PMH: none. SH: denies smoking or alcohol use. FH: negative.",
+          "objective": "Not documented in transcript.",
+          "assessment": "Possible tinnitus and sensorineural hearing loss in left ear. Differential diagnoses include otitis media, impacted cerumen, or Meniere's disease. No specific acute infection noted.",
+          "plan": "1. Schedule face-to-face appointment for examination of left ear within the next four to five days. 2. Provide patient with link to Tinnitus leaflet and encourage reading. 3. Advise against use of cotton swabs in ears. 4. Follow-up if symptoms worsen or new symptoms develop, particularly chest pain, palpitations, or fever. 5. Review appointment details and contact support team for scheduling."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1232,
+          "transcript_char_count": 6576,
+          "note_word_count": 136,
+          "processing_time_ms": 36149.97,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.395,
+          "rouge_2": 0.0424,
+          "rouge_l": 0.2101,
+          "bleu": 0.0064,
+          "section_scores": {
+            "subjective": 0.1935,
+            "assessment": 0.0519
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.210 (Fair). ROUGE-1=0.395, ROUGE-2=0.0424, BLEU=0.0064."
+      }
+    },
+    {
+      "id": "primock_day2_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "53-year-old male presents with a week-long history of swelling on his left elbow, which is slightly warm to touch but not painful. No history of injury or physical activity that could explain the swelling. Denies any past medical conditions except for suspected osteoarthritis, for which he was previously seen by a GP. Allergies include peanuts. No current medications. Reports running regularly and considers himself generally healthy. Chief complaint is the presence of a warm, non-painful swelling on his left elbow.",
+          "objective": "General appearance: Alert and oriented. HEENT: Unremarkable. Cardiovascular: Tachycardia not noted. Respiratory: No respiratory distress or wheezing. Abdominal: Soft, non-tender, no organomegaly. Musculoskeletal: Left elbow shows a warm, non-tender swelling on the tip and adjacent area. Neurological: Intact motor and sensory function. Skin: Dry skin noted at the elbow tip, no eczema or other rashes.",
+          "assessment": "Left elbow bursitis with inflammatory process. Differential diagnoses include gout or septic arthritis (considered less likely given clinical presentation). Inflammatory markers elevated on blood tests pending.",
+          "plan": "1. Ibuprofen 400mg PO BID after meals for anti-inflammatory effect. 2. Arrange blood tests to check for inflammatory markers, infection, and rheumatological antibodies within the next few days. Results expected in about six days. 3. Follow-up appointment via phone or video in one week to review results and physical examination findings. 4. Advise patient to contact if symptoms worsen (redness, increased pain, spreading redness)."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1827,
+          "transcript_char_count": 9539,
+          "note_word_count": 225,
+          "processing_time_ms": 59654.22,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "MISSING_OBJECTIVE_DATA",
+            "message": "Objective section may be missing measurable clinical data (vitals, lab values, physical exam findings).",
+            "severity": "info",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2298,
+          "rouge_2": 0.025,
+          "rouge_l": 0.1491,
+          "bleu": 0.0085,
+          "section_scores": {
+            "subjective": 0.1667,
+            "assessment": 0.0714,
+            "plan": 0.1905
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.149 (Needs Review). ROUGE-1=0.2298, ROUGE-2=0.025, BLEU=0.0085."
+      }
+    },
+    {
+      "id": "primock_day2_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-week hx of hearing loss on left side, decreased hearing, and numbness around left ear and jawline. Occasional ringing in left ear. No chest pain, shortness of breath, or difficulty swallowing. No weakness, numbness, or vision problems elsewhere. No fever, discharge, or pain from the ear. PMH: polyps in nose, past labyrinthitis. SMH: Rennie's for stomach issues, nasal spray for nose (prescription). FH: brother with Neurofibromatosis. OH: jockey, symptoms impacting work. SH: lives alone, no pets.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible Bell's Palsy or other neurological condition causing unilateral hearing loss and facial numbness. Differential diagnoses include otitis media, trigeminal neuralgia, or other ear/nose/throat issues. No life-threatening conditions identified based on history and symptoms.",
+          "plan": "1. Schedule face-to-face appointment for in-clinic assessment. 2. Administer neurological examination to confirm diagnosis. 3. Consider referral to ENT specialist if needed. 4. Provide reassurance pending further evaluation. 5. Follow-up with patient via phone number provided after clinic visit."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1527,
+          "transcript_char_count": 8151,
+          "note_word_count": 153,
+          "processing_time_ms": 43559.94,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3927,
+          "rouge_2": 0.0733,
+          "rouge_l": 0.2182,
+          "bleu": 0.0062,
+          "section_scores": {
+            "subjective": 0.2256,
+            "objective": 0.0,
+            "assessment": 0.2041,
+            "plan": 0.2254
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.218 (Fair). ROUGE-1=0.3927, ROUGE-2=0.0733, BLEU=0.0062."
+      }
+    },
+    {
+      "id": "primock_day2_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "45-year-old female with a one-day history of shortness of breath, productive cough (green sputum), fever, and two episodes of hemoptysis. Reports feeling her heart beating faster than usual and fatigue over the past few weeks. Denies chest pain or other symptoms. Works in an office setting, lives alone in a flat, owns a cat. On Methotrexate for SLE. No allergies. Last Methotrexate dose was this morning. Denies recent long-haul flights or blood clots. Denies family history of blood clots.",
+          "objective": "Pulse: Regular, rate not explicitly stated but patient counted to 12 beats in a few seconds. Capillary refill time normal. Throat examination unremarkable with no enlarged glands noted. No respiratory distress at rest. Methotrexate taken this morning.",
+          "assessment": "Possible chest infection on background of SLE. Differential diagnoses include pneumonia or acute bronchitis. Consideration for lung cancer given hemoptysis, but less likely due to short duration and other symptoms. CURB-65 score not calculated.",
+          "plan": "1. Arrange face-to-face appointment with a GP today for chest examination, blood pressure check, and pulse recheck. 2. Prescribe antibiotics if needed based on clinical findings (specific type and dose not mentioned). 3. Monitor temperature and other symptoms. 4. Advise follow-up in one week or sooner if symptoms worsen. 5. No specific medication prescribed at this visit due to need for further assessment."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1993,
+          "transcript_char_count": 10462,
+          "note_word_count": 213,
+          "processing_time_ms": 58794.29,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2761,
+          "rouge_2": 0.0271,
+          "rouge_l": 0.1279,
+          "bleu": 0.0019,
+          "section_scores": {
+            "subjective": 0.1429,
+            "assessment": 0.0976,
+            "plan": 0.1505
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.128 (Needs Review). ROUGE-1=0.2761, ROUGE-2=0.0271, BLEU=0.0019."
+      }
+    },
+    {
+      "id": "primock_day2_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Onset of fatigue, weakness, and episodes of numbness in right hand over past month to two months. Episodes also involve arm weakness and altered gait for a few days at a time. Recently noticed difficulty holding coffee cup during episodes. No swallowing or speaking difficulties noted. Family history: father had operation to reduce stroke risk. Social history: works as a plastic surgeon, no smoking, takes aspirin 75mg daily due to family history of stroke, no other medications or allergies. No recent illnesses or hospitalizations.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible transient ischemic attack (TIA) given patient's symptoms and family history of stroke. Differential diagnoses include multiple sclerosis, peripheral neuropathy, or other neurological conditions. Patient is a young medical doctor with no prior history of stroke or TIA.",
+          "plan": "1. Refer to TIA clinic for further evaluation including carotid ultrasound and brain imaging within one to two days. 2. Contact the hospital PALS number if symptoms return or persist. 3. If mini-stroke symptoms are prolonged, seek emergency care immediately. 4. Follow-up with primary care provider as needed."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2040,
+          "transcript_char_count": 11076,
+          "note_word_count": 174,
+          "processing_time_ms": 49047.26,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2162,
+          "rouge_2": 0.0233,
+          "rouge_l": 0.1158,
+          "bleu": 0.0047,
+          "section_scores": {
+            "subjective": 0.0862,
+            "assessment": 0.0714,
+            "plan": 0.1928
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.116 (Needs Review). ROUGE-1=0.2162, ROUGE-2=0.0233, BLEU=0.0047."
+      }
+    },
+    {
+      "id": "primock_day2_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "27-year-old male presents with difficulty breathing following a suspected wasp sting on his arm. Rash and mild swelling noted on right-hand side of lip. History of eczema. Allergic to penicillin. No history of anaphylaxis or other significant allergies. Works as a computer scientist, lives alone, has a cat at home. Reports occasional anxiety but no current medication for it. No recent travel or exposure to known allergens.",
+          "objective": "O/E: Mild erythema and puncture mark on right arm. Lips not significantly swollen. Respiratory rate normal, no stridor noted. No wheezing or crackles heard on auscultation of lungs. Temperature 98.6°F (37°C), heart rate 72 bpm, blood pressure 120/80 mmHg, oxygen saturation 98% on room air.",
+          "assessment": "Localised allergic reaction to a suspected wasp sting with mild respiratory symptoms. No evidence of anaphylaxis at this time. Differentials include urticaria and angioedema.",
+          "plan": "1. Administer oral antihistamine (Piriton or Chlorphenamine 4 mg up to six times daily as needed). 2. Monitor for signs of worsening symptoms, including swelling, difficulty breathing, or fever. 3. Advise patient to seek urgent care if any of these symptoms occur. 4. Provide information on anaphylaxis and advise patient to contact clinic if concerns arise. 5. No allergy testing recommended at this time."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2087,
+          "transcript_char_count": 11184,
+          "note_word_count": 200,
+          "processing_time_ms": 60513.63,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3392,
+          "rouge_2": 0.0501,
+          "rouge_l": 0.1696,
+          "bleu": 0.0123,
+          "section_scores": {
+            "subjective": 0.1124,
+            "assessment": 0.2632,
+            "plan": 0.125
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.170 (Needs Review). ROUGE-1=0.3392, ROUGE-2=0.0501, BLEU=0.0123."
+      }
+    },
+    {
+      "id": "primock_day2_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chest discomfort described as pressure in the middle of the chest radiating to left arm and shoulder, present for a couple of hours. Associated symptoms include nausea, sweating, shortness of breath. No history of similar episodes before. High blood pressure noted but no diabetes or high cholesterol. Father died of heart attack at around 60 years old. Smokes about ten cigarettes per day for fifteen years. Drinks seven to eight pints of beer weekly. Overweight. Works as a restaurant owner. Allergy to aspirin with mild allergic reaction.",
+          "objective": "No specific physical examination findings mentioned in the transcript. Patient reported chest discomfort, nausea, sweating, and shortness of breath. No mention of palpitations or other symptoms.",
+          "assessment": "Possible acute coronary syndrome (ACS) including myocardial infarction (MI). Differential diagnoses include angina pectoris, pericarditis, or aortic dissection given the patient's history and presentation.",
+          "plan": "Await ambulance arrival for ECG. Administer oxygen if available. Do not give aspirin due to allergy. Monitor vital signs closely. Prepare for potential hospital admission based on ECG results. Follow-up with cardiology as needed."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1461,
+          "transcript_char_count": 7915,
+          "note_word_count": 171,
+          "processing_time_ms": 41924.85,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2291,
+          "rouge_2": 0.0374,
+          "rouge_l": 0.1424,
+          "bleu": 0.0108,
+          "section_scores": {
+            "subjective": 0.1675,
+            "assessment": 0.0339
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.142 (Needs Review). ROUGE-1=0.2291, ROUGE-2=0.0374, BLEU=0.0108."
+      }
+    },
+    {
+      "id": "primock_day2_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "7-day hx of fever, hot and sweaty, muscle aches, nausea, fatigue, night sweats, coldness. No cough, sore throat, ear pain, diarrhea, neck stiffness, headache (centralized over the head), rash, joint swelling or tenderness, painful urination, increased urinary frequency, recent travel to Vietnam 4 weeks ago, malaria prophylaxis with daily tablet, no river exposure, no beach visits, back pain for years, under physiotherapy, no major illnesses in past. PMH: chronic back pain (related to desk work and poor posture), treated with exercises. SMH: none. FH: father died of heart attack at 68. CHF: Seroxat, pollen allergy (hay fever). Currently works as a nurse, moderate alcohol intake, no smoking.",
+          "objective": "No specific physical exam findings mentioned in the transcript. Blood tests ordered for malaria and inflammatory markers.",
+          "assessment": "Fever of unknown origin with systemic symptoms; differential diagnoses include viral or bacterial infection, malaria, or other exogenous infections given recent travel history to Vietnam. No apparent focus of infection found during conversation.",
+          "plan": "1. Schedule patient for examination at central London clinic or local A&E. 2. Order blood tests: thick and thin blood films for malaria, inflammatory markers. 3. Advise patient not to return to work until further evaluation is completed. 4. Follow-up in 7 days if symptoms persist or worsen."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10516,
+          "note_word_count": 205,
+          "processing_time_ms": 54585.03,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4405,
+          "rouge_2": 0.1374,
+          "rouge_l": 0.2987,
+          "bleu": 0.0851,
+          "section_scores": {
+            "subjective": 0.354,
+            "assessment": 0.0556,
+            "plan": 0.2
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.299 (Fair). ROUGE-1=0.4405, ROUGE-2=0.1374, BLEU=0.0851."
+      }
+    },
+    {
+      "id": "primock_day2_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "CC: Sudden onset inability to move left arm and tingling on left side of face for one hour. No pain in affected limb. Speech feels more complicated and slower than usual. Difficulty swallowing. PMH: Type 2 diabetes, hypertension. DM2 medications: Metformin, losartan, Amlodipine. Allergies: Penicillin. FH: Father has heart disease. SH: Used to smoke but does not currently. Drinks a few beers over the weekend and occasionally during the week.",
+          "objective": "Not documented in transcript",
+          "assessment": "Suspected stroke or transient ischemic attack (TIA) based on sudden onset of weakness in left arm, facial droop, and speech changes. Differential diagnoses include other neurological conditions such as multiple sclerosis exacerbation or Bell's palsy. Patient is at high risk for stroke due to hypertension and diabetes.",
+          "plan": "1. Ambulance called and en route to patient's home. 2. Wait in hallway with unlocked front door for ambulance arrival. 3. Monitor symptoms until emergency services arrive. 4. Follow-up in hospital setting as per standard stroke protocol."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1136,
+          "transcript_char_count": 6022,
+          "note_word_count": 158,
+          "processing_time_ms": 37122.02,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3688,
+          "rouge_2": 0.1195,
+          "rouge_l": 0.1813,
+          "bleu": 0.0482,
+          "section_scores": {
+            "subjective": 0.2212,
+            "assessment": 0.058
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.181 (Needs Review). ROUGE-1=0.3688, ROUGE-2=0.1195, BLEU=0.0482."
+      }
+    },
+    {
+      "id": "primock_day2_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Severe headache on left side for 1 day, waking patient at 5:30 AM. No history of similar severe headaches before. Neck stiffness and fever absent. Sensitive to bright lights but no nausea or vomiting. Work-related stress and anxiety with Sertraline use. No family history of migraines or other neurological conditions. Sleeps 7-8 hours per night, exercises 3 times a week, diet not particularly healthy. Paracetamol ineffective for pain relief.",
+          "objective": "No specific physical exam findings mentioned in the transcript. Patient reports headache worsening when lying down but improves with time. No mention of other symptoms or signs.",
+          "assessment": "Possible tension headache due to stress and anxiety; differential includes migraine given one-sided location and light sensitivity. Noted no significant red flags for more serious conditions like subarachnoid hemorrhage, meningitis, or brain tumor.",
+          "plan": "1. Start Ibuprofen 400mg TID PRN for headache. Continue Paracetamol as needed. 2. Consider time off work and explore counseling options. 3. Ensure adequate hydration (1.5-2L/day) and sleep (7-8 hours/night). 4. Follow-up in one week or sooner if symptoms worsen. 5. Provide patient with link to headache danger signs for self-monitoring."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1957,
+          "transcript_char_count": 10405,
+          "note_word_count": 180,
+          "processing_time_ms": 53400.04,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4286,
+          "rouge_2": 0.0939,
+          "rouge_l": 0.2198,
+          "bleu": 0.0141,
+          "section_scores": {
+            "subjective": 0.1988,
+            "assessment": 0.1579,
+            "plan": 0.2188
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.220 (Fair). ROUGE-1=0.4286, ROUGE-2=0.0939, BLEU=0.0141."
+      }
+    },
+    {
+      "id": "primock_day3_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "10/7 hx of lip swelling after consuming prawn soup; onset within half an hour post-ingestion. No throat or chest tightness initially but now experiencing difficulty breathing. History of asthma and peanut allergy. Swelling has been worsening. No prior anaphylaxis episodes in the past year. Uses salbutamol inhaler for asthma. Mother reported hospitalization at age 6 due to severe allergic reaction. Currently feeling dizzy.",
+          "objective": "Not documented in transcript",
+          "assessment": "Suspected anaphylactic reaction based on history of lip swelling, difficulty breathing, and history of severe allergic reactions. Differential diagnoses include food allergy or asthma exacerbation.",
+          "plan": "1. Administer oral antihistamine (specific type not mentioned) as soon as possible. 2. Call ambulance immediately for suspected anaphylaxis. 3. Follow-up with patient upon hospital discharge to discuss injection therapy options."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1355,
+          "transcript_char_count": 7204,
+          "note_word_count": 123,
+          "processing_time_ms": 35021.19,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          },
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2784,
+          "rouge_2": 0.0559,
+          "rouge_l": 0.1624,
+          "bleu": 0.0041,
+          "section_scores": {
+            "subjective": 0.1883,
+            "objective": 0.0,
+            "plan": 0.1463
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.162 (Needs Review). ROUGE-1=0.2784, ROUGE-2=0.0559, BLEU=0.0041."
+      }
+    },
+    {
+      "id": "primock_day3_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "4/7 hx of severe headache, started four days ago and now associated with fever (feverish but no measured temperature). No cough or cold symptoms. General aching muscles, no neck pain on movement. No pins and needles or muscle weakness. Rash described as red and itchy, non-localized, resolves under pressure. Recent travel to Thailand one week ago. Usual mosquito bites noted. Friend also unwell. No shivering with fever. PMH: none. SH: no surgical history. AH: none. Allergies: none.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible viral illness or dengue fever given recent travel to Thailand and associated symptoms. Differential diagnoses include viral exanthem, meningitis (though patient denies photophobia and non-blanching rash).",
+          "plan": "Urgently see a GP as soon as possible for examination and potential blood tests. If not available, go to the nearest emergency department. Monitor temperature, headache, and rash. Return if symptoms worsen or new symptoms develop."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1238,
+          "transcript_char_count": 6495,
+          "note_word_count": 144,
+          "processing_time_ms": 36236.49,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3405,
+          "rouge_2": 0.0652,
+          "rouge_l": 0.1676,
+          "bleu": 0.0208,
+          "section_scores": {
+            "subjective": 0.1401,
+            "plan": 0.1975
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.168 (Needs Review). ROUGE-1=0.3405, ROUGE-2=0.0652, BLEU=0.0208."
+      }
+    },
+    {
+      "id": "primock_day3_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "35-year-old male reports decreased appetite, energy, and mood for several months. Started after changing to a new law firm three to six months ago. Reports shortness of breath on exertion (climbing stairs), occasional nausea, palpitations in closed spaces (lifts). No chest pain or acid reflux. Bowel movements are normal but patient has lost about 6 lbs over the past 6 months. Past medical history includes hypothyroidism treated with thyroxine, now discontinued. Reports no recent blood tests and is not currently taking any medications.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible depression secondary to work stress; hypothyroidism under investigation due to weight loss and fatigue. Differentials include anxiety or early signs of heart disease given palpitations. No acute medical emergencies noted.",
+          "plan": "1. Order general blood panel including thyroid function tests, liver and kidney function, vitamin levels, and complete blood count (CBC). 2. Follow-up appointment based on blood test results. 3. Smoking cessation advice provided if applicable. 4. Safety net: return to clinic or seek emergency care if shortness of breath at rest, chest pain, nausea, or significant changes in bowel habits occur. 5. Encourage patient to resume walking for better symptom identification."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1968,
+          "transcript_char_count": 10566,
+          "note_word_count": 189,
+          "processing_time_ms": 51886.66,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2983,
+          "rouge_2": 0.0683,
+          "rouge_l": 0.1763,
+          "bleu": 0.0101,
+          "section_scores": {
+            "subjective": 0.1129,
+            "plan": 0.25
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.176 (Needs Review). ROUGE-1=0.2983, ROUGE-2=0.0683, BLEU=0.0101."
+      }
+    },
+    {
+      "id": "primock_day3_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Two to three day hx of shortness of breath on exertion (running, walking briskly). Wheezing and coughing but no sputum production. Using blue inhaler as needed; also using brown inhaler twice daily for prevention. No fever or chest pain. PMH: asthma, eczema. SMH: 10 cigarettes/day for 20 years (200 pack-years). FHx: brother with asthma, sister with eczema. DHx: salbutamol, fluticasone, hydrocortisone, cetraben.",
+          "objective": "No peak flow meter readings provided. SpO2 not documented. No respiratory distress at rest or on examination.",
+          "assessment": "Asthma exacerbation. Differentials include acute bronchitis or early pneumonia. Peak flow reading of 380 L/min suggests mild to moderate asthma control.",
+          "plan": "1. Increase brown inhaler (corticosteroid) to four puffs twice daily. 2. Use blue inhaler as needed, but not more than every two to four hours; if usage exceeds this frequency, seek urgent care. 3. Follow-up appointment with GP in the next few days. 4. If breathing worsens or symptoms persist, go to A&E immediately. 5. Review peak flow meter readings at home and report any significant changes."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1195,
+          "transcript_char_count": 6526,
+          "note_word_count": 167,
+          "processing_time_ms": 70719.72,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3405,
+          "rouge_2": 0.0916,
+          "rouge_l": 0.1918,
+          "bleu": 0.0135,
+          "section_scores": {
+            "subjective": 0.1469,
+            "plan": 0.3008
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.192 (Needs Review). ROUGE-1=0.3405, ROUGE-2=0.0916, BLEU=0.0135."
+      }
+    },
+    {
+      "id": "primock_day3_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Dizziness for two hours, similar episode a month ago lasting five to ten minutes. Nausea, room spinning, unsteady gait but no weakness in limbs or arms. Ear buzzing but no pain or discharge. No fever, recent viral illness, hearing loss, or other medical conditions. PMH: Premature ovarian failure, HRT use. SMH: None. Allergies: None.",
+          "objective": "General appearance: Alert and oriented. No acute distress. HEENT: Ear buzzing but no pain or discharge. Cardiovascular: Normal. Respiratory: Unstable gait but no respiratory distress. Abdominal: Soft, non-tender, non-distended. Musculoskeletal: No weakness in limbs or arms. Neurological: No focal deficits. Skin: Intact and dry.",
+          "assessment": "Labyrinthitis with possible vestibular dysfunction. Differential diagnoses include benign paroxysmal positional vertigo (BPPV) or viral labyrinthitis. Symptoms have persisted for two hours, similar to a previous episode one month ago.",
+          "plan": "1. Prescribe Betahistine 8mg tablets PO TID x 10 days. 2. Schedule appointment with ENT specialist within the next few days for further evaluation and examination of ears. 3. Advise patient on symptoms to watch out for, such as sudden weakness or severe headache, which would require immediate A&E visit. 4. Provide symptomatic relief with Paracetamol PRN if needed. 5. Follow-up in ten days or sooner if symptoms worsen."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1172,
+          "transcript_char_count": 6411,
+          "note_word_count": 199,
+          "processing_time_ms": 43320.14,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3438,
+          "rouge_2": 0.0524,
+          "rouge_l": 0.1927,
+          "bleu": 0.0124,
+          "section_scores": {
+            "subjective": 0.2383,
+            "plan": 0.1217
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.193 (Needs Review). ROUGE-1=0.3438, ROUGE-2=0.0524, BLEU=0.0124."
+      }
+    },
+    {
+      "id": "primock_day3_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "15/7 wasp sting while gardening; onset of shallow breathing, tightness in chest, tingling sensation in lips but no swelling. No fever or chest pain. PMH: eczema, allergic to penicillin. No significant past medical or surgical history. On no regular medications. Rash on body (blotching).",
+          "objective": "No vital signs provided. O/E: Patient reports shallow breathing and tightness in the chest. Tingling sensation in lips but no visible swelling. Skin examination not performed due to patient's request for immediate hospital evaluation.",
+          "assessment": "Suspected allergic reaction possibly anaphylaxis given history of wasp sting, respiratory symptoms, and tingling in lips. Differentials include acute bronchospasm or local allergic reaction.",
+          "plan": "1. Patient instructed to call ambulance immediately due to potential for rapid deterioration. 2. Antihistamine (specific type not mentioned) administered by wife while waiting for ambulance. 3. Instructed to go to hospital for further evaluation and management."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 639,
+          "transcript_char_count": 3588,
+          "note_word_count": 139,
+          "processing_time_ms": 29214.17,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2991,
+          "rouge_2": 0.0345,
+          "rouge_l": 0.1538,
+          "bleu": 0.0061,
+          "section_scores": {
+            "subjective": 0.1739,
+            "plan": 0.1356
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.154 (Needs Review). ROUGE-1=0.2991, ROUGE-2=0.0345, BLEU=0.0061."
+      }
+    },
+    {
+      "id": "primock_day3_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Widespread skin rash over chest, hands, and elbows, itchy, dry, worsening over past few days. No fever, no joint pain, no scratch marks, no thickened skin, no weeping or discharge. History of eczema, uses diprobase cream and dermal product in shower. Uses over-the-counter hydrocortisone but reports no improvement. No allergies. Asthma history, uses blue inhaler only during flare-ups. Family history: mother has hypothyroidism, migraine. Current medications: diprovate, dermal product.",
+          "objective": "Not documented in transcript",
+          "assessment": "Widespread eczema with possible exacerbation. Differential diagnoses include atopic dermatitis or contact dermatitis. No signs of infection or severe systemic involvement.",
+          "plan": "1. Prescribe Fexofenadine 60mg PO BD for next two weeks. 2. Apply Betnovate cream (one fingertip) twice daily to palms and back of hands for next two weeks. 3. Continue using diprovate and dermal product as emollients. 4. Follow-up in two weeks if no improvement or worsening symptoms. Return immediately if allergic reaction occurs."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1244,
+          "transcript_char_count": 6946,
+          "note_word_count": 150,
+          "processing_time_ms": 69712.91,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4023,
+          "rouge_2": 0.104,
+          "rouge_l": 0.2184,
+          "bleu": 0.0252,
+          "section_scores": {
+            "subjective": 0.1951,
+            "plan": 0.2373
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.218 (Fair). ROUGE-1=0.4023, ROUGE-2=0.104, BLEU=0.0252."
+      }
+    },
+    {
+      "id": "primock_day3_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "5-day hx of cough, initially dry but now productive with phlegm. No fever or chest pain. Occasional headache and muscle aches. PMH: type 2 diabetes (metformin), hypertension (lisinopril). Smoker for 20 years (10 pack-years). SOB on exertion of stairs, no wheezing. No recent change in blood sugar or blood pressure readings.",
+          "objective": "O/E: Mild redness at the back of the throat, no enlarged tonsils, no cervical lymphadenopathy. No wheezes or rales on auscultation. Blood pressure and glucose levels within normal range (not documented).",
+          "assessment": "Viral upper respiratory tract infection with productive cough. Differential diagnoses include acute bronchitis. No evidence of chest infection.",
+          "plan": "1. Continue current medications: metformin, lisinopril. 2. Use Night Nurse/Day Nurse as needed for symptomatic relief. 3. Follow-up if symptoms persist >3 weeks or worsen (SOB, wheezing)."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 982,
+          "transcript_char_count": 5439,
+          "note_word_count": 127,
+          "processing_time_ms": 33100.72,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.355,
+          "rouge_2": 0.1048,
+          "rouge_l": 0.2251,
+          "bleu": 0.032,
+          "section_scores": {
+            "subjective": 0.1732,
+            "assessment": 0.3636,
+            "plan": 0.28
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.225 (Fair). ROUGE-1=0.355, ROUGE-2=0.1048, BLEU=0.032."
+      }
+    },
+    {
+      "id": "primock_day3_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-week history of numbness and tingling in left arm from elbow to fingertips, worsening over time. No pain associated with numbness. Numbness also present in shoulder during boxing class activities. Difficulty holding objects, especially piano playing. Neck pain present. Recent cold-like symptoms lasting two weeks. Vision loss in left eye for 20 minutes a month ago. Fatigue and occasional headaches. No history of seizures or fits. Regular medications include ibuprofen, vitamin D, and melatonin. Family history includes father with hypothyroidism and autoimmune conditions, mother with type 2 diabetes, hypertension, and high cholesterol. No significant neurological family history.",
+          "objective": "No specific physical examination findings mentioned in the transcript. Patient reports no respiratory distress or chest pain. Vision loss was transient and not further examined.",
+          "assessment": "Possible multiple sclerosis (MS) given patient's symptoms of numbness, tingling, and visual disturbances. Differential diagnoses include acute neuropathy secondary to recent illness, cervical radiculopathy, or other neurological conditions. Urgent neurology referral indicated for MRI brain and spine, lumbar puncture if necessary.",
+          "plan": "1. Urgent neurology referral with MRI brain and spine, lumbar puncture if needed. 2. Monitor symptoms: worsening weakness, headaches, vomiting, visual disturbances, or new neurological deficits should prompt immediate A&E visit. 3. Continue current medications as tolerated. 4. Follow-up in one week for symptom assessment and further management."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2201,
+          "transcript_char_count": 11765,
+          "note_word_count": 211,
+          "processing_time_ms": 61278.99,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3869,
+          "rouge_2": 0.0932,
+          "rouge_l": 0.2289,
+          "bleu": 0.013,
+          "section_scores": {
+            "subjective": 0.2432,
+            "plan": 0.2308
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.229 (Fair). ROUGE-1=0.3869, ROUGE-2=0.0932, BLEU=0.013."
+      }
+    },
+    {
+      "id": "primock_day3_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day hx of diarrhea, started off as watery and now more frequent (4-5 times/day). Abdominal pain, one episode of vomiting. No fever or blood in stool. Appetite loss but still able to drink plenty. PMH: asthma, using yellow inhaler. FH: father had hypertension, died from bowel cancer at 62 years old. SH: non-smoker, no alcohol or illicit drug use. Current medications: none. Allergies: none.",
+          "objective": "No significant findings on examination. Patient appears well-nourished and hydrated. No abdominal tenderness, no organomegaly, no signs of dehydration.",
+          "assessment": "Acute gastroenteritis likely secondary to dietary indisposition or viral etiology. Differential includes bacterial enterocolitis given patient's father's history of bowel cancer. Stool sample recommended if symptoms persist beyond one week.",
+          "plan": "1. Soft diet: crackers, toast, jam, mashed vegetables (avoid dairy, fish, meat, eggs). 2. Probiotics: yogurt. 3. Oral rehydration: Dioralyte as needed. 4. Follow-up in one week if symptoms persist or worsen. 5. Return to clinic immediately if dehydration, fever, blood in stool, or severe abdominal pain occur."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1451,
+          "transcript_char_count": 7959,
+          "note_word_count": 161,
+          "processing_time_ms": 45655.03,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3584,
+          "rouge_2": 0.0679,
+          "rouge_l": 0.1818,
+          "bleu": 0.0046,
+          "section_scores": {
+            "subjective": 0.1891,
+            "objective": 0.0541,
+            "plan": 0.1739
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.182 (Needs Review). ROUGE-1=0.3584, ROUGE-2=0.0679, BLEU=0.0046."
+      }
+    },
+    {
+      "id": "primock_day4_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chest discomfort described as pressure, seven out of ten (10 being unbearable), started suddenly while gardening. Shortness of breath on exertion and climbing stairs. Nausea present but no vomiting. No chest pain or arm radiation. High cholesterol and hypertension history. Smokes 20 pack-years. No recent changes in medications or allergies. Difficulty with daily activities, especially climbing stairs and uphill walking.",
+          "objective": "No specific physical examination findings mentioned. Patient reports shortness of breath on exertion but no respiratory distress at rest. Nausea present but no vomiting.",
+          "assessment": "Possible acute coronary syndrome given chest discomfort, shortness of breath, and history of hypertension and high cholesterol. Differential includes angina or myocardial infarction.",
+          "plan": "Call emergency services immediately for potential cardiac evaluation. Do not take any medications until evaluated by paramedics. Stay calm and have water if needed. Await ambulance arrival. Follow-up with cardiologist as soon as possible."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1394,
+          "transcript_char_count": 7910,
+          "note_word_count": 141,
+          "processing_time_ms": 38375.22,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_AP_COHERENCE",
+            "message": "Assessment and Plan sections share few common terms. Verify clinical alignment.",
+            "severity": "info",
+            "field": "assessment"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2304,
+          "rouge_2": 0.0529,
+          "rouge_l": 0.1361,
+          "bleu": 0.0112,
+          "section_scores": {
+            "subjective": 0.198,
+            "plan": 0.1395
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.136 (Needs Review). ROUGE-1=0.2304, ROUGE-2=0.0529, BLEU=0.0112."
+      }
+    },
+    {
+      "id": "primock_day4_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Severe headaches during work hours (meetings or on laptop), nausea, reduced appetite leading to five-pound weight loss unintentionally, tingling sensation in both arms, occasional palpitations, shortness of breath at desk but not during exercise, decreased libido since job change. PMH: hyperthyroidism, treated with thyroxine. SMH: lawyer for 20 years. AH: no smoking, drinks wine once a week. No recreational drug use.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible multifactorial symptoms including headaches, weight loss, tingling sensation, palpitations, and shortness of breath. Differential diagnoses include thyroid dysfunction exacerbation or other systemic conditions. Thyroid function tests recommended for hyperthyroidism monitoring.",
+          "plan": "1. Book appointment with clinic to perform physical examination (heart, lungs). 2. Order blood tests for thyroxine levels. 3. Monitor symptoms and follow-up in one week if no improvement. 4. Continue current thyroxine therapy as prescribed. 5. No specific lifestyle modifications recommended at this time."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1398,
+          "transcript_char_count": 7775,
+          "note_word_count": 141,
+          "processing_time_ms": 45168.68,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3133,
+          "rouge_2": 0.0405,
+          "rouge_l": 0.1606,
+          "bleu": 0.0123,
+          "section_scores": {
+            "subjective": 0.1783,
+            "objective": 0.0,
+            "assessment": 0.1026
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.161 (Needs Review). ROUGE-1=0.3133, ROUGE-2=0.0405, BLEU=0.0123."
+      }
+    },
+    {
+      "id": "primock_day4_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Shortness of breath for an hour while sitting watching TV. Cough started yesterday. Four-week history of C-section. No cough or cold symptoms in baby. Allergic to Ibuprofen. Recent use of Codeine painkillers (not regularly). Heart rate measured at 30 beats per minute, feeling stressed and heart racing. Shortness of breath not worsening, no chest pain, no haemoptysis.",
+          "objective": "No respiratory distress noted during conversation. No fever or chills reported. C-section scar tender to touch. No other significant findings on examination.",
+          "assessment": "Possible postpartum complications including pulmonary embolism or DVT given recent C-section and shortness of breath. Differential diagnoses include anxiety-induced symptoms, pleurisy, or early signs of pneumonia. Patient's history of cough and recent use of Codeine raises concern for respiratory infection.",
+          "plan": "1. Recommend patient go to the hospital immediately with baby. 2. Advise against taking Codeine until further evaluation. 3. Monitor heart rate and provide reassurance. 4. Safety net: return if shortness of breath worsens, chest pain, or fever develops."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1133,
+          "transcript_char_count": 6268,
+          "note_word_count": 158,
+          "processing_time_ms": 40531.93,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2869,
+          "rouge_2": 0.0596,
+          "rouge_l": 0.1603,
+          "bleu": 0.0209,
+          "section_scores": {
+            "subjective": 0.1833,
+            "objective": 0.0,
+            "plan": 0.087
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.160 (Needs Review). ROUGE-1=0.2869, ROUGE-2=0.0596, BLEU=0.0209."
+      }
+    },
+    {
+      "id": "primock_day4_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-day hx of wheezing that started after cleaning house and exposure to dust. Worsened over past two days, worse at night. Shortness of breath on exertion (climbing stairs) and talking. No chest pain or haemoptysis. Wheeze present but no use of inhaler. PMH: asthma as a child, occasional hay fever. Smokes not mentioned. Allergies to known substances not reported. Eats and drinks normally.",
+          "objective": "O/E: No respiratory distress at rest. No chest pain or dizziness. Oxygen saturation normal on room air (96%).",
+          "assessment": "Possible asthma exacerbation or allergic reaction due to dust exposure. Differentials include acute bronchitis or early pneumonia. CURB-65 score not applicable given current presentation.",
+          "plan": "1. Advise patient to use her asthma inhaler as needed. 2. Recommend over-the-counter antihistamine (e.g., cetirizine 10mg) for suspected allergic reaction. 3. Schedule follow-up with GP in 7 days or sooner if symptoms worsen, particularly if shortness of breath at rest, chest pain, or haemoptysis develops. 4. Provide information on asthma management and smoking cessation advice."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1104,
+          "transcript_char_count": 5973,
+          "note_word_count": 161,
+          "processing_time_ms": 41462.43,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2557,
+          "rouge_2": 0.0645,
+          "rouge_l": 0.1553,
+          "bleu": 0.0059,
+          "section_scores": {
+            "subjective": 0.1961,
+            "objective": 0.0,
+            "assessment": 0.0667,
+            "plan": 0.0606
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.155 (Needs Review). ROUGE-1=0.2557, ROUGE-2=0.0645, BLEU=0.0059."
+      }
+    },
+    {
+      "id": "primock_day4_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day history of diarrhoea, now with abdominal pain and vomiting. No fever or chest pain. PMH: asthma (uses inhaler), NKDA allergy. FH: father died from bowel cancer 10 years ago. Diarrhoea not worsening but frequent. Vomited once this morning after eating fruit. No blood in stool or vomit. Abdominal pain mainly in the centre area, alleviates with defecation. Anxiety-related use of inhaler. No recent antibiotic use. No significant changes in breathing or walking/talking. Diarrhoea and abdominal pain are concerning for gastroenteritis.",
+          "objective": "No respiratory distress noted. Abdominal examination: mild tenderness centrally without rebound or guarding. Bowel sounds present, no masses palpated. No chest pain on palpation or auscultation. Temperature not measured in office but patient reports feeling hot. No fever, no jaundice, no rash.",
+          "assessment": "Gastroenteritis likely due to ingestion of contaminated food. Differential includes acute gastritis or early signs of inflammatory bowel disease (IBD).",
+          "plan": "1. Increase fluid intake. 2. Monitor for worsening symptoms such as fever, severe abdominal pain, or blood in stool/vomit. 3. Avoid antibiotics unless bacterial infection confirmed. 4. Follow up with GP if symptoms persist beyond 2 days. 5. Consider booking an appointment with a local GP to address concerns about family history."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1691,
+          "transcript_char_count": 8683,
+          "note_word_count": 195,
+          "processing_time_ms": 53594.03,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2867,
+          "rouge_2": 0.0563,
+          "rouge_l": 0.1329,
+          "bleu": 0.0059,
+          "section_scores": {
+            "subjective": 0.1392,
+            "plan": 0.1212
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.133 (Needs Review). ROUGE-1=0.2867, ROUGE-2=0.0563, BLEU=0.0059."
+      }
+    },
+    {
+      "id": "primock_day4_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Severe headache on left side of head for four hours, described as a sudden onset, pain level six out of ten (compared to kidney stone pain at ten). Blurred vision and zigzag lines in vision. Nausea and vomiting twice. No weakness or neurological symptoms. Family history: mother has migraines, hypothyroidism in family. No regular medications or allergies. Not pregnant.",
+          "objective": "No specific physical examination findings mentioned in the transcript. Patient able to walk fine without any gait abnormalities.",
+          "assessment": "Migraine with aura based on unilateral headache, visual disturbances, and nausea/vomiting. Differential diagnoses include other causes of severe headaches such as subarachnoid hemorrhage or meningitis (noted by patient's concern for brain tumor/stroke).",
+          "plan": "Recommend ibuprofen 400mg oral every six hours PRN for pain relief. Suggest drinking sugary and carbonated drinks like Coke to help with nausea. Follow-up in one week if symptoms persist or worsen, particularly if headache becomes severe, vision changes, or new neurological symptoms develop. Instruct patient on the possibility of migraine treatment ladder including antiemetic medication from pharmacy."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1801,
+          "transcript_char_count": 9960,
+          "note_word_count": 167,
+          "processing_time_ms": 48448.78,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3107,
+          "rouge_2": 0.0341,
+          "rouge_l": 0.1505,
+          "bleu": 0.0157,
+          "section_scores": {
+            "subjective": 0.1519,
+            "assessment": 0.0,
+            "plan": 0.1261
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.150 (Needs Review). ROUGE-1=0.3107, ROUGE-2=0.0341, BLEU=0.0157."
+      }
+    },
+    {
+      "id": "primock_day4_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "1 week hx of sore throat followed by dry cough. Shortness of breath developed 3-4 days ago. No fever, headache, or chest pain. Appetite loss noted but no weight loss. Allergic to peanuts. Family history: mother had lung cancer. Recent travel to Europe. No recent significant illness. Sinus congestion not present. Coughing up any sputum or blood negative. No lumps or bumps in neck. Sore throat and cough worse at night. Shortness of breath noted during physical activity but not at rest.",
+          "objective": "O/E: General appearance: no distress. HEENT: pharynx erythematous, tonsils normal size, no exudate. Cardiovascular: regular rate and rhythm, no murmurs. Respiratory: bilateral clear to auscultation, no wheezes or crackles. Abdominal: soft, non-tender, no organomegaly. Skin: no rashes. No palpable lymphadenopathy.",
+          "assessment": "Acute pharyngitis with associated bronchitis. Differentials include viral upper respiratory infection and bacterial etiology (e.g., Streptococcus).",
+          "plan": "1. Paracetamol PRN for pain. 2. Plenty of fluids. 3. Rest advised. 4. Sick note provided for 5 days. 5. Follow-up if symptoms worsen or do not improve in 5 days. 6. Tuberculosis and lung cancer concerns addressed with reassurance based on clinical findings. 7. Monitor for shortness of breath, chest pain, or hemoptysis; seek medical attention if any of these occur."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1925,
+          "transcript_char_count": 10143,
+          "note_word_count": 200,
+          "processing_time_ms": 60525.19,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.318,
+          "rouge_2": 0.0431,
+          "rouge_l": 0.1529,
+          "bleu": 0.0133,
+          "section_scores": {
+            "subjective": 0.1561
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.153 (Needs Review). ROUGE-1=0.318, ROUGE-2=0.0431, BLEU=0.0133."
+      }
+    },
+    {
+      "id": "primock_day4_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Fatigue, difficulty waking up, decreased appetite, low mood, decreased sex drive, shortness of breath during sports. PMH: Hypothyroidism (on Thyroxine). FH: Father's suicide 15 years ago. SH: Married for many years, no significant substance use. Medications: Thyroxine. Allergies: None.",
+          "objective": "Not documented in transcript",
+          "assessment": "Possible depression and hypothyroidism with associated symptoms of fatigue, decreased appetite, low mood, decreased sex drive, and shortness of breath during sports. Differential diagnoses include major depressive disorder, hypothyroidism, and other causes of fatigue.",
+          "plan": "1. Schedule in-person examination and blood tests for further evaluation. 2. Continue Thyroxine as prescribed. 3. Provide mental health support and refer to a psychiatrist if needed. 4. Follow-up appointment with GP within the next few days. 5. Educate patient on recognizing signs of worsening symptoms, including shortness of breath at rest, significant changes in mood or behavior, and suicidal thoughts."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1929,
+          "transcript_char_count": 10606,
+          "note_word_count": 140,
+          "processing_time_ms": 46622.55,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2787,
+          "rouge_2": 0.0165,
+          "rouge_l": 0.1475,
+          "bleu": 0.0047,
+          "section_scores": {
+            "subjective": 0.1654,
+            "assessment": 0.1538,
+            "plan": 0.0588
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.147 (Needs Review). ROUGE-1=0.2787, ROUGE-2=0.0165, BLEU=0.0047."
+      }
+    },
+    {
+      "id": "primock_day4_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "26 yo male with history of asthma and hayfever. Onset of tight chest for 3 hours, associated with wheezing and cough. No fever or chest pain. Recent cold symptoms including sore throat, runny nose. Uses Ventolin (salbutamol) and Clenil Modulite (beclometasone) inhalers but has not used them in the past week due to running out. No drug allergies. Family history of eczema and asthma. No significant medical concerns or hopes for this visit other than getting his inhalers.",
+          "objective": "General appearance: Alert, no distress. HEENT: No conjunctival injection, no pharyngeal erythema. Cardiovascular: Regular rate and rhythm, no murmurs. Respiratory: Tactile fremitus and breath sounds are diminished in the lower lobes bilaterally, no wheezing or crackles heard. Abdomen: Soft, non-tender, non-distended. Neurological: Integumentary: No rashes or lesions noted. No peak flow meter available for measurement of respiratory function.",
+          "assessment": "Asthma exacerbation with possible viral upper respiratory tract infection (URI) superimposed. Differentials include acute bronchitis and early pneumonia. CURB-65 score not applicable due to lack of fever, confusion, or renal impairment symptoms.",
+          "plan": "1. Prescribe Ventolin (salbutamol) inhaler: 2 puffs PRN for wheezing. 2. Prescribe Clenil Modulite (beclometasone) inhaler: 1 puff in the morning. 3. Provide a spacer device with instructions on use. 4. Advise patient to self-certify for sick leave for first seven days and rest until symptoms improve. 5. Follow-up in one week or sooner if symptoms worsen, particularly if shortness of breath at rest, chest pain, or fever >38.5°C develops."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1883,
+          "transcript_char_count": 10082,
+          "note_word_count": 238,
+          "processing_time_ms": 68835.87,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.1975,
+          "rouge_2": 0.0144,
+          "rouge_l": 0.1005,
+          "bleu": 0.0021,
+          "section_scores": {
+            "subjective": 0.1128,
+            "assessment": 0.1143,
+            "plan": 0.0816
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.101 (Needs Review). ROUGE-1=0.1975, ROUGE-2=0.0144, BLEU=0.0021."
+      }
+    },
+    {
+      "id": "primock_day4_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-day hx of nausea, lower abdominal pain described as a dull ache below the navel, more constant over last couple of days. Increased frequency of urination but no urgency or dysuria. Spotting in urine for past week or so. Last menstrual period was about 3 weeks ago. Allergic to Amoxicillin. No other drug allergies. No constipation currently. On Implanon for contraception. Non-smoker, lives with boyfriend. Family history: brother is type one diabetic. Chief complaint includes feeling hot and sweaty.",
+          "objective": "No specific physical exam findings mentioned in the transcript. Patient reports no fever or chills, no vomiting, no diarrhea, no constipation currently, no urinary symptoms other than increased frequency without urgency or dysuria. No discharge noted.",
+          "assessment": "Possible pregnancy given spotting in urine and delayed menstrual period. Constipation history with recent resolution. Nausea and lower abdominal pain of recent onset. Differential diagnoses include early pregnancy, gastrointestinal issues (constipation), or other causes of abdominal pain. Further evaluation required to rule out pregnancy and identify cause of symptoms.",
+          "plan": "1. Refer patient for in-person examination by a GP as soon as possible today. 2. Consider pregnancy test if not done already. 3. Monitor symptoms, particularly worsening nausea, severe abdominal pain, or other concerning signs. 4. Follow-up with GP within 7 days or sooner if symptoms worsen. 5. Provide Implanon information and discuss options for contraception."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1858,
+          "transcript_char_count": 10170,
+          "note_word_count": 220,
+          "processing_time_ms": 53317.37,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2786,
+          "rouge_2": 0.0623,
+          "rouge_l": 0.1486,
+          "bleu": 0.0089,
+          "section_scores": {
+            "subjective": 0.2,
+            "objective": 0.0,
+            "assessment": 0.037,
+            "plan": 0.0896
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.149 (Needs Review). ROUGE-1=0.2786, ROUGE-2=0.0623, BLEU=0.0089."
+      }
+    },
+    {
+      "id": "primock_day5_consultation01",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "1-day hx of severe throbbing headache on left side, worse with light exposure and activity. No fever, chest pain, or haemoptysis. PMH: asthma, no other significant medical problems. FH: mother has high blood pressure, history of migraines. SH: smokes 0 cigarettes/day, drinks alcohol in moderation (a few drinks at the weekend). CM: Microgynon oral contraceptive pill for 6 years. Allergies: Aspirin causes nausea.",
+          "objective": "O/E: No abnormalities noted on general appearance or HEENT exam. No skin changes. Blood pressure not documented. Temperature not measured in office. Headache worse with light and activity, no specific position exacerbation noted. No cough or sneeze exacerbation.",
+          "assessment": "Primary diagnosis: Possible migraine. Differential diagnoses include tension-type headache or viral prodrome. Patient has a history of asthma but no other significant medical history to suggest another cause for the headache.",
+          "plan": "1. Take ibuprofen 200mg TID PRN pain, with paracetamol 500mg QID as needed. 2. Stay well hydrated and avoid bright lights. 3. Check blood pressure at home if not recently done (last check about 6 months ago). 4. Return if headache worsens or is associated with fever, rash, or other concerning symptoms. 5. Follow up in a week if no improvement."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1362,
+          "transcript_char_count": 7606,
+          "note_word_count": 193,
+          "processing_time_ms": 46408.36,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3614,
+          "rouge_2": 0.0448,
+          "rouge_l": 0.1782,
+          "bleu": 0.0145,
+          "section_scores": {
+            "subjective": 0.1607,
+            "assessment": 0.1304,
+            "plan": 0.1895
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.178 (Needs Review). ROUGE-1=0.3614, ROUGE-2=0.0448, BLEU=0.0145."
+      }
+    },
+    {
+      "id": "primock_day5_consultation02",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Six-day hx of dysuria with painful urination and foul-smelling urine. Six days of lower abdominal pain (midline) that comes and goes on a scale of 1-10 (7). No fever or loin pain. Spotting in the urine but able to pass water without difficulty. Regular bowel movements, no blood in stool. No weight loss. No IBS symptoms recently. On regular Mebeverine 200mg TID. Allergic to Clindamycin. No family history of medical problems. Lives with friends and works as a support worker. Drinks one glass of wine weekly but does not smoke or drink alcohol regularly. No recent sexual activity.",
+          "objective": "No respiratory distress, no fever. Lower abdominal tenderness on palpation (midline). Urine spotting noted without difficulty in passing urine.",
+          "assessment": "Possible urinary tract infection (UTI) with possible cystitis given the symptoms of dysuria, lower abdominal pain, and spotting in the urine. No signs of severe infection or complications.",
+          "plan": "1. Prescribe Nitrofurantoin 100mg TID for three days. 2. Increase Mebeverine to 300mg TID. 3. Advise increased fluid intake (2.5-3L/day) and cranberry juice. 4. Provide sachets of urinary pH adjuster. 5. Instruct patient to monitor temperature and return if symptoms worsen, fever develops, or if unable to pass urine. 6. Follow-up in one week if no improvement."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1225,
+          "transcript_char_count": 6758,
+          "note_word_count": 202,
+          "processing_time_ms": 76452.88,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "MISSING_OBJECTIVE_DATA",
+            "message": "Objective section may be missing measurable clinical data (vitals, lab values, physical exam findings).",
+            "severity": "info",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2708,
+          "rouge_2": 0.049,
+          "rouge_l": 0.1667,
+          "bleu": 0.0054,
+          "section_scores": {
+            "subjective": 0.1656,
+            "plan": 0.2143
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.167 (Needs Review). ROUGE-1=0.2708, ROUGE-2=0.049, BLEU=0.0054."
+      }
+    },
+    {
+      "id": "primock_day5_consultation03",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Anxiety over past few months, worsened by new job. Onset about two months ago. Symptoms include morning dread of leaving house, difficulty sleeping (wakes up at night, takes hours to fall asleep), palpitations (irregular, lasts minutes to ten minutes), low energy levels, loss of enjoyment in activities, avoidance of social situations and public transport. PMH: Asthma, no significant changes in eating or weight. Social history: Smokes occasionally, consumes alcohol on weekends. MHx: No suicidal thoughts, family history of depression. Current medications: None. Allergies: Unknown.",
+          "objective": "Not documented in transcript",
+          "assessment": "Generalized anxiety disorder with work-related stressors. Differentials include panic disorder and major depressive disorder. Severity moderate to severe based on symptoms impacting daily functioning.",
+          "plan": "1. Refer for one-to-one therapy via NHS. 2. Provide online resources for self-help. 3. Arrange blood tests for palpitations in a week. 4. Schedule follow-up appointment in one week to review results and discuss further management. 5. Advise on smoking cessation and alcohol moderation. 6. Safety net: Contact GP if anxiety worsens or affects work, daily activities. 7. Provide information on sleep hygiene and relaxation techniques."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2509,
+          "transcript_char_count": 13229,
+          "note_word_count": 180,
+          "processing_time_ms": 56729.04,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "LOW_LEXICAL_DIVERSITY",
+            "message": "Transcript appears to have low lexical diversity. Verify that the full conversation was pasted.",
+            "severity": "info",
+            "field": null
+          },
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3353,
+          "rouge_2": 0.0465,
+          "rouge_l": 0.1329,
+          "bleu": 0.0051,
+          "section_scores": {
+            "subjective": 0.1231,
+            "assessment": 0.1379,
+            "plan": 0.1525
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.133 (Needs Review). ROUGE-1=0.3353, ROUGE-2=0.0465, BLEU=0.0051."
+      }
+    },
+    {
+      "id": "primock_day5_consultation04",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "23-year-old female presents with lower abdominal pain for several days, rated as an 8 out of 10. No fever or chest pain. Vaginal bleeding noted, light pink in color, no dark blood. Constipation reported last week but resolved this week. Regular menstrual cycle since Implanon insertion. Nausea and occasional vomiting. Normal bowel movements now. Amoxicillin allergy. No recent surgery or pregnancies. Works as a teacher. Lives with her husband and his family. No smoking or alcohol use. Recent travel abroad one year ago. No weight loss, blood in stool or urine. Last menstrual period two to three weeks ago. Implanon inserted one year ago. Negative pregnancy test one month ago.",
+          "objective": "Not documented in transcript",
+          "assessment": "Chronic lower abdominal pain with recent onset of vaginal bleeding and constipation. Possible gynecological issue, such as endometriosis or ovarian cysts, given the timing relative to her menstrual cycle and Implanon use. No signs of acute abdomen. Differentials include pelvic inflammatory disease (PID) or early pregnancy complications.",
+          "plan": "1. Arrange for a face-to-face examination at a clinic. 2. Perform a pregnancy test today if not already done. 3. Call the support line to schedule an appointment. 4. Monitor symptoms; seek immediate medical attention if pain worsens, fever develops, or other concerning signs appear. 5. Follow up in one week for further evaluation and management."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1396,
+          "transcript_char_count": 7579,
+          "note_word_count": 217,
+          "processing_time_ms": 48570.96,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3045,
+          "rouge_2": 0.048,
+          "rouge_l": 0.1612,
+          "bleu": 0.006,
+          "section_scores": {
+            "subjective": 0.1858,
+            "objective": 0.1176,
+            "assessment": 0.1039
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.161 (Needs Review). ROUGE-1=0.3045, ROUGE-2=0.048, BLEU=0.006."
+      }
+    },
+    {
+      "id": "primock_day5_consultation05",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-day hx of lower abdominal pain, described as a dull ache, no radiation, no change in bowel habits or diarrhea, constipation resolved within last week, no blood in stool, no nausea or vomiting, no acid reflux, no increased thirst, temperature around 37°C, no fever spikes, no back pain, no urinary symptoms, no recent travel, no family history of significant medical conditions, denies smoking, drinks alcohol 4 times per week (1 beer each time).",
+          "objective": "No specific physical exam findings mentioned in transcript. Temperature 37°C.",
+          "assessment": "Possible lower urinary tract infection or pelvic inflammatory disease given symptoms and risk factors for sexually transmitted infections. Differentials include gynecological issues such as endometriosis or ovarian cysts, but no history of similar problems.",
+          "plan": "1. Start amoxicillin 500mg PO BID x 3 days. 2. Increase fluid intake. 3. Follow up if pain worsens or new symptoms develop. 4. Contact clinic for further evaluation if recurrence occurs."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1038,
+          "transcript_char_count": 5705,
+          "note_word_count": 149,
+          "processing_time_ms": 33665.56,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2931,
+          "rouge_2": 0.0783,
+          "rouge_l": 0.1983,
+          "bleu": 0.0154,
+          "section_scores": {
+            "subjective": 0.25,
+            "plan": 0.2373
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.198 (Needs Review). ROUGE-1=0.2931, ROUGE-2=0.0783, BLEU=0.0154."
+      }
+    },
+    {
+      "id": "primock_day5_consultation06",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "3-day hx of severe diarrhoea, initially watery now loose. Vomiting multiple times today (exact count unknown). Feverish, feels hot to touch. No abdominal pain, no blood in stool or urine. Bowel movements normally once daily in the morning. No history of constipation or previous episodes of similar symptoms. No recent travel. Brother and others at school have similar symptoms. No other medical problems. Menstrual cramps occasionally. Abdominal pain centered around navel area, intermittent. No rash. No surgery or abdominal issues. Regular diet. Does not smoke but consumes alcohol occasionally (1 pint). Takes vitamin D daily. No regular medications. Last period two weeks ago. Not on contraception. Works from home due to symptoms. Lives with brother and mother. Tried ORS three times a day for past 2 days without improvement.",
+          "objective": "No specific physical exam findings mentioned in the transcript. Patient reports passing urine normally an hour ago. No mention of temperature or other vital signs.",
+          "assessment": "Suspected viral gastroenteritis based on symptoms and recent cluster of similar cases among family members and schoolmates. Differential includes bacterial infection, though no specific clinical signs to suggest this at present.",
+          "plan": "1. Continue oral rehydration salts (ORS) in small amounts frequently. 2. Take ibuprofen for menstrual cramps as needed. 3. Avoid fruit, vegetables, milk, and other heavy foods until symptoms improve. 4. Book urgent appointment through support line to check hydration status and obtain stool sample. 5. If symptoms worsen or do not improve within a day, seek urgent care at A&E. 6. Follow-up in clinic if necessary."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1657,
+          "transcript_char_count": 9116,
+          "note_word_count": 252,
+          "processing_time_ms": 54126.13,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3448,
+          "rouge_2": 0.0644,
+          "rouge_l": 0.1823,
+          "bleu": 0.0098,
+          "section_scores": {
+            "subjective": 0.1888,
+            "assessment": 0.0571,
+            "plan": 0.2124
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.182 (Needs Review). ROUGE-1=0.3448, ROUGE-2=0.0644, BLEU=0.0098."
+      }
+    },
+    {
+      "id": "primock_day5_consultation07",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "5-day hx of cough, initially dry now productive with green sputum. Constant nasal congestion and streaming. No chest pain or haemoptysis. PMH: type 2 diabetes mellitus, hypertension (on metformin 200mg and lisinopril 200mg). No history of wheezing or shortness of breath except with intense exercise. No rashes, headaches, visual changes, or chest problems. Diarrhoea at onset but resolved. No vomiting or fever measured. Drinking and urination normal. No recent blood tests for diabetes. Living with partner and dog, works as an office manager. Allergies: hay fever. No known drug allergies.",
+          "objective": "O/E: No respiratory distress at rest. Temperature not checked. Coughing every 20-30 minutes, no phlegm production. Nasal congestion noted but no rhinorrhea or bleeding. No chest pain or wheezing on examination. Weight 65 kg, height 1.65 m (BMI not calculated).",
+          "assessment": "Possible viral upper respiratory tract infection with potential for secondary bacterial pneumonia given diabetes mellitus. Differentials include acute bronchitis and early signs of pneumonia.",
+          "plan": "1. Continue over-the-counter lemon sips as needed for throat comfort. 2. Monitor temperature at home; seek medical attention if >38°C persists or worsens, cough increases in severity, or new symptoms develop (e.g., chest pain, shortness of breath). 3. Maintain regular diabetes and hypertension management with current medications. 4. Follow-up in one week if no improvement. 5. Consider obtaining a thermometer for home use."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1364,
+          "transcript_char_count": 7661,
+          "note_word_count": 217,
+          "processing_time_ms": 49620.14,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3424,
+          "rouge_2": 0.0328,
+          "rouge_l": 0.1359,
+          "bleu": 0.0034,
+          "section_scores": {
+            "subjective": 0.1618,
+            "assessment": 0.1538,
+            "plan": 0.1111
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.136 (Needs Review). ROUGE-1=0.3424, ROUGE-2=0.0328, BLEU=0.0034."
+      }
+    },
+    {
+      "id": "primock_day5_consultation08",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2/12 hx of wheezing and shortness of breath for 3 days. PMH: asthma (used to take inhaler), hay fever, eczema. No chest pain or haemoptysis. Started having similar symptoms as an adult. Last asthma flare-up was a few years ago. Current symptoms include cough, fever, difficulty completing sentences when walking. No phlegm or blood in sputum. No recent hospitalizations for severe exacerbations. Occasionally missed school due to asthma. Currently takes salbutamol PRN. No other medications. Lives with partner and works as an engineer. Drinks alcohol 1-2 times a week (wine). No smoking history. Subjective fever of 37°C. No peak flow meter at home.",
+          "objective": "O/E: No respiratory distress at rest. No chest pain or wheezing on examination. Temperature 37°C.",
+          "assessment": "Asthma exacerbation possibly triggered by pollen or viral infection. Differentials include acute bronchitis or early pneumonia. CURB-65 score 0 — suitable for outpatient management.",
+          "plan": "1. Prescribe salbutamol inhaler 2-4 puffs every 4 hours as needed. 2. Provide a peak flow meter and instruct on use, record values first thing in the morning and evening over the next week. 3. Advise to take an antihistamine for hay fever. 4. Follow up in one week if symptoms worsen or if high temperature develops. Safety net: return immediately if shortness of breath at rest, chest pain, haemoptysis, or fever >38.5°C. 5. Arrange a review appointment to assess asthma control and consider additional inhaler therapy if necessary."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1432,
+          "transcript_char_count": 7780,
+          "note_word_count": 231,
+          "processing_time_ms": 52081.26,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.4585,
+          "rouge_2": 0.098,
+          "rouge_l": 0.1854,
+          "bleu": 0.0495,
+          "section_scores": {
+            "subjective": 0.1675,
+            "assessment": 0.0769,
+            "plan": 0.1951
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.185 (Needs Review). ROUGE-1=0.4585, ROUGE-2=0.098, BLEU=0.0495."
+      }
+    },
+    {
+      "id": "primock_day5_consultation09",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "6-week hx of generalized aches, fatigue, and malaise. Onset after holiday to the US around mid-January. No fever, chest infection, diarrhea, vomiting, or weight change. Appetite decreased but no difficulty swallowing or acid reflux. Bowel habits normal. Urinary symptoms normal. Rash on calf noted in late February, resolved within a few weeks. Sore throat and possible low-grade fever during the same period. No joint swelling, hand, wrist, ankle, or toe pain. Asthma history with occasional use of preventer inhaler but no recent exacerbations. Hay fever. No significant medical problems in past. Works for a health technology company; concentration and energy levels affected. Occasionally drinks alcohol. Lives alone with wife. Blood tests ordered to check liver, kidneys, blood count, and Lyme disease serology.",
+          "objective": "Not documented in transcript",
+          "assessment": "Chronic fatigue syndrome or viral infection possibly related to recent travel. Differential includes Lyme disease given the rash history. Consider other causes of prolonged aches and fatigue such as autoimmune conditions or chronic viral infections.",
+          "plan": "1. Order blood tests including liver function, kidney function, complete blood count (CBC), and Lyme disease serology. 2. Follow-up in one week via phone to discuss results and further management. 3. Advise patient on symptoms to watch for such as worsening fatigue, joint pain, or new rash. 4. Encourage increased fluid intake and rest. 5. Review asthma inhaler use and provide smoking cessation advice if applicable."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1496,
+          "transcript_char_count": 8283,
+          "note_word_count": 227,
+          "processing_time_ms": 48059.78,
+          "sections_populated": 4
+        },
+        "warnings": [
+          {
+            "code": "SPARSE_SECTION_OBJECTIVE",
+            "message": "The Objective section is very brief (4 words). Consider reviewing.",
+            "severity": "warning",
+            "field": "objective"
+          }
+        ]
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2924,
+          "rouge_2": 0.0438,
+          "rouge_l": 0.1176,
+          "bleu": 0.0037,
+          "section_scores": {
+            "subjective": 0.1328,
+            "objective": 0.0606,
+            "assessment": 0.0889,
+            "plan": 0.092
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.118 (Needs Review). ROUGE-1=0.2924, ROUGE-2=0.0438, BLEU=0.0037."
+      }
+    },
+    {
+      "id": "primock_day5_consultation10",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Blinding headache for three days, initially started suddenly and has been constant since then. Pain is mostly 8/10, but can be reduced to 5/10 with Ibuprofen. Headache is all over but stronger over the right eye. No vision changes or problems tolerating light. No nausea or vomiting. No tingling, numbness, or weakness. No change in smell or taste. Past headaches were mild and pressure-like between eyes. Headache wakes patient up in the morning but not at night. Pain worsens when standing quickly or throwing head back. No recent eye checks. No cold symptoms, sore throat, ear pain, cough, or sputum. No nosebleeds or hemoptysis. Weight stable, mild fatigue due to headache. Missed one full day of work and part of another in the last three days. No recent travel. Taking oral contraceptive pill for a year with no side effects noted. No other medications. No allergies. Lives alone, does not smoke, drinks alcohol 3 times per week. No family history of migraines or other neurological conditions.",
+          "objective": "Patient appears well-nourished and in no acute distress. General appearance: alert and oriented. HEENT: no conjunctival injection, no papilledema. Cardiovascular: regular rate and rhythm without murmurs. Respiratory: clear to auscultation bilaterally. Abdominal: soft, non-tender, non-distended. Neurological: cranial nerves intact, no focal deficits. Skin: no rashes or lesions.",
+          "assessment": "Chronic daily headache with recent exacerbation, possibly migraine in nature. Differential diagnoses include tension-type headache and cluster headache. No signs of secondary headache pathology present.",
+          "plan": "1. Prescribe Sumatriptan 50mg tablets to be taken as needed for pain relief (PRN). 2. Advise patient to take Paracetamol 500mg with food if required. 3. Refer patient to support team for full neurological examination and potential migraine prophylaxis evaluation in one week or sooner if headache worsens. 4. Review blood pressure at next visit. 5. Provide smoking cessation advice and offer leaflet. 6. Advise patient to seek emergency care if headache becomes unbearable, changes character, or associated with other symptoms such as vomiting, fever, or visual disturbances."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 1707,
+          "transcript_char_count": 9196,
+          "note_word_count": 326,
+          "processing_time_ms": 67366.92,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3727,
+          "rouge_2": 0.0684,
+          "rouge_l": 0.1563,
+          "bleu": 0.0087,
+          "section_scores": {
+            "subjective": 0.1573,
+            "objective": 0.0759,
+            "assessment": 0.0923
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.156 (Needs Review). ROUGE-1=0.3727, ROUGE-2=0.0684, BLEU=0.0087."
+      }
+    },
+    {
+      "id": "primock_day5_consultation11",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "2-week hx of knee pain, especially after running longer distances (7-8 miles). Pain described as starting around mile 2.5 to 3 and worsening over time. Right knee more affected. Tinging in right toes noted post-run but no change in color or temperature. No locking up when standing or walking. No problems with stairs or full range of motion. Uses ice for pain relief, takes ibuprofen (400mg max) as needed. Smokes occasionally and uses melatonin, Xanax (occasionally), vitamin D, Aleve (ibuprofen). No history of stomach issues, asthma, indigestion, acid reflux. PMH: far-sightedness, Lasik surgery, UTI treated in ER. DH: no significant family history.",
+          "objective": "No swelling noted on examination. Knee pain localized to middle and right side. Mild clicking heard with knee movement during exam. No tenderness on palpation. Full range of motion without restriction or locking. No redness, warmth, or deformity present. No signs of compartment syndrome or deep vein thrombosis.",
+          "assessment": "Possible overuse injury of the right knee secondary to increased running distance. Differential includes patellar tracking disorder, meniscal tear, or ligament strain. Considering ACL involvement but cannot be diagnosed remotely; requires in-person examination by a physiotherapist for further assessment and potential imaging if needed.",
+          "plan": "1. Continue ice therapy as tolerated. 2. Reduce running volume and intensity to avoid exacerbation of symptoms. 3. Prescribe ibuprofen (400mg) PRN for pain relief, to be taken with food. 4. Referral to physiotherapist for initial assessment and potential imaging if indicated. 5. Follow-up in one week or sooner if symptoms worsen or new symptoms develop. Urgent care recommended if persistent swelling, heat, redness, high temperature, or complete knee lock-up occurs."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 2116,
+          "transcript_char_count": 11323,
+          "note_word_count": 265,
+          "processing_time_ms": 64272.43,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.3723,
+          "rouge_2": 0.0696,
+          "rouge_l": 0.1732,
+          "bleu": 0.012,
+          "section_scores": {
+            "subjective": 0.1732,
+            "assessment": 0.069,
+            "plan": 0.24
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.173 (Needs Review). ROUGE-1=0.3723, ROUGE-2=0.0696, BLEU=0.012."
+      }
+    },
+    {
+      "id": "primock_day5_consultation12",
+      "source": "primock57",
+      "chief_complaint": null,
+      "generation": {
+        "soap_note": {
+          "subjective": "Chief complaint: Persistent headache for one day. Onset yesterday mid-morning. Location: Left occipital region. Character: Intense and throbbing, gradually worsening. Aggravating factors: None noted. Relieving factors: None noted. Severity: 8/10. No associated nausea, vomiting, tingling, numbness, weakness, blurred vision, or photophobia. No fever, chills, rashes, or stomach problems. Past medical history: No significant past medical conditions. Medications: Nurofen (Ibuprofen) taken yesterday without relief. Allergies: None reported. Social history: Non-smoker, non-drinker, no other drug use. Occupation: Designer. Living situation: Lives with partner.",
+          "objective": "General appearance: Alert and oriented. HEENT: No abnormalities noted. Cardiovascular: Tachycardia not documented. Respiratory: Normal breath sounds bilaterally. Abdominal: Soft, non-tender, non-distended. Musculoskeletal: No tenderness or limitation of movement. Neurological: No focal deficits noted. Skin: Intact and without rash.",
+          "assessment": "Primary diagnosis: New-onset headache of unknown etiology. Differential diagnoses include tension-type headache, migraine, or secondary headache due to stress or dehydration. Severity moderate to severe based on patient report.",
+          "plan": "1. Prescribe Nurofen (Ibuprofen) 400mg TID with food for pain relief. 2. Advise increased fluid intake and rest. 3. Follow-up in two days if symptoms persist or worsen, particularly if fever, rash, vomiting, or neck stiffness develops. 4. Return precautions: Seek immediate medical attention if headache becomes severe, associated with neurological deficits, or accompanied by other concerning symptoms."
+        },
+        "metadata": {
+          "model": "qwen2.5:7b",
+          "mode": "ollama",
+          "transcript_word_count": 904,
+          "transcript_char_count": 5045,
+          "note_word_count": 207,
+          "processing_time_ms": 45172.94,
+          "sections_populated": 4
+        },
+        "warnings": []
+      },
+      "has_reference": true,
+      "evaluation": {
+        "success": true,
+        "scores": {
+          "rouge_1": 0.2675,
+          "rouge_2": 0.0577,
+          "rouge_l": 0.1465,
+          "bleu": 0.0018,
+          "section_scores": {
+            "subjective": 0.1793,
+            "assessment": 0.1765,
+            "plan": 0.1277
+          }
+        },
+        "summary": "Evaluation against reference note: ROUGE-L=0.146 (Needs Review). ROUGE-1=0.2675, ROUGE-2=0.0577, BLEU=0.0018."
+      }
+    }
+  ],
+  "per_source_statistics": {
+    "primock57": {
+      "total": 57,
+      "successful": 57,
+      "avg_rouge_l": 0.1757,
+      "avg_rouge_1": 0.3223,
+      "avg_bleu": 0.0135,
+      "avg_sections_populated": 3.9825
+    }
+  }
+}
