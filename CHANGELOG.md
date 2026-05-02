@@ -9,6 +9,21 @@ strict semver discipline — this is a portfolio project, not a library.
 - Section-level streaming so each SOAP card fills independently.
 - Per-section confidence scores surfaced in the UI.
 
+### Added
+
+- Few-shot worked example baked into the SOAP system prompt
+  (`backend/app/services/prompts.py`).
+- New eval run `evaluation/reports/results_ollama_qwen25_7b_fewshot.json`:
+  Qwen 2.5 7B + few-shot scores **0.176 ROUGE-L / 0.322 ROUGE-1** on the
+  PriMock57 split — 1.85× the rule-based baseline and 1.24× the same
+  model with no few-shot. See `evaluation/reports/comparison.md`.
+
+### Changed
+
+- `evaluation/scripts/compare_runs.py` now labels report rows by model
+  name (parsed from per-example metadata) instead of dataset filename,
+  so the comparison table actually tells you what was run.
+
 ## [0.1.0] — 2026-05-02
 
 First public-ish version. Everything end-to-end works on a laptop.
