@@ -539,6 +539,12 @@ The script is best-effort — missing datasets are reported and skipped, and
 
 ### Evaluate
 
+Latest headline numbers live in [`evaluation/reports/comparison.md`](evaluation/reports/comparison.md).
+Best free run today: **Qwen 2.5 7B + 1-shot worked example** scoring
+0.176 ROUGE-L / 0.322 ROUGE-1 on PriMock57 (n=57) — 1.85× the
+rule-based baseline, 1.24× the same model with no few-shot, $0 in
+API spend.
+
 Free local path with [Ollama](https://ollama.com/):
 
 ```bash
