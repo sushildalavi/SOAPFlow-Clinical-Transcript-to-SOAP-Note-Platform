@@ -1,0 +1,18 @@
+{
+  "_comment": "OpenAI fine-tuning configuration for SOAPFlow SOAP note generation",
+  "model": "gpt-4o-mini-2024-07-18",
+  "suffix": "soapflow",
+  "n_epochs": 3,
+  "batch_size": "auto",
+  "learning_rate_multiplier": "auto",
+
+  "_validation_split": "Set to 0.1-0.2 to hold out a validation set",
+  "validation_split": 0.1,
+
+  "_notes": [
+    "gpt-4o-mini-2024-07-18 is recommended for cost-effective fine-tuning",
+    "Minimum 10 examples required, 50+ recommended for quality",
+    "n_epochs: 3-5 typically sufficient for instruction following tasks",
+    "After fine-tuning, update OPENAI_MODEL in backend/.env to the fine-tuned model ID"
+  ]
+}
