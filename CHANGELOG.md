@@ -24,6 +24,21 @@ strict semver discipline — this is a portfolio project, not a library.
   name (parsed from per-example metadata) instead of dataset filename,
   so the comparison table actually tells you what was run.
 
+### Docs
+
+- README rewritten so the supported-backend table actually matches the
+  code (6 backends — openai, anthropic, groq, ollama, mlx, demo —
+  instead of the old 3).
+- Architecture tree corrected: `datasets/` → `scribe_datasets/`, plus
+  `data/`, `adapters/`, `monitoring/`, `docs/` are now listed.
+- Six Mermaid diagrams added to README: backend selection, system
+  overview, request lifecycle, SSE streaming flow, training/eval
+  pipeline, Docker topology, plus two ROUGE/latency bar charts.
+- Env example block expanded to cover all six backends (Groq, Ollama,
+  MLX) with their actual env-var names and defaults.
+- Fine-tuning section now documents both the OpenAI and MLX paths and
+  the three trained adapters under `adapters/`.
+
 ## [0.1.0] — 2026-05-02
 
 First public-ish version. Everything end-to-end works on a laptop.
