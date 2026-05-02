@@ -575,13 +575,13 @@ Available demos:
 | Index | Title | Scenario |
 |-------|-------|----------|
 | 0 | Hypertension Follow-Up | Type 2 DM + HTN management |
-| 1 | Acute Respiratory | Community-acquired pneumonia |
+| 1 | Acute Respiratory Complaint | Community-acquired pneumonia |
 | 2 | Pediatric Well Visit | 6-year well-child check |
-| 3 | Mental Health Consult | Depression screening |
+| 3 | Mental Health Consultation | Depression screening |
 | 4 | Emergency Chest Pain | Acute MI workup |
-| 5 | Chronic Pain | Fibromyalgia management |
-| 6 | Orthopedic Consult | Knee injury evaluation |
-| 7 | Diabetes New Onset | Type 2 DM initial presentation |
+| 5 | Chronic Pain Management | Fibromyalgia management |
+| 6 | Orthopedic Knee Evaluation | Knee injury evaluation |
+| 7 | New-Onset Type 2 Diabetes | Type 2 DM initial presentation |
 
 ---
 
