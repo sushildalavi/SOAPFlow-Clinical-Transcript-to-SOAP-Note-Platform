@@ -54,9 +54,9 @@ SOAP (Subjective, Objective, Assessment, Plan) notes are the universal standard 
 
 ```mermaid
 flowchart LR
-    A[Transcript<br/>typed or audio] --> B{Audio?}
-    B -- yes --> C[Whisper ASR<br/>/api/v1/transcribe]
-    B -- no --> D[De-identify<br/>regex + spaCy]
+    A["Transcript<br/>typed or audio"] --> B{Audio?}
+    B -- yes --> C["Whisper ASR<br/>via /api/v1/transcribe"]
+    B -- no --> D["De-identify<br/>regex + spaCy"]
     C --> D
     D --> E{GENERATION_MODE}
     E -->|openai| F1[GPT-4o]
@@ -65,10 +65,10 @@ flowchart LR
     E -->|ollama| F4[Local Qwen 2.5 7B]
     E -->|mlx| F5[Local Qwen + LoRA]
     E -->|demo| F6[Rule-based]
-    F1 & F2 & F3 & F4 & F5 & F6 --> G[JSON repair<br/>+ validator<br/>10+ checks]
-    G --> H[(SQLite<br/>history)]
-    G --> I[(Qdrant<br/>vector index)]
-    G --> J[SOAP card UI<br/>+ warnings]
+    F1 & F2 & F3 & F4 & F5 & F6 --> G["JSON repair<br/>+ validator<br/>10+ checks"]
+    G --> H[("SQLite history")]
+    G --> I[("Qdrant vector index")]
+    G --> J["SOAP card UI<br/>+ warnings"]
 ```
 
 ---
@@ -114,17 +114,17 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    subgraph Client["Browser (React 19 + Vite)"]
-        UI[SOAP cards UI<br/>• TranscriptInput<br/>• OutputPanel<br/>• HistoryPanel]
-        REC[VoiceRecorder<br/>+ waveform]
-        HK[hooks: useGenerate<br/>useStream / useHistory]
+    subgraph Client["Browser — React 19 + Vite"]
+        UI["SOAP cards UI<br/>• TranscriptInput<br/>• OutputPanel<br/>• HistoryPanel"]
+        REC["VoiceRecorder<br/>+ waveform"]
+        HK["hooks: useGenerate<br/>useStream / useHistory"]
     end
 
-    subgraph API["FastAPI backend (port 8000)"]
-        MW[Middleware<br/>CORS · auth · rate limit · request-id]
+    subgraph API["FastAPI backend — port 8000"]
+        MW["Middleware<br/>CORS · auth · rate-limit · request-id"]
         R1["/api/v1/transcribe"]
         R2["/api/v1/generate"]
-        R3["/api/v1/stream (SSE)"]
+        R3["/api/v1/stream — SSE"]
         R4["/api/v1/history"]
         R5["/api/v1/search"]
         R6["/api/v1/evaluate"]
@@ -132,19 +132,19 @@ flowchart TB
     end
 
     subgraph Services["Service layer"]
-        S1[transcription<br/>Whisper]
-        S2[deidentify<br/>regex + spaCy + Presidio]
-        S3[generator<br/>6 backends]
-        S4[validator<br/>10+ checks]
-        S5[cache<br/>Redis or in-process]
-        S6[search<br/>Qdrant + ClinicalBERT]
-        S7[evaluator<br/>ROUGE / BLEU]
+        S1["transcription<br/>Whisper"]
+        S2["deidentify<br/>regex + spaCy + Presidio"]
+        S3["generator<br/>6 backends"]
+        S4["validator<br/>10+ checks"]
+        S5["cache<br/>Redis or in-process"]
+        S6["search<br/>Qdrant + ClinicalBERT"]
+        S7["evaluator<br/>ROUGE / BLEU"]
     end
 
     subgraph Stores["Stores"]
-        DB[(SQLite / Postgres<br/>users · notes · audit)]
-        Q[(Qdrant<br/>vector index)]
-        RD[(Redis<br/>cache + rate limit)]
+        DB[("SQLite or Postgres<br/>users · notes · audit")]
+        Q[("Qdrant vector index")]
+        RD[("Redis cache + rate-limit")]
     end
 
     subgraph LLM["Model providers"]
@@ -268,31 +268,31 @@ sequenceDiagram
     participant FE as React frontend
     participant API as FastAPI router
     participant DI as deidentify
-    participant CA as cache (Redis)
+    participant CA as Redis cache
     participant GEN as generator
-    participant LLM as Provider<br/>(OpenAI/…)
+    participant LLM as LLM provider
     participant V as validator
     participant DB as SQLite
 
-    U->>FE: paste transcript + click Generate
+    U->>FE: paste transcript, click Generate
     FE->>API: POST /api/v1/generate
     API->>DI: redact PHI
     DI-->>API: clean transcript
-    API->>CA: lookup sha256(clean)
+    API->>CA: lookup by sha256 of transcript
     alt cache hit
         CA-->>API: SOAP JSON
     else cache miss
-        API->>GEN: generate(clean, mode)
-        GEN->>LLM: chat completion / local infer
-        LLM-->>GEN: raw JSON (or text)
-        GEN->>GEN: JSON repair / parse
+        API->>GEN: generate clean transcript
+        GEN->>LLM: chat completion or local infer
+        LLM-->>GEN: raw JSON or text
+        GEN->>GEN: JSON repair and parse
         GEN-->>API: SOAP JSON
-        API->>CA: store with 1 h TTL
+        API->>CA: store with 1h TTL
     end
-    API->>V: validate(soap, transcript)
-    V-->>API: warnings[]
+    API->>V: validate soap and transcript
+    V-->>API: warnings list
     API->>DB: persist NoteRecord
-    API-->>FE: { soap_note, warnings, metadata }
+    API-->>FE: soap_note + warnings + metadata
     FE-->>U: render 4 SOAP cards
 ```
 
@@ -300,22 +300,22 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-    participant FE as React (useStream)
+    participant FE as React useStream hook
     participant API as FastAPI
-    participant S as streaming.py
-    participant LLM as Provider
+    participant S as streaming service
+    participant LLM as LLM provider
 
-    FE->>API: EventSource /stream?transcript=…
-    API->>S: token_stream(transcript, mode)
+    FE->>API: EventSource on /api/v1/stream
+    API->>S: open token stream
     S->>LLM: streaming chat completion
     loop per token
         LLM-->>S: token
-        S-->>API: yield {type:"token", text}
-        API-->>FE: data: {"type":"token", ...}
+        S-->>API: yield token event
+        API-->>FE: SSE data type=token
     end
     LLM-->>S: stop
-    S-->>API: yield {type:"done", soap_note, warnings}
-    API-->>FE: data: {"type":"done", ...}
+    S-->>API: yield done event with soap_note + warnings
+    API-->>FE: SSE data type=done
     FE-->>FE: progressively fill SOAP cards
 ```
 
@@ -615,13 +615,13 @@ Use the model dropdown in the transcript input panel to override the server's de
 
 ```mermaid
 flowchart LR
-    Browser((Browser)) -->|:5173| FE[soapflow-frontend<br/>nginx + React build]
-    FE -->|/api/v1/* :8000| BE[soapflow-api<br/>FastAPI + uvicorn]
-    BE -->|6379| RD[(soapflow-redis<br/>cache + rate limit)]
-    BE -->|6333| QD[(soapflow-qdrant<br/>vector store)]
-    BE -->|5000| ML[(soapflow-mlflow<br/>experiment tracking)]
-    BE -->|expose /metrics| PR[soapflow-prometheus<br/>:9090]
-    PR --> GR[soapflow-grafana<br/>:3001]
+    Browser((Browser)) -->|:5173| FE["soapflow-frontend<br/>nginx + React build"]
+    FE -->|api on :8000| BE["soapflow-api<br/>FastAPI + uvicorn"]
+    BE -->|:6379| RD[("soapflow-redis<br/>cache + rate-limit")]
+    BE -->|:6333| QD[("soapflow-qdrant<br/>vector store")]
+    BE -->|:5000| ML[("soapflow-mlflow<br/>experiment tracking")]
+    BE -->|exposes /metrics| PR["soapflow-prometheus<br/>:9090"]
+    PR --> GR["soapflow-grafana<br/>:3001"]
 ```
 
 ### Full stack (recommended)
@@ -824,30 +824,29 @@ rule-based baseline, 1.24× the same model with no few-shot, $0 in
 API spend. Full table in
 [`evaluation/reports/comparison.md`](evaluation/reports/comparison.md).
 
-```mermaid
-xychart-beta
-    title "ROUGE-L on PriMock57 (higher is better)"
-    x-axis ["rule", "1.5B-base", "1.5B-LoRAfull", "1.5B-LoRAmts", "7B-base", "7B-1shot"]
-    y-axis "ROUGE-L" 0 --> 0.25
-    bar [0.0947, 0.0827, 0.0155, 0.0150, 0.1416, 0.1757]
-```
+**ROUGE-L on PriMock57** (n=57, higher is better)
 
-```mermaid
-xychart-beta
-    title "Latency p50 on PriMock57 (ms, lower is better)"
-    x-axis ["rule", "1.5B-base", "1.5B-LoRAfull", "1.5B-LoRAmts", "7B-base", "7B-1shot"]
-    y-axis "ms" 0 --> 75000
-    bar [2, 26747, 11414, 4425, 70440, 57588]
-```
+| Run | Backend | Bars | ROUGE-L |
+|-----|---------|------|---------|
+| `7B-1shot` | Ollama, Qwen 2.5 7B + 1-shot worked example | `█████████████████░░` | **0.1757** |
+| `7B-base` | Ollama, Qwen 2.5 7B Instruct (no few-shot) | `██████████████░░░░░` | 0.1416 |
+| `rule` | demo, rule-based regex | `█████████░░░░░░░░░░` | 0.0947 |
+| `1.5B-base` | MLX, Qwen 2.5 1.5B Instruct 4-bit, no adapter | `████████░░░░░░░░░░░` | 0.0827 |
+| `1.5B-LoRAfull` | MLX, Qwen 2.5 1.5B + LoRA on full mix | `██░░░░░░░░░░░░░░░░░` | 0.0155 |
+| `1.5B-LoRAmts` | MLX, Qwen 2.5 1.5B + LoRA on MTS-Dialog only | `█░░░░░░░░░░░░░░░░░░` | 0.0150 |
 
-| Run | Backend | ROUGE-L | ROUGE-1 | Latency p50 |
-|-----|---------|---------|---------|-------------|
-| `rule` | demo (rule-based) | 0.0947 | 0.180 | 2 ms |
-| `1.5B-base` | MLX, Qwen 2.5 1.5B Instruct (4-bit), no adapter | 0.0827 | 0.165 | 26 747 ms |
-| `1.5B-LoRAfull` | MLX, Qwen 2.5 1.5B + LoRA trained on full mix | 0.0155 | 0.041 | 11 414 ms |
-| `1.5B-LoRAmts` | MLX, Qwen 2.5 1.5B + LoRA trained on MTS-Dialog only | 0.0150 | 0.039 | 4 425 ms |
-| `7B-base` | Ollama, Qwen 2.5 7B Instruct (no few-shot) | 0.1416 | 0.273 | 70 440 ms |
-| `7B-1shot` | Ollama, Qwen 2.5 7B Instruct + 1 worked example | **0.1757** | **0.322** | 57 588 ms |
+**Latency p50 on PriMock57** (lower is better)
+
+| Run | Bars | Latency p50 |
+|-----|------|-------------|
+| `rule` | `░░░░░░░░░░░░░░░░░░░` | **2 ms** |
+| `1.5B-LoRAmts` | `█░░░░░░░░░░░░░░░░░░` | 4 425 ms |
+| `1.5B-LoRAfull` | `███░░░░░░░░░░░░░░░░` | 11 414 ms |
+| `1.5B-base` | `███████░░░░░░░░░░░░` | 26 747 ms |
+| `7B-1shot` | `███████████████░░░░` | 57 588 ms |
+| `7B-base` | `███████████████████` | 70 440 ms |
+
+> Quality and latency are both reported on the same 57-record PriMock57 test split. Bars are scaled to the max in each table; numbers come straight from [`evaluation/reports/`](evaluation/reports/).
 
 ### Run it yourself
 
