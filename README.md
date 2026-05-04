@@ -827,18 +827,27 @@ API spend. Full table in
 ```mermaid
 xychart-beta
     title "ROUGE-L on PriMock57 (higher is better)"
-    x-axis ["rule-based", "Qwen 1.5B base", "Qwen 1.5B + LoRA (full)", "Qwen 1.5B + LoRA (mts)", "Qwen 7B base", "Qwen 7B + 1-shot"]
+    x-axis ["rule", "1.5B-base", "1.5B-LoRAfull", "1.5B-LoRAmts", "7B-base", "7B-1shot"]
     y-axis "ROUGE-L" 0 --> 0.25
     bar [0.0947, 0.0827, 0.0155, 0.0150, 0.1416, 0.1757]
 ```
 
 ```mermaid
 xychart-beta
-    title "Latency p50 (ms, lower is better)"
-    x-axis ["rule-based", "Qwen 1.5B base", "Qwen 1.5B LoRA full", "Qwen 1.5B LoRA mts", "Qwen 7B base", "Qwen 7B + 1-shot"]
+    title "Latency p50 on PriMock57 (ms, lower is better)"
+    x-axis ["rule", "1.5B-base", "1.5B-LoRAfull", "1.5B-LoRAmts", "7B-base", "7B-1shot"]
     y-axis "ms" 0 --> 75000
     bar [2, 26747, 11414, 4425, 70440, 57588]
 ```
+
+| Run | Backend | ROUGE-L | ROUGE-1 | Latency p50 |
+|-----|---------|---------|---------|-------------|
+| `rule` | demo (rule-based) | 0.0947 | 0.180 | 2 ms |
+| `1.5B-base` | MLX, Qwen 2.5 1.5B Instruct (4-bit), no adapter | 0.0827 | 0.165 | 26 747 ms |
+| `1.5B-LoRAfull` | MLX, Qwen 2.5 1.5B + LoRA trained on full mix | 0.0155 | 0.041 | 11 414 ms |
+| `1.5B-LoRAmts` | MLX, Qwen 2.5 1.5B + LoRA trained on MTS-Dialog only | 0.0150 | 0.039 | 4 425 ms |
+| `7B-base` | Ollama, Qwen 2.5 7B Instruct (no few-shot) | 0.1416 | 0.273 | 70 440 ms |
+| `7B-1shot` | Ollama, Qwen 2.5 7B Instruct + 1 worked example | **0.1757** | **0.322** | 57 588 ms |
 
 ### Run it yourself
 
