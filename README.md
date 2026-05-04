@@ -122,13 +122,13 @@ flowchart TB
 
     subgraph API["FastAPI backend (port 8000)"]
         MW[Middleware<br/>CORS · auth · rate limit · request-id]
-        R1[/api/v1/transcribe/]
-        R2[/api/v1/generate/]
-        R3[/api/v1/stream/ SSE]
-        R4[/api/v1/history/]
-        R5[/api/v1/search/]
-        R6[/api/v1/evaluate/]
-        R7[/api/v1/health, /stats, /demo, /auth/]
+        R1["/api/v1/transcribe"]
+        R2["/api/v1/generate"]
+        R3["/api/v1/stream (SSE)"]
+        R4["/api/v1/history"]
+        R5["/api/v1/search"]
+        R6["/api/v1/evaluate"]
+        R7["/api/v1/health · /stats · /demo · /auth"]
     end
 
     subgraph Services["Service layer"]
