@@ -11,7 +11,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source mts_dialog --output data/training/mts_dialog.jsonl
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/mts_dialog_adapter.py
+      - scribe_datasets/adapters/mts_dialog_adapter.py
     outs:
       - data/training/mts_dialog.jsonl
 
@@ -19,7 +19,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source aci_bench --output data/training/aci_bench.jsonl
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/aci_bench_adapter.py
+      - scribe_datasets/adapters/aci_bench_adapter.py
     outs:
       - data/training/aci_bench.jsonl
 
@@ -27,7 +27,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source primock57 --output data/training/primock57.jsonl
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/primock57_adapter.py
+      - scribe_datasets/adapters/primock57_adapter.py
     outs:
       - data/training/primock57.jsonl
 
@@ -35,7 +35,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source notechat --output data/training/notechat.jsonl --count 10000
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/notechat_adapter.py
+      - scribe_datasets/adapters/notechat_adapter.py
     outs:
       - data/training/notechat.jsonl
 
@@ -43,7 +43,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source augmented_notes --output data/training/augmented_notes.jsonl --count 10000
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/augmented_notes_adapter.py
+      - scribe_datasets/adapters/augmented_notes_adapter.py
     outs:
       - data/training/augmented_notes.jsonl
 
@@ -51,7 +51,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source omi_health --output data/training/omi_health.jsonl --count 5000
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/omi_health_adapter.py
+      - scribe_datasets/adapters/omi_health_adapter.py
     outs:
       - data/training/omi_health.jsonl
 
@@ -59,7 +59,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source mimic_note --output data/training/mimic_note.jsonl --count 5000
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/mimic_note_adapter.py
+      - scribe_datasets/adapters/mimic_note_adapter.py
     outs:
       - data/training/mimic_note.jsonl
 
@@ -67,7 +67,7 @@ stages:
     cmd: python training/scripts/prepare_dataset.py --source mtsamples --output data/training/mtsamples.jsonl
     deps:
       - training/scripts/prepare_dataset.py
-      - datasets/adapters/mtsamples_adapter.py
+      - scribe_datasets/adapters/mtsamples_adapter.py
       - data/mtsamples/mtsamples.csv
     outs:
       - data/training/mtsamples.jsonl
@@ -76,7 +76,7 @@ stages:
     cmd: python scripts/build_dataset_stack.py --output-dir data/splits
     deps:
       - scripts/build_dataset_stack.py
-      - datasets/adapters
+      - scribe_datasets/adapters
     outs:
       - data/splits/train.jsonl
       - data/splits/val.jsonl
