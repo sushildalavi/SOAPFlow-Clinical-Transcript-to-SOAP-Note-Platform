@@ -8,11 +8,3 @@ scrape_configs:
       - targets: ["backend:8000"]
     metrics_path: "/metrics"
 
-  - job_name: "qdrant"
-    static_configs:
-      - targets: ["qdrant:6333"]
-    metrics_path: "/metrics"
-
-  - job_name: "redis"
-    static_configs:
-      - targets: ["redis-exporter:9121"]
