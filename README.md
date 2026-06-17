@@ -1,4 +1,4 @@
-# SOAPFlow — Turn Doctor-Patient Conversations into SOAP Notes, Instantly
+# SOAPFlow
 
 ![SOAPFlow Banner](https://img.shields.io/badge/SOAPFlow-AI%20Clinical%20Scribe-0ea5e9?style=for-the-badge&logo=stethoscope)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
